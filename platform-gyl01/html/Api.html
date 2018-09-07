@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="always" name="referrer">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/api.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="Shortcut Icon" href="../images/bitbug_favicon.ico" type="image/x-icon">
+    <title>API列表 - 鲜易供应链开放平台</title>
+</head>
+<body>
+ <div class="warp" style="height:66px">
+    <div class="filex_top">
+        <div class="filex_top_div">
+              <div class="filex_top_left"><small><img src="../images/logo-4.png" alt=""></small></div>
+                  <div class="filex_top_right">
+                      <ul class="filex_top_right_ul">
+                          <li><a href="index.html">首页</a>|</li>
+                          <li><a href="#">文档中心</a>|</li>
+                          <li><a href="Api.html">API</a>|</li>
+                          <li><a href="#">控制台</a>|</li>
+                      </ul>
+                  </div>
+          </div>
+      </div>
+     <header class="header" style="height:66px">
+         <nav class="header_nav">
+            <div class="header_nav_div">
+                 <div class="header_nav_left">
+                     <small><img src="../images/logo-3.png" alt=""></small>
+                 </div>
+                 <div class="header_nav_right">
+                     <ul class="header_nav_right_ul">
+                        <li><a href="index.html">首页</a><span></span></li>
+                        <li><a href="#">文档中心</a><span></span></li>
+                        <li class="onbg"><a href="Api.html" class="onbg">API</a><span></span></li>
+                        <li><a href="#">控制台</a><span></span></li>
+                      </ul>
+                      <!--<div class="header_nav_right_sea">
+                          <input type="text" placeholder="Api搜索">
+                          <button class="header_nav_right_sea_btn">搜索</button>
+                      </div>-->
+                 </div>
+             </div>
+         </nav>
+     </header>
+   </div>
+   <section class="content1">
+    <div class="a_title" style="position: absolute;"> 
+      <ul>
+        <li class="access">客户服务接口</li>
+        <li class="transaction" id="highlight">订单接口</li>
+        <li class="storage">仓储接口</li>
+        <li class="logistics">物流接口</li>
+        <li class="settlement">结算接口</li>
+        <li class="materiel">物料接口</li>
+      </ul>
+      <ul>
+        <li class="distribution">伙伴配送接口</li>
+        <li class="transport">TMS接口</li>
+        <li class="gps">GPS接口</li>
+      </ul>
+      <ul>
+        <li class="storages">伙伴仓储接口</li>
+        <li class="harmonious">WMS接口</li>
+        <li class="control">仓控接口</li>
+      </ul>
+    </div>
+    <div class="a_theme">
+      <p class="one">首页</p>
+      <p class="interva"></p>
+      <p class="two">订单接口</p>
+    </div>
+    <div class="transaction public">
+      <p>订单接口</p>
+      <p>客户可以通过订单接口下发入库单、出库单和运单等</p>
+      <table cellspacing="0">
+        <tr>
+          <th>简要描述</th>
+          <th>功能描述</th>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id" href="Api_Customer_Order.html">入库单下发</a></td>
+          <td>此接口提供给客户系统向鲜易平台发送入库单据</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id"   href="Api_Customer_Order.html">入库单实收反馈</a></td>
+          <td>此接口供使用鲜易仓储的客户查询入库实收信息</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id"   href="Api_Customer_Order.html">入库单取消</a></td>
+          <td>客户可以通过该接口取消之前发送的入库单指令</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id"   href="Api_Customer_Order.html">出库单接收</a></td>
+          <td>此接口提供给客户系统向鲜易平台发送出库单据</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id"   href="Api_Customer_Order.html">出库单发货反馈</a></td>
+          <td>此接口供使用鲜易仓储的客户查询出库实发信息</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id"   href="Api_Customer_Order.html">出库单取消</a></td>
+          <td>客户可以通过该接口取消之前发送的出库单指令</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id"   href="Api_Customer_Order.html">运单下发</a></td>
+          <td>此接口提供给客户系统向鲜易平台发送运输订单</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id"   href="Api_Customer_Order.html">运单取消</a></td>
+          <td>客户可以通过该接口取消之前发送的运输订单</td>
+        </tr>
+      </table>
+    </div>
+    <div class="settlement public">
+      <p>结算接口</p>
+      <p>客户可以通过结算接口获取结算明细</p>
+      <table cellspacing="0">
+        <tr>
+          <th>简要描述</th>
+          <th>功能描述</th>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id_4"   href="Api_Customer_Settlement.html">结算单同步</a></td>
+          <td>此接口供客户系统查询运输单的结算信息（按时间范围查询）</td>
+        </tr>
+      </table>
+    </div>
+    <div class="storage public">
+      <p>仓储接口</p>
+      <p>客户可以通过仓储接口获取库存量、仓储温度、盘点等信息</p>
+      <table cellspacing="0">
+        <tr>
+          <th>简要描述</th>
+          <th>功能描述</th>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id_2" href="Api_Customer_Storage.html">库存查询</a></td>
+          <td>此接口供使用鲜易仓储的客户查询库存数据</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id_2" href="Api_Customer_Storage.html">盘点申请</a></td>
+          <td>此接口供使用鲜易仓储的客户下发盘点指令</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id_2" href="Api_Customer_Storage.html">仓温度查询</a></td>
+          <td>此接口供使用鲜易仓储的客户查询货品存储仓库的温度</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id_2" href="Api_Customer_Storage.html">盘点确认</a></td>
+          <td>此接口供使用鲜易仓储的客户确认盘点结果</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id_2" href="Api_Customer_Storage.html">盘点结果查询</a></td>
+          <td>此接口供使用鲜易仓储的客户查询盘点结果</td>
+        </tr>
+      </table>
+    </div>
+    <div class="logistics public">
+      <p>物流接口</p>
+      <p>物料信息下发到平台。</p>
+      <table cellspacing="0">
+        <tr>
+          <th>简要描述</th>
+          <th>功能描述</th>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id_3" href="Api_Customer_logistics.html">物流状态查询</a></td>
+          <td>此接口供客户系统查询运输单的全量执行信息</td>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id_3" href="Api_Customer_logistics.html">物流状态同步</a></td>
+          <td>此接口供客户系统查询运输单的增量执行信息（按时间范围查询）</td>
+        </tr>
+      </table>
+    </div>
+    <div class="materiel public">
+      <p>物料接口</p>
+      <p>开放给用户交易过程中的快速下单、获取订单接口</p>
+      <table cellspacing="0">
+        <tr>
+          <th>简要描述</th>
+          <th>功能描述</th>
+        </tr>
+        <tr>
+          <td><a class="nm-three_id_5" href="Api_Customer_materiel.html">商品下发</a></td>
+          <td>通过该接口客户可以将商品明细信息下发到平台</td>
+        </tr>
+      </table>
+    </div>
+    <div class="transport public">
+      <p>TMS接口</p>
+      <p>提供伙伴对接TMS系统接口或自由运力平台</p>
+      <table cellspacing="0">
+        <tr>
+          <th>简要描述</th>
+          <th>功能描述</th>
+        </tr>
+        <tr>
+          <td><a href="#">推送运单</a></td>
+          <td>平台将运单信息推送到伙伴TMS系统</td>
+        </tr>
+        <tr>
+          <td><a href="#">取消运单</a></td>
+          <td>可以使用运单号，通过该接口，取消运单</td>
+        </tr>
+        <tr>
+          <td><a href="#">回传运单状态</a></td>
+          <td>伙伴TMS系统回传运单状态变化</td>
+        </tr>
+        <tr>
+          <td><a href="#">回传调度单</a></td>
+          <td>伙伴TMS系统执行完调度操作后，回传调度输单</td>
+        </tr>
+        <tr>
+          <td><a href="#">回传应付账单</a></td>
+          <td>伙伴TMS系统生成，回传应收账单</td>
+        </tr>
+        <tr>
+          <td><a href="#">回传应收账单</a></td>
+          <td>伙伴TMS系统执行完调度操作后，回传调度输单</td>
+        </tr>
+      </table>
+    </div>
+    <div class="gps public">
+      <p>GPS接口</p>
+      <p>提供伙伴对接车载设备接口，获取车辆最新位置信息</p>
+      <table cellspacing="0">
+        <tr>
+          <th>简要描述</th>
+          <th>功能描述</th>
+        </tr>
+        <tr>
+          <td><a href="#">获取车辆的最新位置信息</a></td>
+          <td>获取当前车辆位置、温度等信息</td>
+        </tr>
+        <tr>
+          <td><a href="#">查询两个地点间的预计时间和里程</a></td>
+          <td>获取两个地点间的预计时间和里程</td>
+        </tr>
+        <tr>
+          <td><a href="#">以地图模式获取车辆的最新位置信息</a></td>
+          <td>获取车辆的最新位置信息返回地图图片</td>
+        </tr>
+        <tr>
+          <td><a href="#">以地图模式获取车辆的轨迹</a></td>
+          <td>获取车辆的最新位置信息返回地图图片</td>
+        </tr>
+      </table>
+    </div>
+    <div class="harmonious public">
+      <p>WMS接口</p>
+      <p>提供伙伴对接WMS系统接口。</p>
+      <table cellspacing="0">
+        <tr>
+          <th>简要描述</th>
+          <th>功能描述</th>
+        </tr>
+        <tr>
+          <td><a href="#">推送入库单</a></td>
+          <td>当平台新增入库单时触发该接口，将入库单数据推送到WMS</td>
+        </tr>
+        <tr>
+          <td><a href="#">回传入库单</a></td>
+          <td>WMS完成上架操作后触发该接口，将入库单数据回传到平台</td>
+        </tr>
+        <tr>
+          <td><a href="#">回传入库状态</a></td>
+          <td>当WMS操作入库作业时，WMS及时将入库单状态推送到平台</td>
+        </tr>
+        <tr>
+          <td><a href="#">取消入库单</a></td>
+          <td>当平台取消仓库入库作业的单据时触发该接口</td>
+        </tr>
+        <tr>
+          <td><a href="#">推送出库单</a></td>
+          <td>当平台新增出库单时触发该接口，将出库单数据推送到WMS</td>
+        </tr>
+        <tr>
+          <td><a href="#">回传出库单</a></td>
+          <td>当WMS完成出库作业后触发该接口，将出库发运数据推送到平台</td>
+        </tr>
+        <tr>
+          <td><a href="#">同步出库状态</a></td>
+          <td>当WMS操作出库作业时，WMS及时将出库单状态推送到平台</td>
+        </tr>
+        <tr>
+          <td><a href="#">取消出库单</a></td>
+          <td>当协同平台取消仓库出库作业的单据时触发该接口</td>
+        </tr>
+        <tr>
+          <td><a href="#">推送库存全量</a></td>
+          <td>WMS定期将指定时间段内的库存变化数据推送给平台</td>
+        </tr>
+        <tr>
+          <td><a href="#">查询库存量</a></td>
+          <td>平台向WMS系统查询当前库存量</td>
+        </tr>
+        <tr>
+          <td><a href="#">货品资料</a></td>
+          <td>平台新增货品资料信息时触发该接口，协同平台将货品资料推送到WMS</td>
+        </tr>
+        <tr>
+          <td><a href="#">客户资料</a></td>
+          <td>平台新增客户资料信息时触发该接口，平台将客户资料推送到WMS</td>
+        </tr>
+        <tr>
+          <td><a href="#">承运商资料</a></td>
+          <td>平台新增承运商资料信息时触发该接口，平台将资料推送到WMS</td>
+        </tr>
+        <tr>
+          <td><a href="#">供应商资料</a></td>
+          <td>平台新增供应商资料信息时触发该接口，平台将资料推送到WMS</td>
+        </tr>
+      </table>
+    </div>
+    <div class="control public">
+      <p>仓控接口</p>
+      <p>提供伙伴对接仓控系统接口，采集仓库监测点温湿度数据</p>
+      <table cellspacing="0">
+        <tr>
+          <th>简要描述</th>
+          <th>功能描述</th>
+        </tr>
+        <tr>
+          <td><a href="#">推送监测点信息</a></td>
+          <td>仓控系统首次推送所有监测点数据到协同平台，后续仓控新增或修改监测点数据时，只需推送新增或修改的监测点数据到协同平台</td>
+        </tr>
+        <tr>
+          <td><a href="#">推送监测数据</a></td>
+          <td>仓控系统实时采集监测点温湿度数据，实时将所有监测点温湿度变化数据推送到协同平台</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  
+  
+  
+  
+       <div class="ftrdbsp">
+            <div class="sp_div">
+                <ul>
+                    <li><img src="../images/pass_nby_120.png" alt=""></li>
+                    <li><img src="../images/pass_nby_122.png" alt=""></li>
+                    <li><img src="../images/pass_nby_124.png" alt=""></li>
+                    <li><img src="../images/pass_nby_126.png" alt=""></li>
+                    <li><img src="../images/pass_nby_128.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        <footer class="footer">
+            <div class="ft_div">
+                <div class="ft_div1">
+                    <h3>快速入门</h3>
+                    <ul>
+                        <li>注册流程</li>
+                        <li>认证流程</li>
+                        <li>发布流程</li>
+                        <li>交易流程</li>
+                        <li>交易规则</li>
+                    </ul>
+                </div>
+                <div class="ft_div1">
+                    <h3>服务指南</h3>
+                    <ul>
+                        <li>平台服务协议</li>
+                        <li>商务合作</li>
+                        <li>售后说明</li>
+                        <li>发票须知</li>
+                        <li>免费声明</li>
+                    </ul>
+                </div>
+                <div class="ft_div1">
+                    <h3>关于平台</h3>
+                    <ul>
+                        <li>平台简介</li>
+                        <li>新闻动态</li>
+                        <li>加入我们</li>
+                        <li>联系我们</li>
+                    </ul>
+                </div>
+                <div class="ft_div1">
+                    <h3>关注我们</h3>
+                    <ul>
+                        <li><small><img src="../images/pass_nby_106.png" alt=""></small><a href="http://weibo.com/u/5135258609?refer_flag=1001030101_&is_hot=1">新浪微博</a></li>
+                        <li class="ewm"><small><img src="../images/pass_nby_108.png" alt=""></small><a href="API.html">官方微信</a>
+                            <img src="../images/pass_nby_71.png" alt="" class="ewm1">
+                        </li>
+                        <li>
+                            <small><img src="../images/tieba.png" alt=""></small><a href="http://tieba.baidu.com/f?ie=utf-8&kw=%E9%B2%9C%E6%98%93%E4%BE%9B%E5%BA%94%E9%93%BE&fr=search">官方贴吧</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft_div2">
+                    <ul>
+                        <li style="font-size:24px"><small></small>400-816-0366</li>
+                        <li><small></small>周一至周日 8:00-18:00</li>
+                        
+                    </ul>
+                </div>
+            <p>©2014-2020 郑州鲜易供应链有限公司 京ICP备1330026504 服务热线:4006-080-04040</p>
+        </footer>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/api.js"></script>
+  
+  
+  
+</body>

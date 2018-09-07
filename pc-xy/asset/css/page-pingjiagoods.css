@@ -1,0 +1,122 @@
+/*67-H评价商品—H*/
+.ng-rated{
+	background: #fff;
+}
+.ng-rated .nm-mhea{
+	height: 59px;
+	padding: 0 20px;
+	border-bottom:2px solid #f2f2f2;
+}
+.nm-mhea .nm-heaL{
+	height: 59px;
+	line-height: 59px;
+	color: #333;
+	font-size: 18px;
+}
+.nm-mhea .nm-heaR{
+	padding-top: 35px;
+}
+.nm-heaR .ns-col33{
+	font-size: 14px;
+	font-weight: 600;
+	padding-right: 20px;
+}
+.ng-rated .nm-bycon{
+	padding: 0 40px;
+}
+.nm-bycon .nm-tit{
+	padding-left:84px;
+	height: 69px;
+	line-height: 69px;
+	border-bottom: 1px solid #f2f2f2;
+}
+.nm-bycon .nu-RZ{
+	color: #fd8628;
+	
+}
+.nm-bycon .nu-ZB{
+	color: #fc3333;
+}
+.nm-tit .nu-log{
+	position: relative;
+	left: 0;
+	top: 11px;
+}
+.nm-tit .nu-zb{
+	position: relative;
+	left: 0;
+	top: 27px;
+} 
+.nm-tit .nm-name{
+	padding: 0 0 0 22px;
+}
+.nm-mcon .nm-ralis{
+	padding: 40px 0 26px 37px;
+	border-bottom: 1px dashed #efefef;
+}
+.nm-ralis .nm-lisL{
+	width: 330px;
+	height: 108px;
+	padding-top: 7px;
+	border-right: 1px solid #e4e4e4;
+}
+.nm-lisimg  img{
+	width: 60px;
+	height: 60px;
+	margin-right:10px;
+}
+.nm-prec .nm-name{
+	margin: 11px 0 13px;
+	width: 240px;
+	height: 12px;
+	line-height: 1;
+	overflow: hidden;
+	color: #333;
+}
+.nm-ralis .nm-lisR{
+	width: 440px;
+	padding-left: 70px;
+}
+.nm-lisR .nm-slec{
+	height: 36px;
+	padding-left: 5px;
+}
+.nm-lisR .nm-slec input{
+	margin-right: 4px;
+	vertical-align: middle;
+}
+.nm-slec label{
+	display: inline-block;
+	width: 100px;
+	cursor: pointer;
+}
+.nm-text .nm-txt{
+	border:1px solid #f2f2f2;
+	resize: none;
+	width: 418px;
+	height: 38px;
+	padding:8px 6px; 
+}
+.nm-text .nm-ts{
+	text-align: right;
+	padding-right: 12px;
+}
+.nm-bycon .nm-subma{
+	position: relative;
+	top: -1px;
+	border-top:1px solid #ebebeb;
+	height: 99px;
+	line-height: 99px;
+	text-align: center;
+}
+.nm-subma .u-btn{
+	padding: 16px 54px 15px;
+	font-size: 18px;
+}
+/*弹框样式设置*/
+.example.nm-Malert{
+	padding-top: 57px;
+    height: 43px;
+    color: #666666;
+    text-align: center;
+}

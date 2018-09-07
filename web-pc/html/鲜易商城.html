@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鲜易商城</title>
+    <link rel="stylesheet" href="../css/allCss.css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+    <script src="../js/src/jquery.1.10.2.js"></script>
+    <script src="../js/src/unslider.min.js"></script>
+</head>
+<body>
+    <div class="contenter01">
+        <div class="bg-bannerMall clearfix">
+            <div class="m-qLe fl">
+               <div class="m-qrcode01" style="top: 216px;padding: 0px;"><img src="../images/appqucode.jpg" alt="" width="90" height="90"><p>APP下载</p></div>
+            </div>
+            <div class="m-qri fl">
+                <div class="m-qrcode02" style="top: 216px;padding: 0px;"><img src="../images/weixinshop.jpg" alt="" width="90" height="90"><p>关注微信商城</p></div>
+            </div>
+        </div>
+        <div class="g-topContent">
+            <div class="m-topServe">
+                <p class="m-foge">打造一站式冻品采购服务</p>
+                <p class="m-phone">手机下单  随时随地一键购</p>
+                <h6 class="under-manager"><span class="line-left"></span> <i class="c-dott"></i> <span class="line-right"></span></h6>
+                <ul class="m-stopServe clearfix">
+                    <li class="q-liWidth q-liWidth01 fl">
+                        <p><img src="../images/q-topleft.jpg" alt="" width="267" height="278"></p>
+                        <p class="m-qtit">一手货源  港口直供</p>
+                        <p>优质产地直达，港口直供，一手货源，品类丰富，严格优选，为您精选安全优质有保障的食材。让广大餐饮老板省钱、省力、更省心。</p>
+                    </li>
+                    <li class="q-liWidth q-liWidth01 fl">
+                        <p><img src="../images/q-topcenter.jpg" alt="" width="207" height="277"></p>
+                        <p class="m-qtit">正品行货  来源可溯</p>
+                        <p>民以食为天，食以安为先，正品行货，层层检测，严格管控，天然健康，保障食品安全，让您买的放心，吃的安心。</p>
+                    </li>
+                    <li class="q-liWidth fl">
+                        <p class="m-qtit"><img src="../images/q-topright.jpg" alt="" width="215" height="278"></p>
+                        <p class="m-qtit">闪送下单  送货上门</p>
+                        <p>直购便捷，快速购买，冷链配送，专职配送，送货上门，准时送达。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="g-setpMall">
+            <div class="banner banner01" id="b06" style="width: 1064px; margin:0 auto">
+                <ul>
+                    <li>
+                        <div class="m-cut clearfix">
+                            <div class="m-cutLeft fl">
+                                <img src="../images/q-one.png" alt="" width="291" height="569">
+                            </div>
+                            <div class="m-cutRight fl">
+                                <p class="m-black">01</p>
+                                <p class="m-qblack">—</p>
+                                <p class="m-threeSet">注册</p>
+                                <p class="m-titCli">新用户，填写注册账号，同意协议，进行注 册。已有账号用户，可直接登录。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="m-cut clearfix">
+                            <div class="m-cutLeft fl">
+                                <img src="../images/q-two.png" alt="" width="291" height="569">
+                            </div>
+                            <div class="m-cutRight fl">
+                                <p class="m-black">02</p>
+                                <p class="m-qblack">—</p>
+                                <p class="m-threeSet">定位商品</p>
+                                <p class="m-titCli">分类页按照分类寻找所需商品，或可通过输入查询查找商品。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="m-cut clearfix">
+                            <div class="m-cutLeft fl">
+                                <img src="../images/q-three.png" alt="" width="291" height="569">
+                            </div>
+                            <div class="m-cutRight fl">
+                                <p class="m-black">03</p>
+                                <p class="m-qblack">—</p>
+                                <p class="m-threeSet">下单采购</p>
+                                <p class="m-titCli">所需商品加入进货单，继续购物或直接下单，确认支付方式、配送方式，提交订单</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                       <div class="m-cut clearfix">
+                            <div class="m-cutLeft fl">
+                                <img src="../images/q-four.png" alt="" width="291" height="569">
+                            </div>
+                            <div class="m-cutRight fl">
+                                <p class="m-black">04</p>
+                                <p class="m-qblack">—</p>
+                                <p class="m-threeSet">订单跟踪</p>
+                                <p class="m-titCli">下单后，请及时关注订单状态，根据实时物流，坐等收货</p>
+                            </div>
+                        </div>
+                    </li> 
+                </ul>
+                <a href="javascript:void(0);" class="unslider-arrow06 prev"><img class="m-arrow" id="al" src="../images/q-left.jpg" alt="prev" width="57" height="57"></a>
+                <a href="javascript:void(0);" class="unslider-arrow06 next"><img class="m-arrow" id="ar" src="../images/q-right.jpg" alt="next" width="57" height="57"></a>
+            </div>
+        </div>
+    </div>
+<script>
+
+function imgReload()
+
+{
+
+    var imgHeight = 0;
+
+    var wtmp = $("body").width();
+
+    $("#b06 ul li").each(function(){
+
+        $(this).css({width:wtmp + "px"});
+
+    });
+
+    $(".sliderimg").each(function(){
+
+        $(this).css({width:wtmp + "px"});
+
+        imgHeight = $(this).height();
+
+    });
+
+}
+
+
+
+$(window).resize(function(){imgReload();});
+
+
+
+$(document).ready(function(e) {
+
+    imgReload();
+
+    var unslider06 = $('#b06').unslider({
+
+        dots: true,
+
+        fluid: true
+
+    }),
+
+    data06 = unslider06.data('unslider');
+
+    
+
+    $('.unslider-arrow06').click(function() {
+
+        var fn = this.className.split(' ')[1];
+
+        data06[fn]();
+
+    });
+
+});
+
+</script>
+</body>
+</html>

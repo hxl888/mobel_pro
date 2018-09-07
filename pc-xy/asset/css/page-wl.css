@@ -1,0 +1,439 @@
+@charset "utf-8";
+/*fzy 物流反馈*/
+.g-main-white{
+    background: #fff;
+    padding: 0px 0 50px;
+}
+.mg-mainCont{
+    padding: 0 20px 40px;
+    background: #fff;
+}
+.tit-mainContent{
+    border-bottom: 1px solid #ebebeb
+}
+.tit-label{
+    color: #333;
+    line-height: 58px;
+    float: left;
+    margin-right: 11px;
+    font-size: 18px;
+}
+.tit-small{
+    float: left;
+    line-height: 1;
+    margin-top: 26px;
+    padding-left: 10px;
+    border-left: 1px solid #ebebeb;
+    color: #999;
+}
+.tit-mainContent .u-btn-xs{
+    margin: 23px 0 0 10px;
+}
+.adr-name{
+    font-size: 16px;
+    color: #333;
+}
+
+.adr-name span.s-red{
+    font-size: 12px;
+	line-height: 47px;
+	display: none;
+	height: 50px;
+	margin-left: 14px;
+	vertical-align: middle;
+}
+.floor-adr-default span.s-red{
+    display: inline-block;
+}
+.adr-manage {
+    padding-top: 22px;
+    margin-bottom: -20px;
+}
+.floor-adrInfor {
+    border:1px solid #ebebeb;
+    padding: 3px 20px 13px;
+    position: relative;
+    zoom: 1;
+    margin-bottom: 10px;
+}
+.adr-name {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.infor-adrTxt span {
+    display: inline-block;
+    line-height: 26px;
+    min-width: 62px;
+    text-align: left;
+}
+.txt-spanLeft {
+    color: #666;
+}
+.set-adrBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 13px;
+}
+.set-adrBtn .s-dBlue {
+    margin-left: 16px;
+    float: left;
+}
+.floor-adrInfor .f-setting {
+    display: block;
+}
+.floor-adr-default .f-setting {
+    display: none;
+}
+.floor-nodata {
+    padding: 20px;
+}
+.floor-nodata .z-nodata {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+.place-paging{
+    padding: 20px 0;
+}
+/*意见反馈*/
+.advise-content {
+    width: 625px;
+    padding-left: 40px;
+    padding-bottom: 162px;
+}
+.tips-advise {
+    line-height: 56px;
+    color: #666;
+}
+.tit-advise {
+    line-height: 32px;
+    color: #333;
+}
+
+/*图片预览*/
+ .up-loadImg {
+    margin-right: -30px;
+    padding-bottom: 4px;
+}
+.loading-list {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e4e3e3;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    zoom: 1;
+}
+.loading-list img.upLoaded {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.u-upload {
+    position: absolute;
+    height: 71px;
+    width: 71px;
+    background: url(../images/addPic02.png) no-repeat bottom center;
+    display: inline-block;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    margin: -35px 0 0 -35px;
+}
+.mc-file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter:alpha(opacity:0);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/*图片预览*/
+ .advise-txtbox .s-grayL {
+    line-height: 36px;
+    padding-bottom: 10px;
+    text-indent: 2px;
+}
+
+.advise-txtbox .u-right {
+    line-height: 30px;
+}
+.advise-imgCode {
+}
+.advise-imgCode .spantxt {
+    line-height: 32px;
+    float: left;
+    margin-right: 3px;
+}
+.advise-imgCode .s-dBlue {
+    line-height: 32px;
+    float: left;
+    margin-left: 10px;
+}
+.advise-content .mc-next {
+    padding: 20px 0 0 46px;
+}
+.advise-content .mc-next .u-btn-blush{
+    padding: 6px 30px;
+}
+/*物流*/
+.detailsTop {
+    background: #fff;
+    padding: 0 20px;
+}
+.detailStep {
+    height: 60px;
+    padding: 28px 0;
+    text-align: center;
+    font-family: microsoft yahei
+}
+.step01, .step02, .step03, .step04 {
+    display: inline-block;
+}
+.radiusStep {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #bdbdbd;
+    color: #fff;
+}
+.radiusStep .u-icon {
+    font-size: 30px;
+    color: #fff;
+    height: 30px;
+    line-height: 32px;
+    padding: 5px 0 0 2px;
+}
+.step02 .u-icon {
+    padding-left: 8px;
+}
+.arrStep {
+    width: 68px;
+    height: 14px;
+    float: left;
+    margin: 22px 8px 0;
+    background: url(../images/spriter-images/bg-wlG.png?__spriter);
+}
+.active .arrStep {
+    background: url(../images/spriter-images/bg-wlO.png?__spriter);
+}
+.active .radiusStep {
+    background: #ff6600
+}
+.wlDetailstxt {
+    padding: 22px 20px 22px 58px;
+    background: #f5f5f5;
+    margin-bottom: 28px;
+}
+.tex-row {
+    background-position: -160px -436px;
+    background-repeat: repeat-y;
+    line-height: 32px;
+    padding-left: 26px;
+    overflow: hidden;
+}
+.tex-row1 {
+    background-position: -160px -404px;
+}
+.tex-rowLast {
+    background-position: -160px -468px;
+}
+.wlTime {
+    float: left;
+    color: #666;
+    margin-right: 8px;
+    width: 120px;
+    text-align: right;
+}
+.wlWay {
+    max-width: 728px;
+    float: left;
+    height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.wlInfor {
+    padding:0 0 42px 40px;
+    color: #333
+}
+.wlList {
+    font-size: 12px;
+}
+.wlList li {
+    margin:0px 30px 10px 0;
+    float: left;
+}
+.wlList .wlprice {
+    line-height: 30px;
+    text-align: center;
+}
+.inf-wlTxt {
+    margin-bottom: 10px;
+    line-height: 32px;
+}
+.inf-wlTxt span {
+    float: left;
+    margin-right: 25px;
+}
+.u-recom {
+    margin-top: 20px;
+    padding-left: 5px;
+    background: #fff;
+}
+.c-recomTit {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1;
+    font-family: microsoft yahei;
+    padding: 18px 0 10px 27px
+}
+.u-recom ul {
+    margin-right: -20px;
+    margin-bottom: 10px;
+}
+.u-recom li {
+    float: left;
+    margin: 0 15px;
+    margin-bottom: 16px;
+    width: 150px;
+    overflow: hidden;
+    height: 230px;
+    _display: inline;
+    padding: 10px;
+}
+.u-recom li:hover {
+    background: #eee;
+    /*box-shadow: 0px 0px 5px rgba(0,0,0,.3);*/
+}
+.recom_pic img {
+    width: 150px;
+    height: 150px;
+}
+.recom-txt {
+    margin-top: 12px;
+    color: #383431;
+    line-height: 1.5;
+    font-size: 12px;
+    overflow: hidden;
+    height: 36px;
+}
+.recom-mon {
+    font-size: 18px;
+    color: #b70000;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+    margin-right:5px;
+}
+.recom-mon01 {
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0;
+}
+.z_orders_groups .oups {
+    line-height: 1.5;
+    margin-bottom: 7px;
+    margin-top: -3px;
+}
+.z_orders_groups .oups {
+    padding-left: 0;
+    max-width: 700px;
+}
+.z_orders_groups .oups01 {
+    color: #ff6600;
+}
+.wlDetailstxt {
+    padding: 0 0 50px 0;
+}
+.floor-wlInfo {
+    border-bottom: 1px solid #e5e5e5;
+}
+.floor-wlInfo span {
+    float: left;
+    line-height: 50px;
+    height: 50px;
+}
+.floor-wlInfo .bg-wlStep {
+    background:url(../images/bg-wlInfor.gif) no-repeat;
+    width: 27px;
+}
+.floor-wlInfo .bg-wlStep {
+    background-position: 0 -50px;
+}
+.floor-firstWl .bg-wlStep {
+    background-position: 0 0px;
+}
+.floor-lastWl .bg-wlStep {
+    background-position: 0 -100px;
+}
+.wl-spanLeft {
+    width: 290px;
+    padding-right: 5px;
+    text-align: right;
+    color: #666;
+}
+.wl-mainCont {
+    width: 616px;
+    text-align: left;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+}
+.wl-detailsTit span {
+    line-height: 40px;
+    height: 40px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.wl-detailsTit .wl-spanLeft {
+    padding-right: 45px;
+    width: 305px;
+}
+.wl-detailsTit .bg-wlStep {
+    border-left: 1px solid #e5e5e5;
+    margin: 0 13px;
+    padding: 10px 0 0 0;
+    background: none;
+    width: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+.floor-lastWl .wl-mainCont {
+    color: #ff6600;
+}
+.floor-adr-disable {
+    background: #f1f1f1;
+}
+.floor-adr-disable span.s-red {
+    display: inline-block;
+    margin-left: 20px;
+}
+.f-upper {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 2px 15px;
+    margin: 0;
+    font-size: 12px;
+}
+.floor-adr-disable .s-black, .floor-adr-disable .txt-spanLeft, .floor-adr-disable .adr-name {
+    color: #929292
+}
+/*弹框*/
+.example.nm-Malert{
+    padding-top: 57px;
+    height: 43px;
+    color: #666666;
+    text-align: center;
+}
+/*fzy 物流反馈 end

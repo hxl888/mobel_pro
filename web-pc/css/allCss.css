@@ -1,0 +1,370 @@
+ .contenter{
+    background-color: #f4f4f4;
+ }
+.wrap-1064{
+    width: 1064px;
+    margin:0 auto;
+    zoom:1;
+}
+.bg-banner{
+    background: url(../images/bg-banner.jpg) repeat-x top center;
+    height: 260px;
+}
+.g-downContent{
+    width: 1064px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 700px;
+}
+.m-leftNav{
+    width: 160px;
+    background-color: #fafafa;
+    
+}
+.m-qLe .m-ce{
+    color:#fff;
+    position: absolute;
+    right: 468px;
+    top: 323px;
+}
+.m-qri .m-ce{
+    color: #fff;
+    position: absolute;
+    right: 320px;
+    top: 323px;
+} 
+.m-smallNav a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    /*padding: 7px 15px;*/
+    color: #666;
+    font-size: 14px;
+    padding-left: 25px;
+    border-left: 4px solid #fafafa;
+    /*padding-left: 25px;*/
+}
+.m-smallNav a:hover{
+    background-color: #fff;
+    border-left: 4px solid #f00;
+}
+.m-smallNav .active{
+    background-color: #fff;
+    border-left: 4px solid #f00;
+}
+.m-rightContent{
+    width: 816px;
+    margin: 40px 40px 0 40px;
+}
+.m-rightContent01{
+    margin-top: 64px;
+}
+.m-rightContent02{
+    margin-top: 26px;
+}
+.m-rightContent03{
+    margin-top: 16px;
+}
+.m-text{
+    width: 495px;
+    text-indent: 2em; 
+}
+.m-text,.m-textBottom{
+    text-indent: 2em;
+    font-size: 12px;
+    color: #333;
+    line-height: 34px;   
+}
+/*荣誉*/
+.m-rightcenterHoner{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+.m-rightcenterHoner p{
+    font-size: 12px;
+    color: #333;
+}
+/*公司历程*/
+.m-rightTime p{
+    width: 75px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    padding: 2px 44px;
+}
+/*公司文化*/
+.m-culture .m-lf{
+    width: 75px;
+    display: inline-block;
+    text-align: left;
+}
+.m-culture .m-line{
+    font-size: 12px;
+    color: #666;
+    line-height: 40px;
+}
+/*合作伙伴*/
+.m-righttopHoner p{
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+}
+.m-rightbottomHener{ 
+    /*margin-top: 40px;*/
+}
+
+.m-rightbottomHener .portion{
+    font-size: 12px; 
+    color: #666;
+    line-height: 18px;
+    padding-top: 40px;
+}
+/*供应链基地*/
+.m-rightbottomHener .distribution{
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.m-righttopHoner .explain{
+    line-height: 30px;
+    font-size: 12px;
+    color: #333;
+}
+/*联系我们*/
+.m-culture .m-lf{
+    width: 75px;
+    display: inline-block;
+    text-align: left;
+}
+.m-culture .m-line{
+    font-size: 12px;
+    color: #666;
+    line-height: 40px;
+}
+.m-code span{
+    display: inline-block;
+
+}
+.m-qr{
+    margin-top: 16px;
+}
+
+/*资讯详情*/
+.m-newsCen{
+        width: 670px;
+        height: 450px;
+        margin:0 auto;
+        background-color: #ccc;
+        margin-bottom: 30px;
+    }
+    .m-textCen{
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        color:#333;
+        line-height: 24px;
+    }
+    .m-smallCont h2{
+        font-family: MicrosoftYaHei Bold;
+        font-size: 14px;
+        font-weight: bold;
+        color:#333;
+        line-height: 70px;
+    }
+    .m-smallCont .m-p2,.m-smallCont .m-p3,.m-smallCont .m-p4{
+        padding-top: 35px;
+    }
+/*鲜易商城*/
+    .bg-bannerMall{
+        background: #212123 url(../images/q-bgback.jpg) no-repeat top center;
+        height: 431px;
+        position: relative;
+    }
+    .m-qrcode01{
+        position: absolute;
+        left: 50%;
+        margin-left: 132px;
+    }
+    .m-qrcode01 p, .m-qrcode02 p{
+        line-height: 32px;
+        color: #fff;
+        text-align: center;
+    }
+    .m-stopServe{
+        margin-top: 30px;
+    }
+    .m-qrcode02{
+        position: absolute;
+        left: 50%;
+        margin-left:269px;
+    }
+    .q-liWidth{
+        width: 280px;
+        text-align: center;
+    }
+    .q-liWidth01 {
+        margin-right: 110px;
+    }
+    .g-topContent{
+        width: 1064px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 64px;
+        padding-bottom: 70px;
+    }
+    .m-topServe .m-foge,.m-topServe .m-phone{
+        text-align: center;
+    }
+    .m-topServe .m-foge{
+        font-size: 26px;
+        line-height: 35px;
+        font-weight: bold;
+    }
+    .m-topServe .m-phone{
+        font-size: 16px;
+        line-height: 30px;
+        color: #999;
+    }
+    .m-topServe .m-wrie{
+        color: #999;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 4px;
+    }
+    .m-wrie span{
+        display: inline-block;
+        font-size: 26px;
+        color: #f00;
+    }
+    .q-liWidth p{
+        font-size: 14px;
+        color: #999;
+        line-height: 24px;
+    }
+    .m-stopServe .m-qtit{
+        font-size: 20px;
+        color:#333;
+        margin-bottom: 18px;
+    }
+
+/*切换*/
+.banner { position: relative; overflow: auto; text-align: center; background-color: #f5f6fa}
+.banner ul li { float: left; }
+#b06 { width: 640px;}
+#b06 .dots { position: absolute; left: 0; right: 0; bottom: 20px;}
+#b06 .dots li 
+{ 
+    display: inline-block; 
+
+    width: 10px; 
+
+    height: 10px; 
+
+    margin: 0 4px; 
+
+    text-indent: -999em; 
+
+    border: 2px solid #fff; 
+
+    border-radius: 6px; 
+
+    cursor: pointer; 
+
+    opacity: .4; 
+
+    -webkit-transition: background .5s, opacity .5s; 
+
+    -moz-transition: background .5s, opacity .5s; 
+
+    transition: background .5s, opacity .5s;
+
+}
+
+#b06 .dots li.active 
+{
+    background: #fff;
+    opacity: 1;
+}
+#b06 .m-arrow { 
+    position: absolute; 
+    top: 275px;
+}
+
+#b06 #al { 
+    left: 15px;
+}
+
+#b06 #ar { right: 15px;}
+.g-setpMall{
+    background-color: #f5f6fa;
+}
+.m-smallNav .active a{
+    border-bottom: none;
+}
+
+.m-cut{
+    width: 640px;
+    margin:0 auto;
+}
+.m-cut .m-cutLeft{
+    width: 291px;
+    margin-top: 50px;
+}
+.m-cut .m-cutRight{
+    width: 280px;
+    margin-top: 175px;
+    margin-left: 65px;
+}
+.contenter01 .banner01{
+    width: 1064px;
+    margin:0 auto;
+}
+.m-cutRight .m-black{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 58px;
+}
+.m-cutRight .m-qblack{
+    color: #333;
+    font-weight: bold;
+    line-height: 40px;
+
+}
+.m-cutRight .m-threeSet{
+    font-weight: bold;
+    font-size: 26px;
+    color: #ef2c03;
+    line-height: 48px;
+}
+.m-cutRight .m-titCli{
+    width: 294px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    padding-top: 10px;
+
+}
+
+
+.under-manager {
+    text-align: center;
+    font-size: 0;
+    padding: 16px 0;
+    line-height: 0;
+}
+.under-manager span {
+    line-height: 0;
+    height: 1px;
+    width: 60px;
+    background: #999;
+    display: inline-block;
+    margin-bottom: 1px;
+}
+.c-dott {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: #ef2e04;
+    display: inline-block;
+    margin: 0 15px;
+}

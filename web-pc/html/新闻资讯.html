@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/common.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../css/fzy.css">
+</head>
+<body>
+	<div class="f-content">
+		<div class="wrap-news">
+			<div class="bg-bannerNews">
+				<div class="bg-banner">
+					<div class="wrap1650" style="background: #ccc0cb;">
+						<a href="javascript:;" target="_blank" class="link-banner"><div class="bg-bannerNew" style="background-image: url(../images/banner-d02.jpg); height:250px;"></div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapSmall">
+			<div class="c-newsTitle">
+				<!-- <span class="active">企业动态</span><span>新闻中心</span> -->
+			</div>
+			<div class="list-news">
+				<div class="c-newItem" style="display: block;">
+					<ul>
+						<!-- 头条新闻 -->
+						<!-- <li class="news-headLine">
+							<img src="../images/news/news-banner.jpg" alt="" class="pic-news" width="250" height="140">
+							<h3>鲜易模式闪耀第三届中国供应链创新高峰论坛 </h3>
+							<p>通过全流程、全渠道的统一管理，Saas化线上、线上店铺管理，支撑跨平台多店铺同时管理，打造订单、库存时时同步管理的专业化平台。秉承wei独立化第三方平台的理念，为客户提供冻品全产业链的解决方案，包括订单管理、商品管理、仓储管理、财务管理、采购管理、售后管理、会员管理、供销管理和员工管理等，并通过基础数据统计、运营分析和业务数据分析，帮助客户实现数据化线上运营和管理。</p>
+							<a class="s-blue" href="#">查看详情>></a>
+						</li> -->
+					</ul>
+				</div>
+				<div class="c-newItem">
+					<ul>
+						<!-- 头条新闻 -->
+						<li class="news-headLine">
+							<img src="../images/news/news-banner.jpg" alt="" class="pic-news" width="250" height="140">
+							<h3>鲜易模式闪耀第三届中国供应链创新高峰论坛1 </h3>
+							<p>通过全流程、全渠道的统一管理，Saas化线上、线上店铺管理，支撑跨平台多店铺同时管理，打造订单、库存时时同步管理的专业化平台。秉承wei独立化第三方平台的理念，为客户提供冻品全产业链的解决方案，包括订单管理、商品管理、仓储管理、财务管理、采购管理、售后管理、会员管理、供销管理和员工管理等，并通过基础数据统计、运营分析和业务数据分析，帮助客户实现数据化线上运营和管理。</p>
+							<a class="s-blue" href="#">查看详情>></a>
+						</li>
+					</ul>
+				</div>
+				<div class="paging news-paging">
+					<div style="width:100%;margin:0 auto;">
+						<div id="kkpager" class="kkpageCon"></div>
+					</div>
+				</div>
+			</div>
+			<input id="apiPath" type="hidden" value="http://192.168.28.33">
+		</div>
+	</div>
+	<script src="../js/src/jquery.1.10.2.js"></script></script>
+	<script src="../js/lib/kkpager.min.js"></script>
+	<script>
+		$(function(){
+			var millisecondFormat = function (time, flag) {
+		        if (typeof time === 'number') {
+		            var oDate = new Date(time);
+		            var year = oDate.getFullYear();
+		            var month = (oDate.getMonth() + 1) >= 10 ? oDate.getMonth() + 1 : '0' + (oDate.getMonth() + 1);
+		            var date = oDate.getDate() >= 10 ? oDate.getDate() : '0' + oDate.getDate();
+		            var hours = oDate.getHours() >= 10 ? oDate.getHours() : '0' + oDate.getHours();
+		            var minutes = oDate.getMinutes() >= 10 ? oDate.getMinutes() : '0' + oDate.getMinutes();
+		            var seconds = oDate.getSeconds() >= 10 ? oDate.getSeconds() : '0' + oDate.getSeconds();
+		            if (flag === 'ms') {
+		                return year + '-' +month + '-' + date + '&nbsp;&nbsp;'+ hours + ':' + minutes + ':' + seconds;
+		            } else {
+		                return month + '月' + date + '日';
+		            }
+		        } else {
+		            return '无';
+		        }
+		    };
+		    var pageNum = 1;
+		    var pages = 1;
+		    var total = 0;
+		    function loadList(id, pageNums, boolean) {
+		    	$.ajax({
+			        url: detInitConfig.apiPath + '/pc/pccontent/selectArticle',
+			        type: "post",
+			        cache: false,
+			        data: {
+						cmsColumnId:id,
+						pageNum: pageNums ? pageNums : 1,    
+						pageSize: 10
+					},
+			        dataType: "jsonp",
+			        timeout: 5000,
+			        success: function (res) {
+			        	// var urlBefore = res.data.url;
+			            var newList = '';
+			            pageNum = res.data.pageInfo.pageNum;
+			            total = res.data.pageInfo.total;
+			            pages = res.data.pageInfo.pages;
+			            for (var i = 0; i < res.data.articleList.length; i++) {
+			            	var item = res.data.articleList[i];
+			            	newList += '<li><i>' + millisecondFormat(item.modifyDate) + '</i>';
+			            	newList += 		'<h3><a href="'+item.url+'">'+item.cmsArticleTitle+' </a></h3>';
+			            	newList += 		'<p>来源：鲜易网&nbsp;&nbsp;&nbsp;&nbsp;'+millisecondFormat(item.modifyDate, 'ms')+'</p></li>';
+			            };
+			            console.log('newList', newList);
+			            $('.columId' + id).html(newList);
+			            console.log('test',pageNum,pages,total);
+			            kkpagerFn(pageNum, pages, total, boolean);
+			        },
+			        error:function(error){
+			            console.log('error')
+			        }
+			    });
+		    };
+		    function kkpagerFn(pageNum, pages, total, boolean) {
+		    	console.log('pageNum',pageNum,pages,total, boolean);
+		    	$('#kkpager').html('');
+		    	kkpager.generPageHtml({
+				    pno : pageNum,
+				    mode : 'click', //设置为click模式
+				    //总页码  
+				    total : pages,  
+				    //总数据条数  
+				    totalRecords : total,
+				    //点击页码、页码输入框跳转、以及首页、下一页等按钮都会调用click
+				    //适用于不刷新页面，比如ajax
+				    click : function(pageNum){
+				        //这里可以做自已的处理
+				        //...
+				        //处理完后可以手动条用selectPage进行页码选中切换
+				        this.selectPage(pageNum);
+				        var cmsColumnId = $('.c-newsTitle span.active').attr('colId');
+				        loadList(cmsColumnId, pageNum);
+				    },
+				    //getHref是在click模式下链接算法，一般不需要配置，默认代码如下
+				    getHref : function(n){
+				        return 'javascript:;';
+				    }
+				}, true);
+		    };
+		    $('body').on('click','.c-newsTitle span',function(){
+				if ($(this).hasClass('active')) return;
+				var cmsColumnId = $(this).attr('colId');
+				$(this).addClass('active').siblings().removeClass('active');
+				loadList(cmsColumnId, 1, true);
+				$('.c-newItem').hide().eq($(this).index()).show();
+			})
+			var detInitConfig = {
+		        apiPath : $("#apiPath").val()
+		    };
+		    $.ajax({ // 加载新闻标题
+		        url: detInitConfig.apiPath + '/pc/pccontent/selectColumn',
+		        type: "post",
+		        cache: false,
+		        data: {
+					cmsColumnLevel: 2
+				},
+		        dataType: "jsonp",
+		        timeout: 5000,
+		        success: function (res) {
+		            console.log('test', res);
+		            for (var k = 0; k < res.data.columnList.length; k++) {
+		            	var item = res.data.columnList[k];
+		            	var cls = '';
+		            	if (k == 0) {
+		            		cls = 'active';
+		            	}
+		            	$('.c-newsTitle').append('<span class="'+cls+'" colId="'+item.cmsColumnId+'">'+item.cmsColumnName+'</span>')
+		            	$('.c-newItem ul').eq(k).attr('class','columId' + item.cmsColumnId);
+		            	if (k == 0) {
+		            		loadList(item.cmsColumnId);
+		            	}
+		            }
+		            // kkpagerFn(pageNum,pages,total);
+		        },
+		        error:function(error){
+		            console.log('error')
+		        }
+		    });
+		    $.ajax({
+		        url: detInitConfig.apiPath + '/pc/pccontent/getContentList',
+		        type: "post",
+		        cache: false,
+		        data: {
+					menuGroup: 5,
+					menuType: 1
+				},
+		        dataType: "jsonp",
+		        timeout: 5000,
+		        success: function (res) {
+		            if (res.data.contentList.length) {
+			            $('.bg-bannerNew').css('background-image','url('+res.data.picServer+res.data.contentList[0].imgUrl+')')
+			            $('.link-banner').attr('href',res.data.contentList[0].contentUrl);
+		            }
+		        },
+		        error:function(error){
+		            console.log('error')
+		        }
+		    });
+		})
+	</script>
+</body>
+</html>

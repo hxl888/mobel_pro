@@ -1,0 +1,677 @@
+/*内容区*/
+.n-wrapBxo {
+        width: 100%;
+        background: url("../images/homepageBj.png") repeat-x;
+}
+
+.n-wrapContent {
+        width: 1060px;
+        min-width: 1060px;
+        margin: 0 auto;
+        background: #f6f8fc;
+}
+/*焦点图start*/
+.n-wrapBxo .flor-banner {
+        position: relative;
+        height: 440px;
+        width: 100%;
+        margin: auto;
+        /*max-width: 1650px;*/
+}
+.flor-banner .bannerImg img{
+        width: 100%;
+        height: 100%;
+}
+.flor-banner .bannerImg a{
+        width: 100%;
+        display:block;
+        height:440px;
+}
+.bannerImg {
+        /*width: 1060px;*/
+        height: 440px;
+        background: #3c305f;
+        /*max-width: 1650px;*/
+        /*overflow: hidden;*/
+        position: relative;
+}
+.slider-ul li {
+        /*width: 1060px;*/
+        height: 440px;
+        width: 100%;
+}
+.g-fl01-tit {
+        width: 100%;
+        height: 12px;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        text-align: center;
+}
+.g-fl01-tit ul {
+        font-size: 0;
+        display:inline-block;
+        *display:inline;
+        *zoom:1;
+        height: 12px;
+        vertical-align: top;
+        background: rgba(255,255,255,.4);
+        filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#4FFFFFFF,endcolorstr=#4FFFFFFF);
+        border-radius: 12px;
+        text-align: center;
+}
+.g-fl01-tit li {
+        width: 8px;
+        height: 8px;
+        overflow: hidden;
+        /* text-indent: -999px; */
+        background: #b6b6b6;
+        display: inline-block;
+        display:inline-block;
+        *display:inline;
+        *zoom:1;
+        margin: 2px 3px;
+        border-radius: 50%;
+        vertical-align: top;
+}
+.g-fl01-tit li.on {
+        background: #e84945;
+}
+/*焦点图结束end*/
+
+.flor-banner .bannerOpera {
+        position: absolute;
+        left:50%;
+        top: 230px;
+        width: 380px;
+        margin-left: -190px;
+}
+.yelow_f660 {
+        background: #ff6600;
+}
+.red_ef2 {
+        background: #ef2e04;
+}
+.bannerOpera .login_selec {
+        display: inline-block;
+        padding: 0 35px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 50px;
+        border-radius: 30px;
+        margin-right: 15px;
+        cursor: pointer;
+}
+/*鲜易指数*/
+.xy-indexContent {
+        margin: 40px 0 10px;
+}
+.xy-indexContent .index-title {
+        line-height: 60px;
+        margin-bottom: 20px;
+}
+.index-title .index-text {
+        margin: 0 auto;
+        font-size: 22px;
+        width: 410px;
+        height: 22px;
+        line-height: 22px;
+        color: #333;
+        text-align: center;
+        background: url("../images/xyIndexPic.png");
+}
+.xy-indexContent .xy-indexFlor {
+        margin-bottom: 20px;
+        width: 1060px;
+        height: 316px;
+        box-shadow: 0 0 15px #e8eaee;
+}
+.xy-indexFlor .active {
+        pointer-events: none;
+}
+.xy-indexFlor01 .flor_hea{
+        background: #ecb327;
+}
+.xy-indexFlor01 .flor_citylis{
+        border: 1px solid #ecb327;
+}
+.xy-indexFlor01 .active {
+        background: #edca56;
+        border: 1px solid #fff;
+        border-radius: 15px;
+}
+.xy-indexFlor02  .flor_hea{
+        background: #e16c46;
+}
+.xy-indexFlor02 .flor_citylis{
+        border: 1px solid #e16c46;
+}
+.xy-indexFlor02 .active {
+        background: #e28465;
+        border: 1px solid #fff;
+        border-radius: 15px;
+}
+.xy-indexFlor03  .flor_hea{
+        background: #6797ba;
+}
+.xy-indexFlor03 .flor_citylis{
+        border: 1px solid #6797ba;
+}
+.xy-indexFlor03 .active {
+        background: #87b6d8;
+        border: 1px solid #fff;
+        border-radius: 15px;
+}
+.xy-indexFlor04  .flor_hea{
+        background: #518a79;
+}
+.xy-indexFlor04 .active {
+        background: #72ab9a;
+        border: 1px solid #fff;
+        border-radius: 15px;
+}
+.xy-indexFlor .flor_hea {
+        height: 40px;
+        line-height: 40px;
+}
+.flor_hea .florL_tit {
+        text-indent: 20px;
+        font-size: 20px;
+        color: #fff;
+}
+.flor_hea .florR_href {
+        padding-top: 7px;
+        padding-right: 30px;
+}
+.florR_href .flor_citylis {
+        font-size: 14px;
+        color: #fff;
+        padding: 0 10px;
+        height: 24px;
+        line-height: 24px;
+        margin-left: 20px;
+        border-radius: 15px;
+        cursor: pointer;
+}
+.xy-indexFlor .florConBox {
+        background: #fff;
+        height: 266px;
+        padding: 0 10px 10px 0;
+        /*overflow: hidden;*/
+}
+.florConBox .indextLcont {
+        width: 670px;
+        /*overflow: hidden;*/
+        padding-top: 15px;
+        background: #fff;
+}
+.indextLcont .indexListFlor {
+        width: 675px;
+}
+.indexListFlor .li_active{
+        background: #f4f4f4;
+}
+.florConBox .indextRcont {
+        height: 250px;
+        width: 380px;
+        margin-top: 15px;
+        background: #f2f7ff;
+}
+.florConBox .empty {
+        display: none;
+}
+.indexListFlor .color_999 {
+        color: #999;
+}
+.indexListFlor .indexList {
+        width: 300px;
+        padding: 10px 15px 13px 20px;
+}
+.indexListFlor  .hasBborder {
+        border-bottom: 1px solid #f2f2f2;
+}
+.indexListFlor .hasRborder {
+        width: 299px;
+        border-right: 1px solid #f2f2f2;
+        /*margin-right: 1px;*/
+}
+.indexList .index_fist {
+        position: relative;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 600;
+}
+.index_fist .qr_codeImg {
+        display: none;
+        position: absolute;
+        top: -8px;
+        right: -1px;
+        z-index: 666;
+        padding: 10px;
+        background: #fff;
+        border:1px solid #ccc;
+}
+.qr_codeImg img {
+        margin-bottom: 8px;
+}
+.indexList .maxWid160 {
+        min-width: 160px;
+        max-width: 160px;
+}
+.indexList .maxWid88 {
+        min-width: 88px;
+        max-width: 88px;
+}
+.indexList .maxWid95 {
+        max-width: 95px;
+}
+.indexList .marL13 {
+        margin-left: 13px;
+        font-size: 14px;
+}
+.indexList .index_secon {
+        position: relative;
+}
+.indexList .secon_left {
+    width: 230px;
+}
+.indexList .secon_left p {
+    font-size: 14px;
+    float: left;
+    color: #999;
+    width: 72px;
+    line-height: 30px;
+    padding-right: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.indexList .secon_right {
+    width: 67px;
+}
+.indexList .secon_right p {
+    width: 67px;
+    text-align: right;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.indexList  .numCount {
+        /* position: absolute;
+        right: -3px;
+        top: 0; */
+}
+.indexList .bigFont_col256 {
+        font-size: 24px;
+        color: #ff5256;
+        line-height: 30px;
+}
+.indexList .bigFont_colgreen82a {
+        font-size: 24px;
+        color: #35a82a;
+        line-height: 30px;
+}
+.indexList .smaFont_col999 {
+        color: #999;
+        line-height: 30px;
+}
+.smaFont_col999 img {
+        vertical-align: text-top;
+        cursor: pointer;
+}
+/*品质有保障*/
+.flor05 {
+        margin-bottom: 30px;
+        box-shadow: 0 0 15px #e8eaee;
+}
+.flor05 .qualityLbox {
+        position: relative;
+        width: 795px;
+        height: 440px;
+        background: #fedec4;
+}
+.qualityLbox .qualityImg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+        width: 370px;
+        height: 440px;
+}
+.qualityLbox img {
+        width: 100%;
+        height: 100%;
+}
+.qualityLbox  .qualityListshowBox {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 6;
+        padding: 10px 10px 10px 0;
+}
+.flor05 .qualityListshow {
+        padding: 33px 33px 0 18px;
+        width: 411px;
+        height: 387px;
+        background: #fff;
+}
+.qualityListshow .quality-hea {
+        line-height: 34px;
+        font-size: 24px;
+        color: #ef2e04;
+        text-align: center;
+}
+.qualityListshow .quality-tit {
+        position: relative;
+        line-height: 50px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+}
+.quality-tit:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom:0;
+        width: 20px;
+        margin-left: -10px;
+        border-bottom: 1px solid #ff4b1b;
+}
+.qualityListshow .iconFonBox {
+        height: 100px;
+}
+.iconFonBox .iconImg img {
+        display: block;
+        width: 41px;
+        height: 41px;
+        margin: 14px auto;
+}
+.iconFonBox .lisFlor {
+        margin-bottom: 15px;
+        width: 33.33%;
+}
+.iconFonBox .iconMainHea {
+        font-size: 14px;
+        color: #666;
+        line-height: 24px;
+        text-align: center;
+}
+.iconFonBox .icontext {
+        font-size: 12px;
+        color: #c2c2c2;
+        line-height: 22px;
+        text-align: center;
+}
+.flor05 .qualityRbox {
+        position: relative;
+        width: 240px;
+        height: 420px;
+        padding: 20px 0 0 25px;
+        background: #ff4b1c;
+}
+.qualityRbox .appqucode {
+        margin-right: 15px;
+}
+.appqucode .qu_Img img{
+        display: block;
+        width: 100px;
+        height: 100px;
+}
+.appqucode  .qu_txt {
+        line-height: 24px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+}
+.qualityRbox .pnoneImg img {
+        display: block;
+        width: 287px;
+        height: 323px;
+}
+.qualityRbox .pnoneImg {
+        position: absolute;
+        top:145px;
+        left: -30px;
+        z-index: 333;
+        width: 287px;
+        height: 323px;
+}
+/*冻品生意的必备工具—鲜易云ERP*/
+.flor06 {
+        position: relative;
+        width: 1060px;
+        height: 480px;
+        margin-bottom: 30px;
+        background: #cbfbff;
+        box-shadow: 0 0 15px #e8eaee;
+}
+.florSamelis .florsameLbox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 3;
+}
+.florSamelis .florsameLbox {
+        width: 370px;
+        height: 480px;
+}
+.florSamelis .florsameLbox img{
+        display: block;
+        width: 100%;
+        height: 100%;
+}
+.florSamelis .florsameRcontent {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 6;
+        padding: 10px 10px 10px 0;
+}
+/*.flor06 .florsameRcontent {*/
+        /*background: #cbfbff;*/
+/*}*/
+.florSamelis .florsameRbox {
+        width: 705px;
+        height: 415px;
+        padding: 45px 0 0 20px;
+        background: #fff;
+}
+.florsameRbox .florsamRMaintit {
+        font-size: 24px;
+        line-height: 34px;
+        color: #0075a0;
+        text-align: center;
+}
+.florsameRbox .florsamRsmatit {
+        font-size: 16px;
+        line-height: 26px;
+        color: #666;
+        text-align: center;
+}
+.florsameRbox .florsamRblueBoder {
+        position: relative;
+        height: 15px;
+        margin-bottom: 18px;
+}
+.florsamRblueBoder:after {
+        content: '';
+        position: absolute;
+        left:50%;
+        bottom: 0;
+        width: 18px;
+        margin-left: -9px;
+        border-bottom: 1px solid #0075a0;
+}
+.florsameRbox .florsamContent {
+        padding: 0 15px 0 13px;
+        font-size: 14px;
+        color: #666;
+        line-height: 24px;
+        margin-bottom: 30px;
+}
+.iconFontbox .iconlist {
+        width: 110px;
+        margin: 0 13px;
+}
+.iconFontbox .icon_Img img {
+        display: block;
+        margin: 10px auto;
+}
+.iconFontbox .icon_hed {
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        line-height: 26px;
+}
+.iconFontbox .icon_content {
+        font-size: 12px;
+        color: #999;
+        line-height: 18px;
+}
+.flor07 {
+        position: relative;
+        width: 1060px;
+        height: 480px;
+        background: #cee4f8;
+        box-shadow: 0 0 15px #e8eaee;
+}
+/*.flor07 .florsameRcontent {*/
+        /*background: #cce3f8;*/
+/*}*/
+.flor07 .florsamRMaintit {
+        color: #1974cd;
+}
+.flor07  .florsamContent {
+        margin-bottom: 50px;
+}
+.flor08 {
+        position: relative;
+        width: 1060px;
+        height: 480px;
+        margin: 30px 0 50px;
+        background: #2f1e0e;
+        box-shadow: 0 0 15px #e8eaee;
+}
+.flor08 .mypartnerLbox{
+        position: absolute;
+        left: 0;
+        top:0;
+        bottom: 0;
+        width: 370px;
+        height: 480px;
+}
+.flor08 .mypartnerRbox {
+        position: absolute;
+        right: 0;
+        top:0;
+        bottom: 0;
+        width: 725px;
+        height: 460px;
+        padding: 10px 10px 10px 0;
+}
+.mypartnerLbox img {
+        width: 100%;
+        height: 100%;
+}
+.mypartnerRbox .mypartnerlist {
+        background: #fff;
+        width: 724px;
+}
+.mypartnerlist .muparImgbox {
+        width: 180px;
+        height: 91px;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+}
+.muparImgbox img {
+        display: block;
+        margin: 16px auto;
+        width: 120px;
+        height: 60px;
+}
+.flor09 .newInforLbox {
+        position: relative;
+        width: 520px;
+        height: 488px;
+        background: #fff;
+}
+.flor09 .newInforLbox:hover {
+        box-shadow: 0 0 15px #e8eaee;
+}
+.newInforRbox .newInforlist:hover {
+        box-shadow: 0 0 15px #e8eaee;
+}
+.newInforMain_Img img {
+        display: block;
+        width: 520px;
+        height: 320px;
+}
+.newInforLbox .newInfoType_Img {
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        width: 280px;
+        height: 150px;
+}
+.newInfoType_Img img{
+        width: 100%;
+        height: 100%;
+}
+.newInforMain_content .content_hea {
+        font-size: 18px;
+        line-height: 36px;
+        color: #070707;
+        padding: 7px 20px 0;
+}
+.newInforMain_content .content_all {
+        font-size: 12px;
+        line-height: 22px;
+        color: #666;
+        padding: 0 20px;
+        max-height: 170px;
+        overflow: hidden;
+}
+.flor09 {
+        margin-bottom: 36px;
+}
+.flor09 .newInforRbox {
+        width: 540px;
+        height: 488px;
+        overflow: hidden;
+}
+.newInforRbox .newInforlist {
+        width: 260px;
+        margin: 0 0 10px 10px;
+}
+.newInforlist .list_img {
+        width: 260px;
+        height: 170px;
+}
+.newInforlist .list_img img{
+        width: 100%;
+        height: 100%;
+}
+.newInforlist .list_content {
+        padding: 10px 20px;
+        height: 50px;
+        background: #fff;
+}
+.list_content .cont_hea {
+        width: 225px;
+        font-size: 16px;
+        color: #070707;
+        line-height: 26px;
+}
+.list_content .cont_time {
+        width: 225px;
+        font-size: 14px;
+        color: #666;
+        line-height: 24px;
+}

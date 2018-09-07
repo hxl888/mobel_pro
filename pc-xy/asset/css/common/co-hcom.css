@@ -1,0 +1,154 @@
+.nm-fl01 .nm-frcon{
+	padding: 28px 0 10px;
+	background: #fff;
+}
+.ng-3after .nm-frcon{
+	padding: 28px 0 11px;
+	background: #fff;
+}
+.nm-usesle{
+	height: 32px;
+	line-height: 32px;
+	margin-bottom: 10px;
+}
+.nm-usesle .nu-f01wid{
+	width: 14.5%;
+	text-align: right;
+	padding-right: 4px;
+}
+.nm-usesle .nu-f01widt{
+	width: 12.5%;
+	padding-right: 4px;
+}
+.nm-usesle .nu-f02wid{
+	width: 17.8%;
+}
+.nm-usesle .nu-f02widse{
+	width: auto;
+}
+.nu-f02wid input{
+	vertical-align: top;
+	padding-left: 10px;
+	width: 140px;
+	height: 30px;
+	border:1px solid #dadada;
+}
+.nm-btn{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	background: #fff;
+}
+.nm-btn .nu-btn{
+	margin-right:10px;
+}
+.nm-btn .nu-frot{
+	font-size: 14px;
+}
+.nm-btn .nu-colored{
+	color: #fff;
+}
+.nu-colof{
+	color: #e42c25;
+}
+.nu-btn{
+	display:inline-block;
+	border-radius: 4px;
+	padding: 5px 20px;
+	margin:auto;
+}
+.nu-bgcor{
+	background: #e42c25;
+}
+.nu-borcor{
+	border:1px solid #e42c25;
+}
+.ns-colfff{
+	color: #fff;
+}
+.ns-col6{
+	color: #666;
+}
+.ns-col9{
+	color: #999;
+}
+.ns-col4d{
+	color: #4d4d4d;
+}
+.ns-colc{
+	color: #ccc;
+}
+.ns-colred{
+	color: #e42c25;
+}
+.ns-colmblu{
+	color: #0055aa;
+}
+.ns-colblu{
+	color: #0099ff;
+}
+.ns-col87{
+	color: #878787;
+}
+.ns-col26{
+	color: #262626;
+}
+.ns-col33{
+	color: #333;
+}
+.ns-colgra{
+	color: #757575;
+}
+.ns-col38{
+	color: #383838;
+}
+.nm-col53{
+	color: #535353;
+}
+.ns-bjpink{
+	background: #fbeaea;
+}
+.ns-bjgra{
+	background: #ebebeb;
+}
+.ns-bjred{
+	background: #e42c25;
+}
+.ns-colyelo{
+	color: #ff8533;
+}
+.ns-colgren{
+	color: #59b13b;
+}
+.ns-bjgray{
+	background: #ebebeb;
+}
+.nu-fw{
+	font-weight: 600;
+}
+/*46 55 空页面*/
+.nm-SPempty{
+	height: 405px;
+	background:#fff;
+}
+.nm-SPempty .nm-epypig{
+	position: relative;
+	margin:52px auto 0;
+	width: 285px;
+	height: 137px;
+	background:url(../../images/spriter-images/h-shopempty.png?_spriter) no-repeat 98px 0;
+}
+.nm-epypig .nm-precon{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 16px;
+	color: #666666;
+	width: 100%;
+	text-align: center;
+}
+/*个人中心、我的订单样式小改begin*/
+.td08 .us_btnp{
+	padding-bottom: 7px;
+}
+/*个人中心、我的订单样式小改end*/

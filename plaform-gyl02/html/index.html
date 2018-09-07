@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="always" name="referrer">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="Shortcut Icon" href="../images/bitbug_favicon.ico" type="image/x-icon">
+    <title>鲜易供应链门户网站 - 打造生鲜供应链互联互通生态圈</title>
+    <style>
+    .header{
+      width:100%;
+      position: relative;
+      height:550px;
+      overflow: hidden;
+      background:#000;
+    }
+    .header .bgp1{
+      width:1920px;
+      position: absolute;
+      left:50%;
+      margin-left: -960px;
+      top:0px;
+      height:550px;
+      background-image:url("../images/banner111.jpg");
+    }
+    .header .bgp2{
+      position: absolute;
+      left:50%;
+      margin-left: -424.5px;
+      top:170px;
+      background: url("../images/bannertxt.png");
+      width:849px;
+      height:188px;
+    }
+    .header .bgp3{
+      position: absolute;
+      left:50%;
+      top:0px;
+      margin-left:-960px;
+      background: url("../images/guang.png");
+      width:1920px;
+      height:550px;
+      clip:rect(0px,0px,550px,0px);
+      transition:all 3s linear;
+    }
+    .header .light{
+      clip: rect(0px,1920px,550px,0px);
+    }
+    .header .dark{
+      clip: rect(0px,1920px,550px,1920px);
+    }
+    .header .dl{
+      clip: rect(0px,1920px,550px,0px);
+    }
+    .header .ld{
+      clip: rect(0px,0px,550px,0px);
+    }
+    .header .bgp4{
+      position: absolute;
+      left:50%;
+      margin-left:-790px;
+      top:186px;
+      background:url("../images/1.png");
+      width:226px;
+      height:102px;
+      display: none;
+    }
+    .header .bgp5{
+      position: absolute;
+      left:50%;
+      margin-left:-574px;
+      top:309px;
+      background:url("../images/2.png");
+      width:270px;
+      height:158px;
+      display: none;
+    }
+    .header .bgp6{
+      position: absolute;
+      left:50%;
+      margin-left:-105px;
+      top:410px;
+      background:url("../images/3.png");
+      width:141px;
+      height:134px;
+      display: none;
+    }
+    .header .bgp7{
+      position: absolute;
+      left:50%;
+      margin-left:-725px;
+      top:305px;
+      background:url("../images/7.png");
+      width:115px;
+      height:98px;
+      display: none;
+      opacity: 0.1;
+    }
+    @media (max-width: 960px){
+      .header{
+        width:960px;
+      }
+    }
+
+    #line,#area,#bar,#pie,#scatter,#column{
+        float:left;width: 305px;height: 180px;
+        border:1px solid #4cadd8;
+    }
+
+
+    .mapTipText{width: 280px;height: 110px;background-color: #ffffff;}
+        .mapTipText .mapTipImg{height: 66px; width: 66px; float: left;border: 2px solid #ffffff; border-radius: 50%;overflow: hidden;margin: -12px 5px 0 -12px;}
+        .mapTipText .mapTipImg img{width: 100%;height: 100%;}
+        .mapTipText .mapTipList{float: left;margin-left: 4px;position: relative; z-index: 300;}
+        .mapTipText .mapTipList h2{text-align: left;}
+        .mapTipText .mapTipList h2 a{font-size: 24px; color: #262626;text-decoration:none;}
+        .mapTipText .mapTipList h2 a:hover{ color: #0085d2;}
+        .mapTipText .mapTipList h2 a span{font-size: 16px;margin-left: 3px;}
+        .mapTipText .mapTipList ul{ width: 203px;padding-right: 10px;position: relative;z-index: 200;}
+        .mapTipText .mapTipList ul li{list-style: none;float: left;padding: 5px 3px 0 3px;width: 100%;}
+        .mapTipText .mapTipList ul li span{list-style: none;float: left;padding: 5px 2px 0 3px;width: 30%;}
+        .mapTipText .mapTipList ul li a{color: #262626;text-decoration:none;}
+        .mapTipText .mapTipList ul li a:hover{background-color:#2ebcfe;color:#ffffff;}
+  </style>
+</head>
+<body>
+    <div class="warp">
+      <div id="go_top">  
+            <img src="../images/pass_nby_98.png" alt="回到顶部图片">  
+            <img src="../images/pass_nby_71.png" alt="" class="ewm1">
+       </div>
+       <div class="tmzz">
+            <div class="tmzz_div">
+                <div class="tmzz_tu"><img src="../images/logo.png" alt=""></div>
+                <ul class="tmzz_ul">
+                    <p class="tmzz_ul_bg"></p>
+                    <li class="onbg"><a href="http://www.paas.xianyiscm.com/" class="onbg">首页</a></li>
+                    <li><a href="http://open.xianyiscm.com/" target="_blank">开放平台</a></li>
+                    <li><a href="http://www.paas.xianyiscm.com/API.html">帮助中心</a></li>
+                </ul>
+                <div class="tmzz_dl">
+                  <div class="dl_left">
+                     <a href="#" class="login">
+                      <em class="cszt"><img src="../images/user.png" alt=""></em>
+                      <em class="hgzt"><img src="../images/user-active.png" alt=""></em>
+                     登录
+                     </a>
+                     <div class="djdl">
+                      <span class="gb" cursor="pointer">&times;</span>
+                        <ul class="hynul">
+                         <li class="hynulli"><a href="http://paas.xianyiscm.com/#3000">客户登录</a></li>
+                         <li class="hynulli"><a href="http://paas.xianyiscm.com/#1000">运营登录</a></li>
+                         <li class="hynulli" style="background:#8A8A8D;"><a href="#" style="cursor:default">伙伴登录</a></li>
+                        </ul>
+                     </div>
+                     <!--<p class="cgsjh">
+                         <a href="#" class="hyn">欢迎您！</a>133666*****  V
+                         
+                     </p>-->
+                     <div class="hghyn">
+                         <span class="gb" cursor="pointer">&times;</span>
+                       <dl class="hyndl">
+                           <dt><img src="" alt=""></dt>
+                           <dd> 133666*****  </dd>
+                           <p><a href="#">退出登录</a></p>
+                       </dl>
+                        <ul class="hynul">
+                         <li class="hynulli"><a href="">客户登录</a></li>
+                         <li class="hynulli"><a href="">伙伴登录</a></li>
+                         <li class="hynulli"><a href="">运营登录</a></li>
+                     </ul> 
+                     </div>
+                     
+                  </div>
+                  <div class="dl_right">
+                     <a href="#" style="cursor:default">
+                      <em class="cszc"><img src="../images/record.png" alt=""></em>
+                      <em class="hgzc"><img src="../images/record-active.png" alt=""></em>
+                      注册
+                      </a>
+                  </div>
+                   <!--<a href="register.html" class="mfzc">免费注册</a>
+                    <a href="Land.html" class="dengl">登录</a>
+                    <ul class="dlul">
+                        <li><a href="#">伙伴登录</a></li>
+                        <li><a href="#">客户登录</a></li>
+                        <li><a href="#">运营登录</a></li>
+                    </ul>-->
+                </div>
+            </div>
+       </div>
+       
+        <div class="header">
+          <div class="bgp1"></div><div class="bgp2"></div><div class="bgp3"></div><div class="bgp4"></div><div class="bgp5"></div><div class="bgp6"></div><div class="bgp7"></div>
+           
+            <div class="header_div">
+               <div class="header_left">
+                <img src="../images/pass_nby_49.png" alt="">
+                <img src="../images/pass_nby_55.png" alt="">
+                <p>冷库覆盖</p>
+            </div>
+            <div class="header_right">
+                <img src="../images/pass_nby_50.png" alt="">
+                <img src="../images/pass_nby_52.png" alt="">
+                <p>冷链卡班</p>
+            </div>
+                <ul class="header_div_ul">
+                    <li><small><img src="../images/dianji.png" alt=""></small><a href="http://paas.xianyiscm.com#3000">客户加入</a></li>
+                    <li><small><img src="../images/dianji.png" alt=""></small><a href="http://paas.xianyiscm.com#1000">运营加入</a></li>
+                    <li><small><img src="../images/dianji.png" alt=""></small><a href="javascript:">伙伴加入</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <section class="section1">
+            <h1>仓运配&金融一体化服务</h1>
+            <ul>
+                <li>
+                        <div class="tu_div">
+                            <div class="tu_div1"><img src="../images/pass_nby_37.png" alt=""></div>
+                            <div class="tu_div2">
+                                <img src="../images/1-1.png" alt="" class="animated fadeInDown">    
+                                <img src="../images/1-2.png" alt="" class="animated fadeInUp">    
+                                <img src="../images/1-2.png" alt="" class="animated fadeInUp">    
+                                <img src="../images/1-2.png" alt="" class="animated fadeInUp">    
+                                <img src="../images/1-2.png" alt="" class="animated fadeInUp">    
+                            </div>
+                        </div>
+                        <h3>「温控仓储」</h3>
+                        <ol>
+                            <li>全国布局 七大区域 </li>
+                            <li><b>20 </b>多个温控基地 </li>
+                            <li>标准仓储容积 <b>192</b> 万m³ </li>
+                            <li>完善的云仓网络 </li>
+                            <li>提供仓配一体化服务 </li>
+
+                        </ol>
+                        <a href="javascript:"><button type="button">进一步了解</button></a>
+                    
+                </li>
+                <li>
+                   
+                        <div class="tu_div">
+                            <div class="tu_div1"><img src="../images/qie_04.png" alt=""></div>
+                            <div class="tu_div2">
+                                <img src="../images/qie_11.png" alt="" class="animated fadeInRight">
+                                <img src="../images/qie_13.png" alt="" class="animated fadeInDown">
+                                <img src="../images/qie_16.png" alt="" class="animated fadeInDown">
+                            </div>
+                        </div>
+                        <h3>「冷链运输」</h3>
+                        <ol>
+                            <li>覆盖 <b>28</b> 省市自治区</li>
+                            <li>辐射 <b>244</b> 个地级城市</li>
+                            <li>冷链车辆 <b>3000</b> 余台</li>
+                            <li>千余条冷链运输路线</li>
+                            <li>提供温控可视化服务</li>
+                        </ol>
+                        <a href="javascript:"><button type="button">进一步了解</button></a>
+                    
+                </li>
+
+                <li>
+
+                        <div class="tu_div">
+                            <div class="tu_div1"><img src="../images/pass_nby_42.png" alt=""></div>
+                            <div class="tu_div2">
+                                <img src="../images/2-3.png" alt="" class="animated fadeInUp">
+                                <img src="../images/2-2.png" alt="" class="animated fadeInUp">
+                                <img src="../images/2-1.png" alt="" class="animated fadeInUp">
+                            </div>
+                        </div>
+                        <h3>「供应链金融」</h3>
+                        <ol>
+                            <li>国内外多家金融机构合作</li>
+                            <li>原材料产品代采融资服务</li>
+                            <li>应收款保理融资服务</li>
+                            <li>存货质押融资</li>
+                            <li>仓单质押融资</li>
+                        </ol>
+                        <a href="javascript:"><button type="button">进一步了解</button></a>
+
+                </li>
+                <li>
+
+                    <div class="tu_div">
+                        <div class="tu_div1"><img src="../images/111_24.png" alt=""></div>
+                        <div class="tu_div2">
+                            <img src="../images/111_26.png" alt="" class="animated fadeInLeft">
+                            <img src="../images/111_29.png" alt="" class="animated fadeInRight">
+                            <img src="../images/111_31.png" alt="" class="animated fadeInRight">
+                        </div>
+                    </div>
+                    <h3>「流通加工」</h3>
+                    <ol>
+                        <li>通过多项体系认证</li>
+                        <li>打造流通加工平台</li>
+                        <li>OEM贴牌生产</li>
+                        <li>ODM设计代工</li>
+                        <li>生鲜加工配送服务</li>
+                    </ol>
+                    <a href="#"><button type="button">进一步了解</button></a>
+
+                </li>
+
+            </ul>
+        </section>
+        
+        <section class="section2">
+            <div class="section2_div">
+                <div class="s2_left">
+                    <div class="itemCon" style="float: left;margin-left:-47px;margin-top:63px;">
+                        <div id="ChinaMap" style="margin: 50px;"></div>
+                        <div id="stateTip" style="position: absolute;left: 100%;text-align: left;display: inline;"></div>
+                    </div>
+	
+    <div id="mapTipContent" style="width: 470px;margin: 0 auto;display: none">
+       <div class="mapTipText mapTipText24" style="padding-bottom: 10px">
+            <div class="mapTipImg"><img src="../images/beijing.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">北京基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li style="padding-top: 0">托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">3410</i>托</p>
+
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">315132</i>m³</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText1">
+            <div class="mapTipImg"><img src="../images/jilin.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">长春基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">6956</i>托</p>
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">49942</i>m³</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText2">
+            <div class="mapTipImg"><img src="../images/liaoning.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">沈阳基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">4433</i>托</p>
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">31826</i>m³</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText23">
+            <div class="mapTipImg"><img src="../images/tianjin.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">天津基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">8467</i>托</p>
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">69476</i>m³</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText10">
+            <div class="mapTipImg"><img src="../images/shaanxi.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">西安基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">5180</i>托</p>
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">37192</i>m³</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText5">
+            <div class="mapTipImg"><img src="../images/jiangsu.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">昆山基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">26599</i>托</p>
+
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">436488</i>m³</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText7">
+            <div class="mapTipImg"><img src="../images/anhui.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">合肥基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">7113</i>托</p>
+
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">51068</i>m³</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText21">
+            <div class="mapTipImg"><img src="../images/shanghai.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">上海基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">4610</i>托</p>
+
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">37827</i>m³</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText12">
+            <div class="mapTipImg"><img src="../images/hubei.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">武汉基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">7076</i>托</p>
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">50804</i>m³</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText30">
+            <div class="mapTipImg"><img src="../images/guangdong.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">广州基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">8096</i>托</p>
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">58128</i>m³</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText15">
+            <div class="mapTipImg"><img src="../images/hunan.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <h2><a href="">长沙基地</a></h2>
+                <ul>
+                    <li></li>
+                    <li>托盘数&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">50000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">4893</i>托</p>
+                        </div>
+                    </li>
+                    <li>总立方&nbsp;&nbsp;
+                        <div class="jdt_1">
+                            <p class="jdtwz_1"><i class="u-allCout" style="display: none">450000</i></p>
+                            <p class="jdtwzz_1"><i class="u_Num">49126</i>m³</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mapTipText mapTipText8" style="height: 150px">
+            <div class="mapTipImg"><img src="../images/henan.jpg" alt=""/></div>
+            <div class="mapTipList">
+                <ul>
+                    <li style="border-bottom: 1px solid #ccc"><span>郑州基地</span><span>98973m³</span><span>13786托</span></li>
+                    <li style="border-bottom: 1px solid #ccc"><span>安阳基地</span><span>374447m³</span><span>25964托</span></li>
+                    <li style="border-bottom: 1px solid #ccc"><span>洛阳基地</span><span>62443m³</span><span>7610托</span></li>
+                    <li style="border-bottom: 1px solid #ccc"><span>驻马店基地</span><span>55599m³</span><span>6776托</span></li>
+                    <li style="border-bottom: 1px solid #ccc"><span>许昌基地</span><span>342080m³</span><span>26920托</span></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+                   
+              
+                </div>
+                
+                <div class="s2_jz"><img src="../images/pass_nby_03.png" alt=""></div>
+                <div class="s2_right">
+                    <h3>温控仓储</h3>
+                    <ul>
+                        <li>全国布局温控基地<b> 16 </b>个基地</li>
+                        <li>标准仓储容积<b> 192 </b>万m³</li>
+                        <li>完善的DC、TC、PC、EC网络</li>
+                        <li>实时监控仓储温湿度变化</li>
+                        <li>智能化WMS系统精细管理</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section class="section3">
+           <h3>冷链卡班</h3>
+            <div class="s3_div">
+                <dl class="s3_dl">
+                    <dt><p class="s3_st"></p><img src="../images/pass_nby_08.png" alt=""></dt>
+                    <dd>
+                        <h3>郑州 到 北京</h3>
+                        <p>12小时</p>
+                        <p>-18℃</p>
+                    </dd>
+                </dl>
+                <ul>
+                    <li>郑州(四季物流港)</li>
+                    <li>北京(五环金州物流中心)</li>
+                    <li>周一,周四</li>
+                    <li>16:00 发车</li>
+                </ul>
+            </div>
+            <div class="s3_div">
+                <dl class="s3_dl">
+                    <dt><p class="s3_st"></p><img src="../images/pass_nby_10.png" alt=""></dt>
+                    <dd>
+                        <h3>郑州 到 广州</h3>
+                        <p>28小时</p>
+                        <p>-18℃</p>
+                    </dd>
+                </dl>
+                <ul>
+                    <li>郑州(四季物流港)</li>
+                    <li>广州(华邦物流园)</li>
+                    <li>周二,周五</li>
+                    <li>11:00 发车</li>
+                </ul>
+            </div>
+            <div class="s3_div">
+                <dl class="s3_dl">
+                    <dt><p class="s3_st"></p><img src="../images/pass_nby_12.png" alt=""></dt>
+                    <dd>
+                        <h3>郑州 到 上海</h3>
+                        <p>17小时</p>
+                        <p>-18℃</p>
+                    </dd>
+                </dl>
+                <ul>
+                    <li>郑州(四季物流港)</li>
+                    <li>上海(上海山普冷库)</li>
+                    <li>周一,周三,周五</li>
+                    <li>18:00 发车</li>
+                </ul>
+            </div>
+            <div class="s3_div">
+                <dl class="s3_dl">
+                    <dt><p class="s3_st"></p><img src="../images/pass_nby_14.png" alt=""></dt>
+                    <dd>
+                        <h3>上海 到 郑州</h3>
+                        <p>19小时</p>
+                        <p>-18℃</p>
+                    </dd>
+                </dl>
+                <ul>
+                    <li>上海(山普冷库)</li>
+                    <li>郑州(四季物流港)</li>
+                    <li>周二,周四,周六</li>
+                    <li>12:00 发车</li>
+                </ul>
+            </div>
+            <div class="s3_div">
+                <dl class="s3_dl">
+                    <dt>
+                       <p class="s3_st"></p>
+                        <img src="../images/pass_nby_16.png" alt="">
+                    </dt>
+                    <dd>
+                        <h3>广州 到 郑州</h3>
+                        <p>28小时</p>
+                        <p>-18℃</p>
+                    </dd>
+                </dl>
+                <ul>
+                    <li>广州(华邦物流园)</li>
+                    <li>郑州(四季物流港)</li>
+                    <li>周一,周四</li>
+                    <li>11:00 发车</li>
+                </ul>
+            </div>
+            <div class="s3_div">
+                <dl class="s3_dl">
+                    <dt><p class="s3_st"></p><img src="../images/pass_nby_18.png" alt=""></dt>
+                    <dd>
+                        <h3>北京 到 郑州</h3>
+                        <p>12小时</p>
+                        <p>-18℃</p>
+                    </dd>
+                </dl>
+                <ul>
+                    <li>北京(五环金州物流中心)</li>
+                    <li>郑州(四季物流港)</li>
+                    <li>周二,周五</li>
+                    <li>16:00 发车</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="section4_div">
+                <div class="s4_left">
+                    <h3>冷链城配</h3>
+                    <ul>
+                        <li>聚焦核心城市<b> 20+</b>个</li>
+                        <li>全国配送网点<b> 3000+</b>个</li>
+                        <li>全流程可视化冷链城配服务</li>
+                        <li>服务生鲜电商、商超、餐饮等行业</li>
+                    </ul>
+                </div>
+                <div class="s4_jz"><img src="../images/pass_nby_05.png" alt=""></div>
+                <div class="s4_right">
+                    <img src="../images/pass_nby_20.png" alt="" class="s4_img">
+                </div>
+            </div>
+        </section>
+         <section class="section5">
+            <h3>鲜易供应链公开数据统计</h3>
+            
+                <dl class="s5_dl" id="line_">
+                    <dt><img src="../images/pass_nby_90.png" alt=""></dt>
+                    <dd>仓库类型分布</dd>
+                    <div class="bobox"><div id="line" ></div></div>
+                </dl>
+            
+            
+                <dl class="s5_dl" id="area_">
+                    <dt><img src="../images/pass_nby_92.png" alt=""></dt>
+                    <dd>仓库区域分布</dd>
+                    <div class="bobox"><div id="area"></div></div>
+                </dl>
+           
+                <dl class="s5_dl" id="bar_">
+                    <dt><img src="../images/pass_nby_95.png" alt=""></dt>
+                    <dd>车辆类型分布</dd>
+                    <div class="bobox"><div id="bar"></div></div>
+                    
+                </dl>
+            
+                <dl class="s5_dl" id="pie_">
+                    <dt><img src="../images/pass_nby_113.png" alt=""></dt>
+                    <dd>车辆区域分布</dd>
+                    <div class="bobox"><div id="pie"></div></div>
+                </dl>
+            
+                <dl class="s5_dl" id="scatter_">
+                    <dt><img src="../images/pass_nby_111.png" alt=""></dt>
+                    <dd>发运车次</dd>
+                    <div class="bobox"><div id="scatter"></div></div>
+                </dl>
+            
+                <dl class="s5_dl" id="column_">
+                    <dt><img src="../images/pass_nby_112.png" alt=""></dt>
+                    <dd>发运吨数</dd>
+                    <div class="bobox">
+                        <div id="column">
+                            <!-- <h4 class="n-tit">集采分销&nbsp;&nbsp;&nbsp;<span style="font-size: 12px;">(热销品排行)</span></h4> -->
+                            <!-- <div class="nm-modvew">
+                              <div class="n-navlis clearfix">
+                                <span class="fl lis_tit n_fis" style="text-indent: -100px">'</span>
+                                <span class="fl lis_tit n_sec" style="text-indent: 40px;">商品</span>
+                                <span class="fl lis_tit n_thre">吨数</span>
+                              </div>
+                              <div id="marquee" class="n-lisshow n-navlis">
+                                <ul>
+                                  <li class="nm-con">
+                                    <span class="fl n_fis">1</span>
+                                    <span class="fl n_sec f-ellipsis">西班牙FACCSA 猪头</span>
+                                    <span class="fl n_thre f-ellipsis">125吨</span>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </dl>
+        </section>
+        <section class="section6">
+            <div class="s6_div">
+                <h3>常见问题</h3>
+                <div class="s6_list">
+                    <h4>冷链知识</h4>
+                    <ul class="s6_ul" id="s6_ul1">
+                        <li><a>目前全国有哪些仓储基地?</a></li>
+                        <li><a>提供哪些服务?</a></li>
+                        <li><a>鲜易供应链解说的作用?</a></li>
+                        <li><a>从鲜易供应链未来发展?</a></li>
+                        <li><a>鲜易供应链食品安全息息相关?</a></li>
+                        <li><a>鲜易供应链已成为行业的福音?</a></li>
+                        <li><a>目前全国有哪些仓储基地?</a></li>
+                        <li><a>鲜易供应链是啥东西？</a></li>
+                        <p class="s6_st" id="s6_st1"></p>
+                    </ul>
+                </div>
+                <div class="s6_list">
+                    <h4>业务合作</h4>
+                    <ul class="s6_ul" id="s6_ul2">
+                        <li><a>目前那些城市开通了卡班业务?</a></li>
+                        <li><a>货物中途丢失，出现，破损怎么办?</a></li>
+                        <li><a>鲜易供应链 助冷链运输一路领鲜?</a></li>
+                        <li><a>第21届国际 畅谈冷链物流发展?</a></li>
+                        <li><a>2016中国冷链物流发展论坛举行?</a></li>
+                        <li><a>中国冷链物鲜易供应链上线?</a></li>
+                        <li><a>基于传感物联网仓储温湿实时监测?</a></li>
+                        <li><a>鲜易供应链发展看看如何申报支持?</a></li>
+                        <p class="s6_st" id="s6_st2"></p>
+                    </ul>
+                </div>
+                <div class="s6_list">
+                    <h4>系统接入</h4>
+                    <ul class="s6_ul" id="s6_ul3">
+                        <li><a>目前那些城市开通了服务?</a></li>
+                        <li><a>服务品类及温度保证是什么?</a></li>
+                        <li><a>鲜易供应链智慧易腐率?</a></li>
+                        <li><a>发现信赖:怎么少得了鲜易供应链?</a></li>
+                        <li><a>鲜易供应链全力助推冷链物流发展?</a></li>
+                        <li><a>鲜易供应链推动生鲜电商品质化升级?</a></li>
+                        <li><a>鲜易供应48小时到达消费者餐桌?</a></li>
+                        <li><a>鲜易供应链大动作!</a></li>
+                        <p class="s6_st" id="s6_st3"></p>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section7">
+            <h3>鲜易供应链，打造冷链行业标杆品牌</h3>
+                <ul class="header_div_ul">
+                    <li><small><img src="../images/dianji.png" alt=""></small><a href="http://paas.xianyiscm.com/#3000">客户加入</a></li>
+
+                    <li><small><img src="../images/dianji.png" alt=""></small><a href="http://paas.xianyiscm.com/#1000">运营加入</a></li>
+                    <li><small><img src="../images/dianji.png" alt=""></small><a href="javascript:">伙伴加入</a></li>
+                </ul>
+            <!--<div class="s7_div">
+                <h1>您要使用吗?</h1>
+                <a href="http://test1.xianyiscm.com:7001" class="s7a1"><button>立即创建运单</button></a>
+                <a href="http://shang.qq.com/email/stop/email_stop.html?qq=314719&sig=32fadd9314c63410295b30f4f78794aedebafd86a16da285&tttt=1" class="s7a2">运单咨询</a>
+            </div>-->
+        </section>
+        <div class="ftrdbsp">
+            <div class="sp_div">
+                <ul>
+                    <li><img src="../images/pass_nby_120.png" alt=""></li>
+                    <li><img src="../images/pass_nby_122.png" alt=""></li>
+                    <li><img src="../images/pass_nby_124.png" alt=""></li>
+                    <li><img src="../images/pass_nby_126.png" alt=""></li>
+                    <li><img src="../images/pass_nby_128.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        <footer class="footer">
+            <div class="ft_div">
+                <div class="ft_div1">
+                    <h3>快速入门</h3>
+                    <ul>
+                        <li><a href="API.html#zhucelc">注册流程</a></li>
+                        <li><a href="API.html#storage">认证流程</a></li>
+                        <li><a href="API.html#logistics">发布流程</a></li>
+                        <li><a href="API.html#settlement">交易流程</a></li>
+                        <li><a href="API.html#materiel">交易规则</a></li>
+                    </ul>
+                </div>
+                <div class="ft_div1">
+                    <h3>服务指南</h3>
+                    <ul>
+                        <li><a href="API.html#harmonious">平台服务协议</a></li>
+                        <li><a href="API.html#gps">商务合作</a></li>
+                        <li><a href="API.html#Withcity">售后说明</a></li>
+                        <li><a href="API.html#Withcity1">发票须知</a></li>
+                        <li><a href="API.html#Withcity2">免费声明</a></li>
+                    </ul>
+                </div>
+                <div class="ft_div1">
+                    <h3>关于平台</h3>
+                    <ul>
+                        <li><a href="API.html#transaction">平台简介</a></li>
+                        <li><a href="API.html#control">新闻动态</a></li>
+                        <li><a href="API.html#control1">加入我们</a></li>
+                        <li><a href="API.html#control2">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="ft_div1">
+                    <h3>关注我们</h3>
+                    <ul>
+                        <li><small><img src="../images/pass_nby_106.png" alt=""></small><a href="http://weibo.com/u/5135258609?refer_flag=1001030101_&is_hot=1">新浪微博</a></li>
+                        <li class="ewm"><small><img src="../images/pass_nby_108.png" alt=""></small><a href="API.html">官方微信</a>
+                            <img src="../images/pass_nby_71.png" alt="" class="ewm1">
+                        </li>
+                        <li>
+                            <small><img src="../images/tieba.png" alt=""></small><a href="http://tieba.baidu.com/f?ie=utf-8&kw=%E9%B2%9C%E6%98%93%E4%BE%9B%E5%BA%94%E9%93%BE&fr=search">官方贴吧</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft_div2">
+                    <ul>
+                        <li style="font-size:24px"><small></small>400-816-0366</li>
+                        <li><small></small>周一至周日 8:00-18:00</li>
+                        
+                    </ul>
+                </div>
+            <p>©2014-2020 郑州鲜易供应链有限公司 京ICP备1330026504 服务热线:4006-080-04040</p>
+        </footer>
+    </div>
+
+    <!-- js库 -->
+    <script src="../js/jquery-2.1.0.js"></script>
+     <script src="../js/highcharts.js"></script>
+    <script src="../js/highcharts-3d.js"></script>
+    <script src="../js/lib/raphael-min.js"></script>
+    <script src="../js/res/chinaMapConfig.js"></script>
+    <script src="../js/map-min.js"></script>
+    <!-- js单页面 -->
+    <script src="../js/index.js"></script>
+    <script src="../js/chart_animate.js"></script>
+    <script>
+        //----主页调用地图方法start-------
+        $(function(){
+            $('#ChinaMap').SVGMap({
+                mapWidth: 470,
+                mapHeight: 400
+            });
+        })
+    </script>
+  </body>
+</html>

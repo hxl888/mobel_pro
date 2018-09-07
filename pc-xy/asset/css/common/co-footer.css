@@ -1,0 +1,213 @@
+.g-footer {
+    background: #f9f9f9;
+    border-top: 1px solid #ececec;
+}
+.g-footer-none{
+    border-top: 0;
+    background: #fff;
+}
+.g-footer-icon {
+    width: 1080px;
+    height: 52px;
+    overflow: hidden;
+    padding: 24px 0;
+    margin:0 auto;
+}
+.g-footer-icon ul {
+    width: 200%;
+}
+.g-footer-icon li {
+    float: left;
+    width: 62px;
+    height: 52px;
+    line-height: 22px;
+    margin-right: 60px;
+    padding:4px 0 0 68px;
+    color: #4d4d4d;
+    font-size: 14px;
+    position: relative;
+}
+.g-footer-icon li span {
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border:1px solid #de3733;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    color: #de3733;
+    vertical-align: top;
+}
+
+.g-footer-item {
+    padding:25px 0;
+    background: #dd2e29;
+}
+.g-ftmc {
+    width: 1100px;
+    margin:0 auto;
+}
+.g-ftmc-list {
+    width: 51%;
+    overflow: hidden;
+}
+.g-ftmc-list ul {
+    width: 200%;
+}
+.g-ftmc-list li {
+    float: left;
+    width: 90px;
+    margin-right: 28px;
+    display: inline;
+}
+.g-ftmc-list h6 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.g-ftmc-list p a {
+    display: block;
+    color: #ffd9d9;
+    line-height: 24px;
+}
+.g-ftmc-qrc {
+    width: 263px;
+    border-left:1px solid #cd120b;
+    border-right:1px solid #ef4e48;
+}
+.g-ftmc-qrc1 {
+    width: 215px;
+    padding:0 23px;
+    border-left:1px solid #ef4e48;
+    border-right:1px solid #cd120b;
+}
+.g-ftmc-qrc1 div {
+    width: 100px;
+}
+.g-ftmc-qrc1 div p {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 12px;
+    font-weight: 600;
+}
+.g-ftmc-qrc1 div span {
+    padding:5px;
+    background: #fff;
+    display: block;
+    width: 90px;
+    height: 90px;
+}
+
+.g-ftmc-des {
+    width: 210px;
+    padding:25px 30px;
+    margin: -25px 0;
+    text-align: right;
+    background: url(../../images/vf-02.jpg) no-repeat center;
+}
+
+.g-ftmc-des h6 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 5px;
+    text-align: left;
+}
+.g-ftmc-des p {
+    color: #fff;
+    line-height: 24px;
+    text-align: left;
+}
+.g-ftmc-des a {
+    text-align: right;
+    color: #fff;
+}
+.g-ft-flkc {
+    padding:20px 0;
+    text-align: center;
+}
+.g-ft-flkc .g-ft-flk {
+    vertical-align: top;
+}
+.g-ft-flkc .g-ft-flk a {
+    margin:0 8px;
+    color: #333;
+    vertical-align: baseline;
+}
+.g-ft-flkc p {
+    padding:6px 0 10px 0;
+    color: #666;
+}
+.g-ft-flkc .g-ft-safe {
+    vertical-align: top;
+}
+.g-ft-flkc .g-ft-safe a {
+    margin:0 5px;
+}
+.g-footer-icon {
+    height: auto;
+    overflow: hidden;
+}
+.g-footer01 {
+    background: #fff;
+}
+.c-footerList {
+    /*width: 850px;*/
+    /*margin: 0 auto;*/
+    overflow: hidden;
+    padding-left: 122px;
+}
+.c-footerList li {
+    float: left;
+    padding: 0 96px;
+    position: relative;
+    width: auto;
+    min-height: 66px;
+    margin-right: 53px;
+    background: url(../../images/spriter-images/nu-Dzborder.png) no-repeat right center;
+}
+.c-footerList i.bg-icon {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 65px;
+    height: 65px;
+}
+i.bg-icon01 {
+    background: url(../../images/spriter-images/bg-footer01.png?__spriter) no-repeat;
+}
+i.bg-icon02 {
+    background: url(../../images/spriter-images/bg-footer02.png?__spriter) no-repeat;
+}
+i.bg-icon03 {
+    background: url(../../images/spriter-images/bg-footer03.png?__spriter) no-repeat;
+}
+.c-footerList h6 {
+    line-height: 32px;
+    color: #ee6161;
+    font-size: 22px;
+}
+.c-footerList p {
+    line-height: 28px;
+    color: #757575;
+    font-size: 14px;
+}
+.root990 .g-footer-icon li {
+    margin-right: 20px;
+    padding:0 86px;
+}
+.g-footer-icon .c-footerList .list-footer03 {
+    width: 142px;
+    background: none;
+    padding-right: 0;
+    margin-right: 0
+}
+.g-ft-flkc .c_code{
+    padding-top: 0;
+    margin-top: -2px;
+}

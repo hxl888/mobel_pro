@@ -1,0 +1,204 @@
+/*配送地址三级联动*/
+.dstion-plugins {
+    float: left;
+    position: relative;
+    z-index: 3;
+}
+.dstion-plugins-active{
+    z-index: 4;
+}
+.dstion-plugins .dstion-close {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -9px;
+    background: #999;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.dstion-con-left .dstion-close,
+.dstion-con-center .dstion-close {
+    right:-9px;
+}
+.dstion-con-right .dstion-close {
+    left: -9px;
+}
+
+.dstion-plugins .dstion-top {
+    position: relative;
+    height:24px;
+    padding:0 25px 0 5px;
+    border:1px solid #999;
+    background: #fff;
+    top: 0;
+}
+.dstion-plugins .dstion-top .dstion-t-msg {
+    color: #333;
+    line-height: 24px;
+}
+.dstion-plugins .dstion-top b {
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #5e5e5e;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+    transition:all .5s ease;
+}
+
+.dstion-plugins .dstion-con {
+    width: 390px;
+    padding: 10px;
+    background: #fff;
+    border:1px solid #999;
+    position: absolute;
+    top: 25px;
+    display: none;
+}
+
+.dstion-plugins .dstion-con-left {
+    left: 0;
+}
+.dstion-plugins .dstion-con-right {
+    right: 0;
+}
+.dstion-plugins .dstion-con-center {
+    left: 50%;
+    margin-left: -205px;
+}
+.dstion-plugins-active .dstion-con{
+    display: block;
+}
+
+.dstion-plugins-active .dstion-top{
+    border-bottom:none;
+    padding-bottom: 1px;
+    z-index: 1;
+}
+.dstion-plugins-active .dstion-top b {
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.dstion-plugins .dstion-con-default {
+
+}
+.dstion-plugins .dstion-con-text {
+    padding-bottom: 10px;
+    border-bottom:1px solid #d1d1d1;
+}
+.dstion-plugins .dstion-con-text a{
+    color: #003399;
+}
+.dstion-plugins .dstion-con-item h4{
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.dstion-plugins .dstion-tab ul {
+    border-bottom: 2px solid #fe6c00;
+}
+.dstion-plugins .dstion-tab li {
+    float: left;
+    height: 27px;
+    margin-right: 5px;
+}
+.dstion-plugins .dstion-tab li a {
+    display: block;
+    position: relative;
+    padding:1px 21px 1px 9px;
+    border:1px solid #ccc;
+    border-bottom: none;
+    height: 24px;
+    line-height: 24px;
+}
+.dstion-plugins .dstion-tab li.active a {
+    display: block;
+    height: 27px;
+    background: #fff;
+    padding:0 20px 0 8px;
+    border:2px solid #fe6c00;
+    border-bottom:none;
+}
+.dstion-plugins .dstion-tab li em {
+    font-weight: bold;
+}
+.dstion-plugins .dstion-tab li b {
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #5e5e5e;
+    position: absolute;
+    right: 3px;
+    top: 5px;
+
+}
+.dstion-plugins .dstion-tab-con {
+    display: none;
+}
+.dstion-plugins .show {
+    display: block;
+}
+.dstion-plugins .hide {
+    display: none;
+}
+.dstion-plugins .dstion-tab-con ul {
+    padding-top: 5px;
+}
+.dstion-plugins .dstion-tab-con li {
+    float: left;
+    width: 58px;
+    padding:2px 10px;
+    float: left;
+}
+.dstion-plugins .dstion-tab-con li a {
+    float: left;
+    padding: 2px 4px;
+    line-height: 16px;
+}
+.dstion-plugins .dstion-tab-con li a:hover {
+    background: #fe6c00;
+    color: #fff;
+}
+.dstion-plugins .dstion-tab-con li a.active {
+    background: #fe6c00;
+    color: #fff;
+}
+.dstion-plugins .dstion-tab-con li.long-li {
+    width: auto;
+}
+
+/**/
+.dstion-plugins .dstion-con-topnav {
+    width: 520px;
+    padding:0;
+    border:none;
+    position: static;
+}
+.dstion-plugins .dstion-con-topnav .dstion-tab li a {
+    font-size: 14px;
+}
+.dstion-plugins .dstion-con-topnav .dstion-tab-con ul {
+    padding-top: 10px;
+}
+.dstion-plugins .dstion-con-topnav .dstion-tab-con li {
+    width: 64px;
+    padding: 6px 10px 6px 0;
+}
+.dstion-plugins .dstion-con-topnav .dstion-tab-con li.long-li {
+    width: auto;
+}

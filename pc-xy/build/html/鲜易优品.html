@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鲜易优品</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+	<!-- <link rel="stylesheet" href="../css/global.css" type="text/css"> -->
+	<!-- <link rel="stylesheet" href="../css/super_pro.css" type="text/css"> -->
+	<!-- <link rel="icon" href="http://www.xebest.com/favicon.ico" mce_href="http://www.xebest.com/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="../css/common/bundle.min.css" type="text/css">
+    
+    
+    
+</head>
+<style type="text/css">
+.wrap{width:1200px; margin:0 auto;}
+.mainContanier { background-color: #f2f2f2; padding-bottom:50px;}
+.super_bgs {background:url(../images/spriter-images/n-Posion.png?_spriter) no-repeat;}
+.citylis .super_bg{background:url(../images/spriter-images/n-BigPosition.png?_spriter) no-repeat;left:0;}
+/******焦点图*******/
+.xeSlider { width:100%; height:400px; position:relative; z-index:1;}
+.mtsBanner{width:auto; height:400px; background:#f6f6f6; overflow:hidden;}
+.mtsBanner .bannerWrap{ position:relative; width:auto;height:400px;overflow:hidden; }
+.mtsBanner .bannerWrap li{background-position:center top; background-repeat:no-repeat;position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden;}
+.slide_control {position: absolute; z-index: 20; left: 10px; bottom: 15px;}
+.mtsBanner .slide_control{position:absolute;z-index:20; bottom:10px;left:50%;margin-left:-230px;
+	/*background:rgba(0, 0, 0, 0.2)!important;
+	filter:Alpha(opacity=50); 
+	background:#000;
+	border-radius:10px;
+	*padding:2px 0;*/
+}
+.mtsBanner .bannerWrap li a{ width:100%; height:400px; display:block;}
+.mtsBanner .mall_dot,.mtsBanner .mall_dot_hover{width:10px;height:10px;line-height:15px;text-decoration:none;float:inherit;display:inline-block;}
+.mtsBanner .mall_dot{background:#fff; text-indent:-20px;  position:relative;}
+.mtsBanner .mall_dot_hover{background:#fa0007;text-indent:-20px;-moz-opacity: 1;
+	opacity:1;
+	filter:alpha(opacity=100);}
+.mall_dot,.mall_dot_hover{float:left;margin:0 5px;width:14px;overflow:hidden;height:14px;line-height:100px;text-align:center;font-weight:800;font-size:12px;color:white;cursor:pointer;text-decoration:none;background:#9d9fa2;border-radius:50%}
+.mall_dot_hover{background:#ed145b;}
+.slidearrow{position:absolute;cursor:pointer;width:36px;height:36px;opacity:.3;top:50%; margin-top:-18px; background:#000;display:block;filter:alpha(opacity=30);color:#fff;text-align:center; line-height:36px}
+.slidearrow:hover{ opacity:.7;cursor:pointer;}
+.slidearrow_l{left:0px; display:none;}
+.slidearrow_r{right:0px; display:none;}
+/********焦点图*********/
+
+.xeMenu { display: none;}
+/*今日特惠*/
+.xe { width:100%; padding-top:25px;}
+.xe_hidden { height:452px; overflow:hidden;}
+.xet { padding:0 20px 10px 20px; font-family: microsoft yahei;}
+.xet .more { color: #7a7a7a; line-height:22px;}
+.xet .more:hover { color:#b70000;}
+.xet_h5 { 
+	width:240px; 
+	height:22px; 
+	overflow:hidden;
+	font:400 18px/22px "microsoft yahei",'Hiragino Sans GB';
+	position:relative;
+	color:#3a3a3a;
+}
+.xet_sift { background-position: -0px -0px;}
+.xet_reco { background-position: -0px -22px; margin-bottom: 10px;}
+.xet_fresh { background-position: -0px -44px;}
+.xet_map { background-position: -0px -66px;}
+.xet_firTit:after,.xet_secTit:after,.xet_thiTit:after,.xet_fthTit:after,.xet_fifTit:after,.xet_sixTit:after {
+	content : "";
+	width:240px; 
+	height:0px; 
+	overflow:hidden; 
+	text-indent:-999px;
+	position:absolute;
+	left: 0;
+	top:0;
+	opacity:0;
+	background:#f2f2f2 url(../images/img_index/index_all_bgsa.png) no-repeat;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.xet_firTit { background-position: 0 -88px;}
+.xet_firTit:after {background-position:0 -110px;}
+.current .xet_firTit:after{
+	opacity:1;
+	height:22px;
+	
+}
+.xet_secTit { background-position: 0 -132px;}
+.xet_secTit:after {background-position:0 -154px;}
+
+.current .xet_secTit:after{
+	opacity:1;
+	height:22px;
+	
+}
+.xet_thiTit { background-position: 0 -176px;}
+.xet_thiTit:after {background-position:0 -198px;}
+.current .xet_thiTit:after{
+	opacity:1;
+	height:22px;
+	
+}
+.xet_fthTit { background-position: 0 -220px;}
+.xet_fthTit:after {background-position:0 -242px;}
+.current .xet_fthTit:after{
+	opacity:1;
+	height:22px;
+	
+}
+.xet_fifTit { background-position: 0 -264px;}
+.xet_fifTit:after {background-position:0 -286px;}
+.current .xet_fifTit:after{
+	opacity:1;
+	height:22px;
+	
+}
+.xet_sixTit { background-position: 0 -308px;}
+.xet_sixTit:after {background-position:0 -330px;}
+.current .xet_sixTit:after{
+	opacity:1;
+	height:22px;
+	
+}
+
+.xec_floor1_left { width:890px;}
+.floor1_con {}
+.s_list {}
+.s_list_01 { width: 287px;}
+.s_list_01 a,.s_list_02 a { height:210px; background:#fff; display:block; border-left:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; overflow: hidden;}
+.s_list_01 a { width: 287px;}
+.s_list_01 a { border-left:0 none}
+.s_list_02 { width: 287px;}
+.s_list_02 a { width:287px; }
+/*.s_list img {
+	-webkit-transition: -webkit-transform .2s linear;
+    -moz-transition: -moz-transform .2s linear;
+    -ms-transition: -ms-transform .2s linear;
+    -o-transition: -o-transform .2s linear;
+    transition: transform .2s linear;
+}
+.s_list img:hover {
+	-webkit-transform: translateX(-5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+    transform: translateX(-5px);
+}*/
+.grid_312 { width: 315px;}
+.grid_574 { width: 574px;}
+
+.xec_floor1_right { width:310px; position:relative;}
+.quo { width: 100%; height:452px; overflow:hidden; position:absolute; left:0; top:-32px;}
+
+.reco_bg  { width: 100%; height: 67px; background: #000; background: rgba(0,0,0,.7); filter: alpha(opacity=70); position: absolute; bottom: 0; left: 0;}
+.reco_text { height: 44px; line-height: 22px; color: #fff; width: 248px; overflow: hidden; position: absolute; left: 50%; bottom: 13px; margin-left: -124px;}
+
+/*新鲜速递*/
+.xecs { position: relative; padding-left:305px;}
+.bgc_01 { background-color: #d6f5cf;}
+.bgc_02 { background-color: #b9dbe7;}
+.xecs_left { width:305px; height:480px; position:absolute; left:0; top:0; font-family: microsoft yahei; }
+.xecs_left img { position: absolute; right:0; top:0;}
+.tab_txt { width: 210px; position: absolute; left: 52px; top: 112px;}
+.tab_txt a { width: 95px; height: 30px; line-height: 30px; text-align: center; float: left; background-color: #fff; margin:8px 8px 0 0; color: #326f00; font-size: 14px;}
+.tab_txt a.active { color: #b70000;}
+.tab_txt a:hover { color: #b70000}
+
+.xecs_right { height:460px; padding:10px 10px 10px 0;}
+.xecs_ul { background-color: #fff; position: relative; width:100%; height: 460px; overflow: hidden; margin-left: -1px; display: none;}
+.xecs_ul_active { display: block;}
+.xecs_ul li { width:140px; padding:12px 18px; border-left:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family: microsoft yahei; float: left;}
+.xecs_ul .pro_pic { width:100%; height: 140px; position: relative; overflow: hidden;}
+.xecs_ul .pro_pic .tit { width: 100%; height: 24px; line-height: 24px; text-align: center; color: #fff; background-color: #b70000; position: absolute; left: 0; bottom: -24px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.xecs_ul .pro_name { height: 40px; overflow: hidden; padding-top: 5px;}
+.xecs_ul .pro_pri { font-size: 14px; color: #b70000; font-weight: 700;}
+
+/*美食地图*/
+.tab_adr { position: relative; width: 100%; height: 100%;}
+.tab_adr li { position: absolute; padding-top: 44px; width: 40px; text-align: center; cursor: pointer;}
+/*.tab_adr li.ca_li { left: 150px; top: 144px;}
+.tab_adr li.nm_li { left: 7px; top: 212px;}
+.tab_adr li.hn_li { left: 160px;
+  top: 218px;}
+.tab_adr li.yn_li {   left: 42px;
+  top: 258px;}
+.tab_adr li.jx_li {   left: 88px;
+  top: 268px;}
+.tab_adr li.bj_li {   left: 212px;
+  top: 276px;}
+.tab_adr li.sc_li { left: 99px;
+  top: 340px;}
+.tab_adr li.dl_li {   left: 196px;
+  top: 367px;}*/
+
+.tab_adr li.name_city0{ left: 150px; top: 144px;}
+.tab_adr li.name_city1{ left: 7px; top: 212px;}
+.tab_adr li.name_city2{ left: 160px;
+  top: 218px;}
+.tab_adr li.name_city3{   left: 42px;
+  top: 258px;}
+.tab_adr li.name_city4{   left: 88px;
+  top: 268px;}
+.tab_adr li.name_city5{   left: 212px;
+  top: 276px;}
+.tab_adr li.name_city6{ left: 99px;
+  top: 340px;}
+.tab_adr li.name_city7{   left: 196px;
+  top: 367px;}
+
+.tab_icon { width: 35px; height: 43px; position: absolute; left: 3px; top: 12px; }
+.tab_adr li.active .tab_icon { background-position: 0 -98px;}
+.name_city { color: #424242; padding-top: 4px;}
+.tab_adr li.active .name_city { color: #b70000;}
+
+/*缩小版*/
+.xeSmallStyle .xec_floor1_left { width: 662px;}
+.xeSmallStyle .grid_574 { width: 348px;}
+.xeSmallStyle .s_list_02 { display: none;}
+.xeSmallStyle .xecs_ul li { padding: 12px 15px}
+
+</style>
+<body>
+        <!--  url链接前缀=================-->
+         <input type="hidden" id="imgPath" value="http://qa-pic.xebest.com/" />
+         <input type="hidden" id="apiPath" value="http://qa-newapi.cy.xebest.com/" />
+         <input type="hidden" id="itemPath" value="http://qa-detail.xebest.com/" />
+         <input id="h_cartPath" type="hidden" value="http://qa-newcart.xebest.com/">
+	<!-- 头部============ -->
+   <div class="g-header">
+
+        <div class="m-topNav">
+            <div class="g-wrap clearfix">
+                <ul class="m-nt m-nav-l fl">
+                    <li class="vm-nav-adr0">
+                        配送至：<span class="ac">许昌市<i class="arrow"></i></span>
+                    </li>
+                    <li class="J-drop" id="appdl">
+                        <div class="vm-nav-adr1">
+                            <i class="u-icon ic">&#xe612;</i>
+                            手机鲜易
+                            <em class="u-icon arrow">&#xe600;</em>
+                        </div>
+                        <div class="dr01 J-dropdown">
+                            <div class="dd-spacer"></div>
+                            <div class="pqrd clearfix">
+                                <h5 class="fl">
+                                    <img src="../images/qrc-01.jpg" width="75" height="75" alt="" />
+                                </h5>
+                                <div class="pqrd-div fr">
+                                    <p>鲜易网客户端下载</p>
+                                    <p><a href="#">更多优惠好礼</a></p>
+                                    <div class="pqrd-col">
+                                        <div class="fl pqrd-ios">
+                                            <span></span>
+                                            <p>iPhone</p>
+                                        </div>
+                                        <div class="fr pqrd-and">
+                                            <span></span>
+                                            <p>Android</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vm-nav-adr2 vm-drop">
+                            <i class="u-icon ic">&#xe625;</i>
+                            <a id="J-afv" href="#">收藏鲜易</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="m-nt m-nav-r fr">
+                    <li>
+                        <div class="z-logined">
+                            <span>用户名，欢迎您来到鲜易网！</span>
+                            <a href="#">退出</a>
+                        </div>
+                        <div class="z-reg">
+                            <a href="#" target="_blank">登录</a><a href="#" target="_blank">免费注册</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vm-nav-adr1">
+                            <a href="#" target="_blank">我的鲜易</a>
+                        </div>
+                    </li>
+                    <li class="m-nt-pipe">|</li>
+                    <li>
+                        <div class="vm-nav-adr1">
+                            <a href="#" target="_blank">商家入驻</a>
+                        </div>
+                    </li>
+                    <li class="m-nt-pipe">|</li>
+                    <li class="J-drop">
+                        <div class="vm-nav-adr1 vm-drop">
+                            <a href="#" target="_blank">帮助中心</a>
+                            <em class="u-icon arrow">&#xe600;</em>
+                        </div>
+                        <div class="J-dropdown">
+                            <div class="dd-spacer"></div>
+                            <div class="vm-tlst">
+                                <a target="_blank" href="#">新手入门</a>
+                                <a target="_blank" href="#">购物指南</a>
+                                <a target="_blank" href="#">配送方式</a>
+                                <a target="_blank" href="#">售后服务</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-nt-pipe">|</li>
+                    <li class="J-drop">
+                        <div class="vm-nav-adr1 vm-drop">
+                            网站导航
+                            <em class="u-icon arrow">&#xe600;</em>
+                        </div>
+                        <div class="J-dropdown vm-wesite">
+                            <div class="dd-spacer"></div>
+                            <div class="vm-west">
+                                <ul>
+                                    <li>
+                                        <h5>特色市场</h5>
+                                        <p>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">批发市场</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>品类</h5>
+                                        <p>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">批发市场</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>帮助中心</h5>
+                                        <p>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">批发市场</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="m-tbr">
+            <div class="g-wrap">
+                <a href="#">
+                    <img src="../images/top_banner.jpg" width="1200" height="82" alt="活动信息">
+                </a>
+                <div class="m-tbr-close u-icon">&#xe60d;</div>
+            </div>
+        </div>
+
+        <div class="g-wrap clearfix">
+            <div class="vm-logo fl">
+                <a href="#" class="vm-logo1">鲜易网 http://wwww.xebest.com</a>
+                <span class="vm-sgn">鲜天下品 易万家味</span>
+            </div>
+            <div class="vm-search fl">
+                <div class="vm-s-tab">
+                    <span class='active'>产品</span><em>|</em><span>供应商</span>
+                </div>
+                <div class="vm-s-cons">
+                    <input class="vm-s-input" id="J-search" placeholder="猪肉" type="text">
+                    <a href="#" class="u-btn u-btn-red u-btn-lg">搜索</a>
+                </div>
+                <div class="vm-s-hot">
+                    <span>热门搜索:</span><a href="#" target="_blank">冷鲜肉</a><a href="#" target="_blank">猪蹄</a><a href="#" target="_blank">海参</a><a href="#" target="_blank">大连鲍</a><a href="#" target="_blank">鸡蛋</a><a href="#" target="_blank">苹果</a><a href="#" target="_blank">大连鲍</a><a href="#" target="_blank">鸡蛋</a><a href="#" target="_blank">苹果</a><a href="#" target="_blank">大连鲍</a><a href="#" target="_blank">鸡蛋</a><a href="#" target="_blank">苹果</a><a href="#" target="_blank">大连鲍</a><a href="#" target="_blank">鸡蛋</a><a href="#" target="_blank">苹果</a>
+                </div>
+            </div>
+
+            <div class="vm-mct fr">
+                <div class="vm-tspl fl">
+                    <a href="#" target="_blank">
+                        <img src="../images/vt-01.jpg" width="110" height="70" alt="">
+                    </a>
+                </div>
+                <!-- vm-mct-hover -->
+                <div class="vm-mct-cart J-drop fl" id="g-miCart">
+                    <div class="vm-mcts">
+                        <i class="u-icon cart-icon">&#xe65b;</i>
+                        <a href="#">我的进货单</a>
+                        <i class="u-badge">1</i>
+                    </div>
+                    <div class="vm-cart-ml J-dropdown">
+                        <div class="spacer"></div>
+                        <!-- <div class="smt">最新加入的商品</div> -->
+                        <div class="smc">
+                            <div class="smc-loading u-loading"></div>
+                            <!-- <div class="smc-ets noPro">
+                                <span class="vm-nop"></span>
+                                进货单里还没有商品，赶紧选购吧！
+                            </div> -->
+                            <!-- <div class="smc-ets noNet">
+                                <span class="vm-nop"></span>
+                                加载失败，请<a href="#">重新加载</a>
+                            </div> -->
+                            <!-- <ul>
+                                <li>
+                                    <div class="vp-img fl">
+                                        <a href="#" target="_blank">
+                                            <img src="../images/pro-01.jpg" width="50" height="50" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="vp-name fl">
+                                        <a href="#" target="_blank">超值众品鲜肉五花肉+良五
+套 50KG包装</a>
+                                    </div>
+                                    <div class="vp-pri fr">
+                                        <p><em class='f-rmb'>&yen;</em>165.8 <span>x1</span></p>
+                                        <p><em class='f-rmb'>&yen;</em>165.8 <span>x1</span></p>
+                                        <a href="#" class="vm-remove">删除</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="dtc">
+                                <em class="fl">【套餐】</em><span class="fl">小计：<strong><i class="f-rmb">&yen;</i>1200</strong></span><a href="#" class="vm-remove fr">删除</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="vp-img fl">
+                                        <a href="#" target="_blank">
+                                            <img src="../images/pro-01.jpg" width="50" height="50" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="vp-name fl">
+                                        <a href="#" target="_blank">超值众品鲜肉五花肉+良五
+套 50KG包装</a>
+                                    </div>
+                                    <div class="vp-pri fr">
+                                        <p><em class='f-rmb'>&yen;</em>165.8 <span>x1</span></p>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
+                        <!-- <div class="smb">
+                            <div class="tips">进货单里面还有<em>1</em>件失效商品</div>
+                            <div class="mctal"><span><i>共2件商品</i><em>共计<strong><i class="f-rmb">&yen;</i>16785.8</strong></em></span><a href="#" class="u-btn u-btn-red">去进货单结算</a></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="vm-mzs J-drop fl" id="vm-mzs">
+                    <span></span>
+                    <div class="vm-mzs-c J-dropdown">
+                        <p>扫一扫下载客户端</p><img src="../images/qrc-01.jpg" width="95" height="95" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vg-mainav">
+            <div class="g-wrap">
+                <div class="g-mnv clearfix">
+                    <div class="vg-menu" id="vg-menu">
+                        <h4><span class="u-icon">&#xe632;</span>所有商品分类</h4>
+                        <div class="xeMenu">
+                  <ul class="menuUl">
+                    <li class="menu_firli">
+                                    <div>
+                          <h3 class="menuH3"><a href="##" target="_blank"><i class="u-icon"></i>分割肉类</a></h3>
+                          <p class="menuP"><a href="http://newsearch.xebest.com/list-s1-206_2-0-0-0-0-0-1.html">猪肉</a><a href="http://newsearch.xebest.com/list-s1-207_2-0-0-0-0-0-1.html">牛肉</a><a href="http://newsearch.xebest.com/list-s1-208_2-0-0-0-0-0-1.html">羊肉</a><a href="http://newsearch.xebest.com/list-s1-213_2-0-0-0-0-0-1.html">预制品</a><a href="http://newsearch.xebest.com/list-s1-210_2-0-0-0-0-0-1.html">肉制品</a><a href="http://newsearch.xebest.com/list-s1-211_2-0-0-0-0-0-1.html">蛋类</a><a href="http://newsearch.xebest.com/list-s1-209_2-0-0-0-0-0-1.html">禽肉</a></p>
+                                    </div>
+                    </li>
+                    <li>
+                                    <div>
+                          <h3 class="menuH3"><a href="##" target="_blank"><i class="u-icon"></i>骨排产品</a></h3>
+                          <p class="menuP"><a href="http://newsearch.xebest.com/list-s1-206_2-0-0-0-0-0-1.html">猪肉</a><a href="http://newsearch.xebest.com/list-s1-207_2-0-0-0-0-0-1.html">牛肉</a><a href="http://newsearch.xebest.com/list-s1-208_2-0-0-0-0-0-1.html">羊肉</a><a href="http://newsearch.xebest.com/list-s1-213_2-0-0-0-0-0-1.html">预制品</a><a href="http://newsearch.xebest.com/list-s1-210_2-0-0-0-0-0-1.html">肉制品</a><a href="http://newsearch.xebest.com/list-s1-211_2-0-0-0-0-0-1.html">蛋类</a><a href="http://newsearch.xebest.com/list-s1-209_2-0-0-0-0-0-1.html">禽肉</a></p>
+                                    </div>
+                    </li>
+                    <li>
+                                    <div>
+                          <h3 class="menuH3"><a href="##" target="_blank"><i class="u-icon"></i>精细食材</a></h3>
+                          <p class="menuP"><a href="http://newsearch.xebest.com/list-s1-206_2-0-0-0-0-0-1.html">猪肉</a><a href="http://newsearch.xebest.com/list-s1-207_2-0-0-0-0-0-1.html">牛肉</a><a href="http://newsearch.xebest.com/list-s1-208_2-0-0-0-0-0-1.html">羊肉</a><a href="http://newsearch.xebest.com/list-s1-213_2-0-0-0-0-0-1.html">预制品</a><a href="http://newsearch.xebest.com/list-s1-210_2-0-0-0-0-0-1.html">肉制品</a><a href="http://newsearch.xebest.com/list-s1-211_2-0-0-0-0-0-1.html">蛋类</a><a href="http://newsearch.xebest.com/list-s1-209_2-0-0-0-0-0-1.html">禽肉</a></p>
+                                    </div>
+                    </li>
+                    <li>
+                                    <div>
+                          <h3 class="menuH3"><a href="##" target="_blank"><i class="u-icon"></i>肉类副产</a></h3>
+                          <p class="menuP"><a href="http://newsearch.xebest.com/list-s1-206_2-0-0-0-0-0-1.html">猪肉</a><a href="http://newsearch.xebest.com/list-s1-207_2-0-0-0-0-0-1.html">牛肉</a><a href="http://newsearch.xebest.com/list-s1-208_2-0-0-0-0-0-1.html">羊肉</a><a href="http://newsearch.xebest.com/list-s1-213_2-0-0-0-0-0-1.html">预制品</a><a href="http://newsearch.xebest.com/list-s1-210_2-0-0-0-0-0-1.html">肉制品</a><a href="http://newsearch.xebest.com/list-s1-211_2-0-0-0-0-0-1.html">蛋类</a><a href="http://newsearch.xebest.com/list-s1-209_2-0-0-0-0-0-1.html">禽肉</a></p>
+                                    </div>
+                    </li>
+                    <li>
+                                    <div>
+                          <h3 class="menuH3"><a href="##" target="_blank"><i class="u-icon"></i>熟食制品</a></h3>
+                          <p class="menuP"><a href="http://newsearch.xebest.com/list-s1-206_2-0-0-0-0-0-1.html">猪肉</a><a href="http://newsearch.xebest.com/list-s1-207_2-0-0-0-0-0-1.html">牛肉</a><a href="http://newsearch.xebest.com/list-s1-208_2-0-0-0-0-0-1.html">羊肉</a><a href="http://newsearch.xebest.com/list-s1-213_2-0-0-0-0-0-1.html">预制品</a><a href="http://newsearch.xebest.com/list-s1-210_2-0-0-0-0-0-1.html">肉制品</a><a href="http://newsearch.xebest.com/list-s1-211_2-0-0-0-0-0-1.html">蛋类</a><a href="http://newsearch.xebest.com/list-s1-209_2-0-0-0-0-0-1.html">禽肉</a></p>
+                                    </div>
+                    </li>
+
+                  </ul>
+                  <div class="menuSub_cons" id="menuSub_cons">
+                      <div id="menuSub_1" class="menuSub">
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">鱼类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+                              <a href="#" target="_blank">甲鱼</a>
+                              <a href="#" target="_blank">黄鳝</a>
+                              <a href="#" target="_blank">其他鱼</a>
+                              <a href="#" target="_blank">鳕鱼</a>
+                              <a href="#" target="_blank">鸦片鱼</a>
+                              <a href="#" target="_blank">鲳鱼</a>
+                              <a href="#" target="_blank">鮐鱼</a>
+                              <a href="#" target="_blank">鲅鱼</a>
+                              <a href="#" target="_blank">板鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">虾类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">虾类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">虾类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">虾类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">蟹类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">贝类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">燕鲍参类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">海藻类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">加工水产</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                      </div>
+                      <div id="menuSub_2" class="menuSub">
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">鱼类2</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+                              <a href="#" target="_blank">甲鱼</a>
+                              <a href="#" target="_blank">黄鳝</a>
+                              <a href="#" target="_blank">其他鱼</a>
+                              <a href="#" target="_blank">鳕鱼</a>
+                              <a href="#" target="_blank">鸦片鱼</a>
+                              <a href="#" target="_blank">鲳鱼</a>
+                              <a href="#" target="_blank">鮐鱼</a>
+                              <a href="#" target="_blank">鲅鱼</a>
+                              <a href="#" target="_blank">板鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">虾类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">蟹类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">贝类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">燕鲍参类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">海藻类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">加工水产</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                      </div>
+                      <div id="menuSub_3" class="menuSub">
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">鱼类3</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+                              <a href="#" target="_blank">甲鱼</a>
+                              <a href="#" target="_blank">黄鳝</a>
+                              <a href="#" target="_blank">其他鱼</a>
+                              <a href="#" target="_blank">鳕鱼</a>
+                              <a href="#" target="_blank">鸦片鱼</a>
+                              <a href="#" target="_blank">鲳鱼</a>
+                              <a href="#" target="_blank">鮐鱼</a>
+                              <a href="#" target="_blank">鲅鱼</a>
+                              <a href="#" target="_blank">板鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">虾类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">蟹类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">贝类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">燕鲍参类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">海藻类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">加工水产</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                      </div>
+                      <div id="menuSub_4" class="menuSub">
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">鱼类4</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+                              <a href="#" target="_blank">甲鱼</a>
+                              <a href="#" target="_blank">黄鳝</a>
+                              <a href="#" target="_blank">其他鱼</a>
+                              <a href="#" target="_blank">鳕鱼</a>
+                              <a href="#" target="_blank">鸦片鱼</a>
+                              <a href="#" target="_blank">鲳鱼</a>
+                              <a href="#" target="_blank">鮐鱼</a>
+                              <a href="#" target="_blank">鲅鱼</a>
+                              <a href="#" target="_blank">板鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">虾类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">蟹类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">贝类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">燕鲍参类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">海藻类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">加工水产</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                      </div>
+                      <div id="menuSub_5" class="menuSub">
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">鱼类5</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+                              <a href="#" target="_blank">甲鱼</a>
+                              <a href="#" target="_blank">黄鳝</a>
+                              <a href="#" target="_blank">其他鱼</a>
+                              <a href="#" target="_blank">鳕鱼</a>
+                              <a href="#" target="_blank">鸦片鱼</a>
+                              <a href="#" target="_blank">鲳鱼</a>
+                              <a href="#" target="_blank">鮐鱼</a>
+                              <a href="#" target="_blank">鲅鱼</a>
+                              <a href="#" target="_blank">板鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">虾类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">蟹类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">贝类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">燕鲍参类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">海藻类</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">鱿鱼</a>
+                              <a href="#" target="_blank">鲑鱼</a>
+
+                            </dd>
+                          </dl>
+                          <dl class="subDl clearfix">
+                            <dt><a href="#" target="_blank">加工水产</a></dt>
+                            <dd>
+                              <a href="#" target="_blank">鲈鱼</a>
+                              <a href="#" target="_blank">带鱼</a>
+                              <a href="#" target="_blank">三文鱼</a>
+                              <a href="#" target="_blank">墨鱼</a>
+                              <a href="#" target="_blank">黄鱼</a>
+                              <a href="#" target="_blank">冰鱼</a>
+                            </dd>
+                          </dl>
+                      </div>
+                  </div>
+                </div>
+                    </div>
+
+                    <div class="vg-mlis fl">
+                        <a href="#" class="active">首页</a>
+                        <a href="#">生鲜自营</a>
+                        <a href="#">批发市场<i class="nav-new"></i></a>
+                        <a href="#">大宗专区</a>
+                        <a href="#">冷链物流</a>
+                        <a href="#">金融服务</a>
+                        <a href="#">行业资讯</a>
+                    </div>
+
+                    <div class="vg-phone fr">客服电话：400-662-6366</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--头部 begin main begin-->
+	
+	<!--主要Main-->
+	<div class="mainContanier">
+		<div class="xeSlider">
+            <div class="mtsBanner FreshYP" id="mtsBanner">
+                <ul class="bannerWrap" style="position: relative; z-index: 0; margin: 0px; padding: 0px; overflow: hidden; width: 100%;">
+                    <!-- <li style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; display: list-item; background-image: url(../images/banner01.jpg); background-color: #ffe739;">
+                        <a href="#" target="_blank"></a>
+                    </li> -->
+                    
+                </ul> 
+            </div>
+        </div>
+
+        <div class="wrap">
+	        	<div class="xe xe_hidden floorlist">
+	        		<div class="xet">
+	        			<h5 class="xet_h5">今日特惠&nbsp;&nbsp;TODAY'S SPECIAL</h5>
+	        		</div>
+	        		<div class="xec clearfix">
+	        			<div class="xec_floor1_left fl">
+	        				<div class="grid_312 fl">
+	        					<a href="#"><img class="lazy" src="" data-original="" width="315" height="420" alt="从摘到发，全程监控"></a>
+	        				</div>
+	        				<div class="grid_574 floor1_con fl">
+	        					<div class="s_list s_list_01 fl">
+	        						<a href="#">
+	        							<img class="lazy" src="" data-original="" width="287" height="210" alt="">
+	        						</a>
+	        						<a href="#">
+	        							<img class="lazy" src="" data-original="" width="287" height="210" alt="">
+	        						</a>
+	        					</div>
+	        					<div class="s_list s_list_02 fl">
+	        						<a href="#">
+	        							<img class="lazy" src="" data-original="" width="287" height="210" alt="">
+	        						</a>
+	        						<a href="#">
+	        							<img class="lazy" src="" data-original="" width="287" height="210" alt="">
+	        						</a>
+	        					</div>
+	        				</div>
+	        			</div>
+	        			<div class="xec_floor1_right fr">
+	        				<div class="quo">
+	        					<h5 class="xet_h5 xet_reco">特别推荐&nbsp;&nbsp;RECOMMENDED</h5>
+	        					<div class="quoList">
+	        						<a href="#"><img class="lazy" src="" data-original="" width="305" height="420"></a>
+	        						<!-- <i class="reco_bg"></i>
+	        						<p class="reco_text"><strong>推荐理由：</strong>林语花溪米面杂粮东北五常稻花香林语花溪米面杂粮东北五常稻花香新米 </p> -->
+	        					</div>
+	        				</div>
+
+	        			</div>
+	        		</div>
+	        	</div>
+        </div>
+
+        <div class="wrap">
+        	<div class="xe">
+        		<div class="xet">
+        			<h5 class="xet_h5">新鲜速递&nbsp;&nbsp;FRESH COURIER</h5>
+        		</div>
+        		<div class="xecs bgc_01 clearfix">
+        			<div class="xecs_left">
+        				<img class="lazy" src="../images/expres.jpg" data-original="../images/expres.jpg" width="320" height="480" alt="">
+        				<p class="tab_txt clearfix">
+	        				<a href="javascript:;" class="MeatEgg active" data-lazy="lazyed">肉类蛋禽</a>
+	        				<a href="javascript:;" class="Seafood">海鲜水产</a>
+	        				<a href="javascript:;" class="Fruit">水果蔬菜</a>
+	        				<a href="javascript:;" class="Beverage">酒水饮品</a>
+	        				<a href="javascript:;" class="NonStaple">粮油副食</a>
+        				</p>
+        			</div>
+        			<div class="xecs_right">
+        				<ul class="xecs_ul FreshExpress xecs_ul_active clearfix">
+        					<!-- <li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li> -->
+        				</ul>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+		
+		<div class="wrap">
+        	<div class="xe">
+        		<div class="xet">
+        			<h5 class="xet_h5">美食地图&nbsp;&nbsp;GOURMET MAP</h5>
+        		</div>
+        		<div class="xecs bgc_02 clearfix">
+        			<div class="xecs_left">
+        				<img class="lazy" src="../images/FreshMap.png" data-original="" width="322" height="480" alt="">
+        				<ul class="tab_adr">
+							<!-- <li class="ca_li active" data-lazy="lazyed">
+								<p class="tab_icon super_bgs"></p>
+								<p class="name_city">加拿大</p>
+							</li>
+							<li class="nm_li">
+								<p class="tab_icon super_bgs"></p>
+								<p class="name_city">内蒙</p>
+							</li>
+							<li class="hn_li">
+								<p class="tab_icon super_bgs"></p>
+								<p class="name_city">河南</p>
+							</li>
+							<li class="yn_li">
+								<p class="tab_icon super_bgs"></p>
+								<p class="name_city">云南</p>
+							</li>
+							<li class="jx_li">
+								<p class="tab_icon super_bgs"></p>
+								<p class="name_city">江西</p>
+							</li>
+							<li class="bj_li">
+								<p class="tab_icon super_bgs"></p>
+								<p class="name_city">北京</p>
+							</li>
+							<li class="sc_li">
+								<p class="tab_icon super_bgs"></p>
+								<p class="name_city">四川</p>
+							</li>
+							<li class="dl_li">
+								<p class="tab_icon super_bgs"></p>
+								<p class="name_city">大连</p>
+							</li> -->
+        				</ul>
+        			</div>
+        			<div class="xecs_right">
+        				<ul class="xecs_ul FoodMap xecs_ul_active clearfix">
+        					<!-- <li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">0郑州昱鑫商贸有限公司0郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li>
+        					<li>
+        						<p class="pro_pic">
+        							<a href="#"><img class="lazy" src="http://pic.cy.xebest.com//banner/712/840/3730c79724bd43618e0c8e0180e46bd5.jpg" data-original="../images/super_pro/s_09.jpg" width="140" height="140" alt=""></a>
+        							<span class="tit">郑州昱鑫商贸有限公司</span>
+        						</p>
+        						<p class="pro_name">
+        							<a href="#">林语花溪米面杂粮东北五常稻花香新米 </a>
+        						</p>
+        						<p class="pro_pri">
+        							¥150.00
+        						</p>
+        					</li> -->
+        				</ul>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+       
+	</div>
+	<!--主要Main-->
+	<!-- 底部 -->
+	 <div class="g-footer">
+        <div class="g-wrap">
+            <div class="g-footer-icon">
+                <ul class="clearfix">
+                    <li>
+                        <span class='u-icon'>&#xe634;</span>
+                        国家级<br />安全检测
+                    </li>
+                    <li>
+                        <span class='u-icon'>&#xe636;</span>
+                        品牌厂商<br />直供
+                    </li>
+                    <li>
+                        <span class='u-icon'>&#xe635;</span>
+                        冷藏保障<br />食品安全
+                    </li>
+                    <li>
+                        <span class='u-icon'>&#xe618;</span>
+                        无缝快速<br />冷链配送
+                    </li>
+                    <li>
+                        <span class='u-icon'>&#xe615;</span>
+                        支持多种<br />支付方式
+                    </li>
+                    <li>
+                        <span class='u-icon'>&#xe611;</span>
+                        7x24小时<br />全年无休
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="g-footer-item">
+            <div class="g-wrap">
+                <div class="g-ftmc clearfix">
+                    <div class="g-ftmc-list fl">
+                        <ul>
+                            <li>
+                                <h6>新手入门</h6>
+                                <p>
+                                    <a href="#" target="_blank">会员认证</a>
+                                    <a href="#" target="_blank">账号密码</a>
+                                    <a href="#" target="_blank">交易须知</a>
+                                    <a href="#" target="_blank">APP操作流程</a>
+                                </p>
+                            </li>
+                            <li>
+                                <h6>购物指南</h6>
+                                <p>
+                                    <a href="#" target="_blank">商家须知</a>
+                                    <a href="#" target="_blank">采购流程</a>
+                                    <a href="#" target="_blank">意向询价</a>
+                                    <a href="#" target="_blank">在线支付</a>
+                                </p>
+                            </li>
+                            <li>
+                                <h6>配送说明</h6>
+                                <p>
+                                    <a href="#" target="_blank">发货及配送</a>
+                                    <a href="#" target="_blank">发票制度</a>
+                                </p>
+                            </li>
+                            <li>
+                                <h6>售后服务</h6>
+                                <p>
+                                    <a href="#" target="_blank">售后政策</a>
+                                    <a href="#" target="_blank">退换货流程</a>
+                                    <a href="#" target="_blank">退款说明</a>
+                                    <a href="#" target="_blank">投诉评价</a>
+                                </p>
+                            </li>
+                            <li>
+                                <h6>商家合作</h6>
+                                <p>
+                                    <a href="#" target="_blank">卖家合作</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="g-ftmc-qrc fl">
+                        <div class="g-ftmc-qrc1 clearfix">
+                            <div class="fl">
+                                <p>客户端下载</p>
+                                <span>
+                                    <img src="../images/qrc-01.jpg" width="90" height="90" alt="">
+                                </span>
+                            </div>
+                            <div class="fr">
+                                <p>鲜易公众号</p>
+                                <span>
+                                    <img src="../images/qrc-01.jpg" width="90" height="90" alt="">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-ftmc-des fr">
+                        <h6>鲜易网自营商城分站</h6>
+                        <p>鲜易网已在全国30个区域开启自营配送服务，提供货到付款、网上支付、实体预付卡支付等多种付款方式，为您提供贴心服务。</p>
+                        <a href="#">查看详情&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="g-wrap g-ft-flkc">
+            <div class="g-ft-flk">
+                <a href="#" target="_blank">关于我们</a>|<a href="#" target="_blank">法律声明</a>|<a href="#" target="_blank">服务协议</a>|<a href="#" target="_blank">隐私声明</a>|<a href="#" target="_blank">联系我们 </a> |<a href="#" target="_blank">友情链接</a>|<a href="#" target="_blank">新浪微博</a>
+            </div>
+            <p>© 2013 鲜易网版权所有 xebest.com All Rights Reserved. 豫ICP备13001282号-2 </p>
+            <div class="g-ft-safe">
+                <a href="#">
+                    <img src="../images/vs-01.jpg" width="108" height="47" alt="">
+                </a>
+                <a href="#">
+                    <img src="../images/vs-02.jpg" width="127" height="47" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/src/xeplugins.min.js"></script>
+    
+    
+    
+    
+    <script src="../js/src/page-xyyp.js"></script>
+    <script src="../js/src/page-dazong-slider.js"></script>
+</body>
+</html>

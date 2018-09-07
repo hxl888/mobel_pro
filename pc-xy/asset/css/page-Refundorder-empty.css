@@ -1,0 +1,551 @@
+.ng-mri .ng-mrctui{
+	padding:0 20px;
+	height: 700px;
+	background: #fff;
+	color: #333;
+}
+.ng-mrctui .cth4{
+	height: 59px;
+	line-height:59px;
+	font-size: 18px;
+	border-bottom:1px solid #ebe4e4;
+}
+.nm-YhBtn .u-btn-white{
+	display: inline-block;
+	padding: 3px 7px 2px 4px;
+	border-color: #e9e9e9;
+	background: #f3f2f2;
+	font-size: 12px;
+	color: #666;
+	margin-right:-10px;
+}
+.nm-YhBtn .u-icon{
+	position: relative;
+	top: -1px;
+	padding-right: 3px;
+	-webkit-text-stroke-width:0;
+}
+.nm-YhBtn .u-btn-blush{
+	display: inline-block;
+	padding: 5px 14px 5px 13px;
+	color: #fff;
+	font-size: 12px;
+	margin:0;
+}
+.ng-mrctui .imgempt{
+	position: relative;
+	background: url(../images/spriter-images/h-shopempty.png?_spriter) no-repeat 50% 0;
+	width: 280px;
+	height: 149px;
+	margin:110px auto 0;
+}
+.imgempt img{
+	position: absolute;
+	top: 0;
+	left: 33%;
+}
+.imgempt .empco{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+}
+/*60-H我的返利－空------------*/
+.nm-fanli{
+	position: relative;
+}
+.nm-fanli .nm-go{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	text-align: center;
+	bottom: -30px;
+}
+
+/*62-H我的优惠券－空-----------*/
+.ng-mrctui .nm-yhemp{
+	margin-top: 20px;
+	padding-left: 50px;
+	height: 40px;
+	line-height: 40px;
+	background: #ebebeb;
+}
+.nm-yhemp  span{
+	cursor: pointer;
+}
+.nm-yhemp .nm-a01{
+	display: block;
+	width: 110px;
+	text-align: center;
+}
+.nm-yhemp .nm-a02{
+	display: block;
+	width: 93px;
+	text-align: center;
+}
+.nm-yhemp .nm-a03,
+.nm-yhemp .nm-a04{
+	display: block;
+	width: 115px;
+	text-align: center;
+}
+.nm-yhemp .u-icon{
+	display: inline-block;
+	width: 12px;
+	height: 13px;
+	line-height: 13px;
+	font-size: 12px;
+	color: #999999;
+}
+.nm-yhemp .nu-em01{
+	padding-left: 7px;
+}
+.nm-yhemp .nu-em02{
+	padding-left: 7px;
+}
+
+/*63-H我的返利------------------*/
+.ng-mrctui.ng-myfl{
+	height: auto;
+	padding-bottom: 30px;
+}
+.ng-myfl .nm-yhImg{
+	padding: 20px;
+}
+.nm-yhImg .nm-pkdiv{
+	position: relative;
+	padding: 18px 28px 0 20px;
+	width: 222px;
+	height: 130px;
+	background: #fd827a;
+}
+.nm-pkdiv .nu-pos01{
+	position: absolute;
+	left: -4px;
+	top:0;
+}
+.nm-pkdiv .nu-pos02{
+	position: absolute;
+	right: -4px;
+	top:0;
+}
+.nm-pri .nu-sm{
+	font-family: arial;
+	color: #fff;
+	line-height: 37px;
+	font-size: 28px;
+	padding-right: 7px;
+}
+.nm-pri .nu-bg{
+	color: #fff;
+	height: 37px;
+	line-height: 37px;
+	font-size: 42px;
+}
+.nm-pkdiv .nm-con{
+	width: 100%;
+	font-size: 16px;
+	color: #bf2d2d;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #fea8a2;
+}
+.nm-pkdiv .nm-com{
+	line-height: 23px;
+	color: #fff;
+}
+.nm-com.nm-tj{
+	margin-top: 4px;
+}
+
+.ng-myfl .nm-hisJL{
+	padding: 10px 0 7px 20px;
+	border:1px solid #ebebeb;
+	border-bottom: none;
+}
+.nm-hisJL .ns-colgren,.nm-hisJL .ns-colred{
+	font-size: 14px;
+}
+.ng-myfl .nm-h4{
+	width: 135px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px solid #ebebeb;	
+}
+.nm-hisJL .nm-item{
+	padding: 10px 0 7px;
+}
+.nm-item .nm-sr,.nm-item .nm-zc{
+	line-height: 24px;
+	font-family: arial;
+}
+.nm-JLtab{
+	border-left: 1px solid #ebebeb;
+	color: #333;
+}
+.nm-JLtab .nm-JLfr{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.nm-JLfr .td01{
+	width: 148px;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+.nm-JLfr .td02{
+	width: 118px;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+.nm-JLfr .td03{
+	width: 173px;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+.nm-JLfr .td04,
+.nm-JLfr .td05,
+.nm-JLfr .td06,
+.nm-JLfr .td07{
+	width: 98px;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+.nm-hea .nm-fr{
+	border-bottom: none;
+	height: 39px;
+}
+.nm-bdtr .nm-fr{
+	height: 39px;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+/*64-H我的积分------------*/
+.ng-mrctui.ng-myJF{
+	height: auto;
+	padding-bottom: 54px;
+}
+.cth4.nm-JFh4{
+	height: 60px;
+	border: none;
+}
+.nm-JFh4 .nm-con{
+	font-size: 13px;
+	color: #666;
+}
+.nm-JFh4 .nm-num{
+	color: #dd2e29;
+	font-size: 18px;
+}
+.ng-myJF{
+	color: #333;
+}
+.ng-myJF .nm-mxTab{
+	margin-bottom:20px;
+	height: 40px;
+	border-bottom: 1px solid #eaeaea;
+}
+.nm-mxTab a{
+	position: relative;
+	top: -1px;
+	display: block;
+	background: #fff;
+	margin-right:10px;
+	width: 158px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #eaeaea;
+	border-bottom-color:#fff; 
+}
+.nm-mxTab .nm-a02{
+	border-bottom-color: #eaeaea;
+	color: #25201e;
+}
+.ng-myJF .nm-JFtab{
+	width: 100%;
+	border-left: 1px solid #ebebeb;
+}
+.nm-JFfr .nm-fr{
+	width: 33.2%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-right:1px solid transparent;
+}
+.nm-Jftr .nm-fr{
+	border-right:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+}
+
+/*我的优惠券------------*/
+.ng-mrctui.ng-YHhsa{
+	height: auto;
+	padding-bottom: 20px;
+}
+.nm-yhemp.nm-yhhas{
+	margin:20px 0;
+}
+.ng-mrctui .nm-yhcon{
+	margin:0 -17px;
+}
+.nm-yhcon .nm-yhlist{
+	position: relative;
+	margin:0 17px 20px;
+	width: 257px;
+}
+.nm-yhlist .nm-litop{
+	position: relative;
+	width: 100%;
+	height: 138px;
+	background: #fd827a;
+}
+.nm-litop .nm-close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+.nm-close.nm-clohid{
+	display: none;
+}
+.nm-pri .nm-money{
+	font-size: 16px;
+	color: #fff;
+	font-family: arial;
+}
+.nm-pri .nm-num{
+	font-size: 48px;
+	color: #fff;
+}
+.nm-litop .nm-pri{
+	padding: 30px 0 14px;
+	text-align: center;
+	line-height: 1;
+}
+.nm-litop .nm-lisall{
+	color: #fff;
+	text-align: center;
+}
+.nm-litop .nm-sy{
+	display: block;
+	position: absolute;
+	right: 57px;
+	top: 18px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: #f36d64;
+	border-radius: 100%;
+	font-size: 18px;
+	color: #ffd1d1;
+}
+.nm-sy.nm-blu{
+	background: 
+}
+.nm-yhlist .nm-libot{
+	position: relative;
+	padding-top:10px;
+	height: 234px;
+	border: 1px solid #fd827a;
+	border-top: none;
+	background: #f8f7f7; 
+}
+.nm-libot .nm-bcon{
+	text-indent: 15px;
+	line-height: 32px;
+}
+.nm-libot .nm-btns{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	width: 138px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: -69px;
+	color: #fd827a;
+	border:1px dashed #fd827a;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.nm-bjblu .nm-litop{
+	background: #52cccc;
+}
+.nm-bjblu .nm-sy{
+	background: #43bdbd;
+	color: #c6ffff;
+}
+.nm-bjblu .nm-lisall{
+	color: #006666;
+}
+.nm-bjblu .nm-btns{
+	border-color: #37c2c2;
+	color: #37c2c2;
+}
+.nm-bjblu .nm-libot{
+	border-color: #37c2c2;
+}
+
+.nm-yhlist .nm-GQ{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 8;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.nm-GQ .u-icon{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: block;
+	width: 116px;
+	height: 116px;
+	margin-top: -58px;
+	margin-left:-58px;
+	font-size: 116px;
+	line-height: 1;
+	color: #8d9797;
+}
+.nm-SYyllo .u-icon{
+	color: #fcb683;
+}
+
+/*已使用优惠券样式*/
+.nm-bjHs .nm-litop{
+	background: #e6e6e6;
+}
+.nm-litop .nu-Yhpos{
+	position: absolute;
+	left: 0;
+	bottom: -11px;
+	z-index: 2;
+	width: 257px;
+}
+.nm-bjHs .nm-lisall{
+	color: #666666;
+}
+.nm-bjHs .nm-btns{
+	border-color: #999999;
+	color: #999999;
+}
+.nm-bjHs .nm-libot{
+	border-color: #f4f4f4;
+}
+.nm-SY .u-icon{
+	color: #34baba;
+}
+.nm-bjHs .nm-sy{
+	background: #e1e1e1;
+	color: #fff;
+}
+.nm-SYred .u-icon{
+	color: #fd827a;
+}
+.nm-YHyello .nm-litop{
+	background: #fcb683;
+}
+.nm-YHyello .nm-lisall{
+	color: #e5540d;
+}
+.nm-YHyello .nm-btns{
+	border-color: #fcb683;
+	color: #fcb683;
+}
+.nm-YHyello .nm-libot{
+	border-color: #fcb683;
+}
+.nm-YHyello .nm-sy{
+	background: #eaa06a;
+	color: #ffe4d0;
+}
+/*66-H账户余额－常规版*/
+.nm-dqye{
+	padding: 24px 43px 24px 41px;
+	height: 32px;
+	line-height: 32px;
+}
+.nm-dayecon{
+	width: 320px;
+	margin:38px auto 0;
+	border-radius: 5px;
+	border:1px solid #f26574;
+}
+.nm-dayecon .nm-dqtop{
+	padding:27px 0 0 0;
+	height: 109px;
+	color: #fff;
+	font-size: 16px;
+	background: #ee5566 url(../images/nm-dqye.png) 0 128px no-repeat;
+}
+.nm-dqtop .nm-sp1{
+	font-family: arial;
+	text-align: center;
+	line-height: 1;	
+}
+.nm-dqtop .nm-pri{
+	font-size: 36px;
+}
+.nm-dqtop .nm-sp2{
+	padding-top:20px;
+	line-height: 1;
+	text-align: center;
+}
+.nm-dayecon .nm-dqbot{
+	padding: 43px 0 0 86px;
+	height: 62px;
+	line-height: 30px;
+}
+.nm-dqbot .nm-cz{
+	font-size: 14px;
+	color: #666666;
+	padding: 7px 20px;
+	border:1px solid #cccccc;
+	margin-right: 10px;
+}
+.nm-yeall .ns-colred{
+	font-family: arial;
+	font-size: 18px;
+}
+
+/*弹出层设置----------------------*/
+.example.nm-YHalert01{
+	padding-top: 58px;
+	height:36px;
+	text-align: center;
+	color: #535353;
+	font-size: 13px;
+}
+.example.nm-YHalert02{
+	padding-top: 50px;
+	height:44px;
+	text-align: center;
+	color: #535353;
+	font-size: 13px;
+}
+.nm-YHsyzm .nm-Lwid{
+	width: 100px;
+	text-align: right;
+	font-size: 13px;
+	color: #535353;
+	height: 28px;
+	line-height: 28px;
+}
+.nm-YHsyzm .nm-Rwid input{
+	padding-left: 10px;
+	width: 148px;
+	height: 26px;
+	border:1px solid #e9e9e9;
+}

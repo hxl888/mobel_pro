@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+	<title>首页</title>
+	<link rel="stylesheet" href="./css/common.css" type="text/css">
+	<link rel="stylesheet" href="./css/hxl.css" type="text/css">
+	<link rel="stylesheet" href="../pc(svn)/css/hxl.css">
+</head>
+<body class="bjcol_8fc">
+	<!--隐藏域-->
+	<input id="apiPath" type="hidden" value="http://192.168.28.33">
+	<!-- 头部 -->
+	<div class="n-header">
+        <div class="head-content clearfix">
+            <div class="hed-Logo fl">
+                <a href="#" class="logoImg"></a>
+            </div>
+            <ul class="hed-navBar fl clearfix">
+               <li class="navList active fl">
+                   <a href="#">首页</a>
+               </li>
+               <li class="navList fl"><a href="#">鲜易商城</a></li>
+               <li class="navList fl"><a href="#">生意管家</a></li>
+               <li class="navList fl"><a href="#">平台合作</a></li>
+               <li class="navList fl"><a href="#" id="animiNav"></a></li>
+            </ul>
+            <div class="hed-login fr clearfix">
+                <div class="tel_mob fl"></div>
+                <div class="user_login fl user_login_hover">
+                    <a href="#" class="loginGo">商户登录&nbsp;&nbsp;<span class="arrowBox"><i class="arrow"></i><i class="arrow_02"></i></span></a>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- 头部 -->
+	<!-- 内容 -->
+	<div class="n-wrapBxo">
+		<!--焦点图-->
+		<div class="flor-banner">
+			<div class="bannerImg" id="bannerImg">
+			</div>
+			<div class="bannerOpera">
+				<span class="login_selec yelow_f660">鲜易商城</span>
+				<span class="login_selec red_ef2  f-tryTouses">商家申请试用</span>
+			</div>
+		</div>
+		<div class="n-wrapContent clearfix">
+			<!--鲜易指数-->
+			<div class="xy-indexContent">
+				<div class="index-title">
+					<div class="index-text">
+						鲜易指数&nbsp;<span style="font-size: 18px">PRICE&nbsp;INDEX</span>
+					</div>
+				</div>
+				<!--flor1-->
+				<div id="indexContent"></div>
+			</div>
+			<!--品质有保障-->
+			<div class="flor05 clearfix">
+				<div class="qualityLbox fl">
+					<div class="qualityImg">
+						<img src="./images/flor_05banner.jpg" class="lazy" alt="">
+					</div>
+					<div class="qualityListshowBox">
+						<div class="qualityListshow">
+							<div>
+								<div class="quality-hea">品质有保障</div>
+								<div class="quality-tit">专业化服务打造一站式冻品采购</div>
+								<div class="iconFonBox">
+									<ul class="clearfix">
+										<li class="fl lisFlor">
+											<div class="iconImg">
+												<img src="./images/quality_01.png" alt="">
+											</div>
+											<div class="iconMainHea">品类丰富</div>
+											<div class="icontext">Rich&nbsp;category</div>
+										</li>
+										<li class="fl lisFlor">
+											<div class="iconImg">
+												<img src="./images/quality_02.png" alt="">
+											</div>
+											<div class="iconMainHea">正品保障</div>
+											<div class="icontext">Certified&nbsp;guarantee</div>
+										</li>
+										<li class="fl lisFlor">
+											<div class="iconImg">
+												<img src="./images/quality_03.png" alt="">
+											</div>
+											<div class="iconMainHea">物美价低 </div>
+											<div class="icontext">High&nbsp;quality</div>
+										</li>
+									</ul>
+									<ul class="clearfix">
+										<li class="fl lisFlor">
+											<div class="iconImg">
+												<img src="./images/quality_04.png" alt="">
+											</div>
+											<div class="iconMainHea">冷链配送</div>
+											<div class="icontext">Cold&nbsp;chain</div>
+										</li>
+										<li class="fl lisFlor">
+											<div class="iconImg">
+												<img src="./images/quality_05.png" alt="">
+											</div>
+											<div class="iconMainHea">送货上门</div>
+											<div class="icontext">Deliver&nbsp;home</div>
+										</li>
+										<li class="fl lisFlor">
+											<div class="iconImg">
+												<img src="./images/quality_06.png" alt="">
+											</div>
+											<div class="iconMainHea">专业客服</div>
+											<div class="icontext">Customer&nbsp;service</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="qualityRbox fl clearfix">
+					<div class="appqucode fl">
+						<p class="qu_Img">
+							<img src="./images/appqucode.jpg" class="lazy" alt="">
+						</p>
+						<p class="qu_txt">APP下载</p>
+					</div>
+					<div class="appqucode fl">
+						<p class="qu_Img">
+							<img src="./images/weixinshop.jpg" class="lazy" alt="">
+						</p>
+						<p class="qu_txt">关注微信商城</p>
+					</div>
+					<div class="pnoneImg">
+						<img src="./images/iphone.png" class="lazy" alt="">
+					</div>
+				</div>
+			</div>
+			<!--flor06冻品生意的必备工具—鲜易云ERP-->
+			<div class="flor06 florSamelis clearfix">
+				<div class="florsameLbox">
+					<img src="./images/flor_06banner.jpg" class="lazy" alt="">
+				</div>
+				<div class="florsameRcontent">
+					<div class="florsameRbox">
+
+						<div class="florsamRMaintit">冻品生意的必备工具—鲜易云ERP</div>
+						<div class="florsamRsmatit">权利：冻品商家赚钱的优质渠道</div>
+						<div class="florsamRblueBoder"></div>
+						<div class="florsamContent">
+							【鲜易云ERP】是一套针对冻品商户的解决方案，通过对全流程，全渠道的一体化管理，聚合优势商品资源，链接商家信息，通过信息互联，数据共享的手段来提升商户们的交易金额。全saas化的线上管理方式，为商户提供科学的生意经，帮助全产业链的客户建立数据多元化，分销多样化，价格透明化的纯线上运营服务体系。
+						</div>
+						<ul class="iconFontbox clearfix">
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor06_01.png" alt="">
+								</div>
+								<div class="icon_hed">一键分销</div>
+								<div class="icon_content">在家轻松管理货品，一键分销至全国</div>
+							</li>
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor06_02.png" alt="">
+								</div>
+								<div class="icon_hed">信息互联</div>
+								<div class="icon_content">行业海量数据，相互连接，资源共享</div>
+							</li>
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor06_03.png" alt="">
+								</div>
+								<div class="icon_hed">优质货源</div>
+								<div class="icon_content">智能化定制化的货源自动推荐，降低成本</div>
+							</li>
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor06_04.png" alt="">
+								</div>
+								<div class="icon_hed">指数定价</div>
+								<div class="icon_content">数据分析出合理的有竞争力的商品进价与售价</div>
+							</li>
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor06_05.png" alt="">
+								</div>
+								<div class="icon_hed">货品监控</div>
+								<div class="icon_content">全面化的库存管理，精准分销，滞销库存</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--flor07智慧冷链  放心托付-->
+			<div class="flor07 florSamelis clearfix">
+				<div class="florsameLbox">
+					<img src="./images/flor_07banner.jpg" class="lazy" alt="">
+				</div>
+				<div class="florsameRcontent">
+					<div class="florsameRbox">
+
+						<div class="florsamRMaintit">智慧冷链&nbsp;&nbsp;放心托付</div>
+						<div class="florsamRsmatit">构建冷链资源公共服务平台</div>
+						<div class="florsamRblueBoder"></div>
+						<div class="florsamContent">
+							冷链马甲平台以冷链物流能力和资源为主要交易标的，将大数据、云计算、物联网等先进技术与物流活动深度融合，以无车承运人模式构建互联网+运力，互联网+冷链资源交易，互联网+供应链管理等服务模式，为用户提供信息发布、供应链优化、食品安全追溯、在线支付、物流保险、供应链金融等服务。
+						</div>
+						<ul class="iconFontbox clearfix">
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor07_01.png" alt="">
+								</div>
+								<div class="icon_hed">在线交易</div>
+								<div class="icon_content">Online&nbsp;&nbsp;Trading</div>
+							</li>
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor07_02.png" alt="">
+								</div>
+								<div class="icon_hed">货物跟踪</div>
+								<div class="icon_content">Cargo&nbsp;&nbsp;Tracking</div>
+							</li>
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor07_03.png" alt="">
+								</div>
+								<div class="icon_hed">金融服务</div>
+								<div class="icon_content">Financial&nbsp;&nbsp;Service</div>
+							</li>
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor07_04.png" alt="">
+								</div>
+								<div class="icon_hed">保险服务</div>
+								<div class="icon_content">Insurance&nbsp;&nbsp;Service</div>
+							</li>
+							<li class="iconlist fl">
+								<div class="icon_Img">
+									<img src="./images/flor07_05.png" alt="">
+								</div>
+								<div class="icon_hed">诚信保障</div>
+								<div class="icon_content">Credit&nbsp;&nbsp;Guarantee</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--flor08我们的伙伴-->
+			<div class="flor08 clearfix">
+				<div class="mypartnerLbox">
+					<img src="./images/flor_08banner.jpg" class="lazy" alt="">
+				</div>
+				<div class="mypartnerRbox">
+					<ul class="mypartnerlist clearfix">
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner01.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner02.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner03.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner04.png" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner05.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner06.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner07.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner08.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner09.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner10.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner11.png" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner12.png" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner13.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner14.png" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner15.png" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner16.png" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner17.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner18.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner19.jpg" alt="">
+						</li>
+						<li class="muparImgbox fl">
+							<img src="./images/logolist/mypartner20.jpg" alt="">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--flor09新闻资讯-->
+			<div class="flor09 clearfix" style="margin-top: 50px" id="flor09">
+			</div>
+		</div>
+	</div>
+	<!-- 内容 -->
+	<!-- 底部 -->
+	<div class="n-footer">
+		<div class="footer-content clearfix">
+			<div class="footerLbox fl">
+				<ul class="footer-nav clearfix">
+					<li class="navlist fl"><a href="#">产品介绍</a></li>
+					<li class="navlist fl"><a href="#">申请试用</a></li>
+					<li class="navlist fl"><a href="#">购物指南</a></li>
+					<li class="navlist fl"><a href="#">关于鲜易</a></li>
+					<li class="navlist fl"><a href="#">联系我们</a></li>
+					<li class="navlist fl noberR"><a href="#">鲜易资讯</a></li>
+				</ul>
+				<div class="footer-content">
+					<p class="cont_lis">咨询方式:400-662-6366&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：河南省郑州市绿地大厦15层16层&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：xy@hnxianyi.com</p>
+					<p class="cont_lis">© 2013 鲜易网版权所有 xebest.com All Rights Reserved. 豫ICP备16040286号</p>
+					<p class="cont_lis">中华人民共和国增值电信业务经营许可证编号：豫B2-20160035&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;食品经营许可证编号：JY14110820011138</p>
+				</div>
+				<div class="footer-Img">
+					<a href="#">
+						<img src="./images/footer_01.jpg" alt="">
+					</a>
+					<a href="#">
+						<img src="./images/footer_02.jpg" alt="">
+					</a>
+					<a href="#">
+						<img src="./images/footer_03.jpg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="footerRbox fr clearfix">
+				<div class="appqucode fl">
+					<p class="qu_Img">
+						<img src="./images/appqucode.jpg" alt="">
+					</p>
+					<p class="qu_txt">APP下载</p>
+				</div>
+				<div class="appqucode fl">
+					<p class="qu_Img">
+						<img src="./images/weixinshop.jpg" alt="">
+					</p>
+					<p class="qu_txt">关注微信商城</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--试用申请弹框start-->
+	<div class="userOntrial" style="display: none">
+		<div class="user-content">
+			<div class="user-heaBox clearfix">
+				<div class="heaLtit fl">试用申请</div>
+				<div class="heaRclose fr">&times;</div>
+			</div>
+			<div class="user-form">
+				<!-- <form action=""> -->
+					<div class="form-item clearfix">
+						<div class="form-label fl">企业性质</div>
+						<div class="form-input fl">
+							<label for="one" class="label_txt">
+								<input type="radio" value="1" checked name="venProperties" id="one">&nbsp;公司企业
+							</label>
+							<label for="two" class="label_txt">
+								<input type="radio" value="3" name="venProperties" id="two">&nbsp;个体工商户
+							</label>
+							<label for="three" class="label_txt">
+								<input type="radio" value="4" name="venProperties" id="three">&nbsp;个人
+							</label>
+						</div>
+					</div>
+					<div class="form-item form-item_valid clearfix">
+						<div class="form-label fl"><span class="required">*&nbsp;</span>公司名称</div>
+						<div class="form-input fl"><input class="input_text" name="venName" required type="text" placeholder="请输入"></div>
+					</div>
+					<div class="form-item form-item_valid clearfix">
+						<div class="form-label fl"><span class="required">*&nbsp;</span>联系人姓名</div>
+						<div class="form-input fl"><input class="input_text" name="userName" required maxlength="10" type="text" placeholder="请输入"></div>
+					</div>
+					<div class="form-item form-item_valid clearfix">
+						<div class="form-label fl"><span class="required">*&nbsp;</span>联系方式</div>
+						<div class="form-input fl"><input class="input_text" name="userPhone" maxlength="11" required type="text" placeholder="请输入"></div>
+					</div>
+					<div class="form-item form-item_valid clearfix">
+						<div class="form-label fl">公司所在地</div>
+						<div class="form-input fl" required>
+							<select name="province" id="province" class="select-form">
+								<option value="">请选择</option>
+							</select>
+							<select name="city" id="city" class="select-form">
+								<option value="">请选择</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-item clearfix">
+						<div class="form-label fl">主营品类</div>
+						<div class="form-input fl businessTypeBox">
+						</div>
+					</div>
+					<div class="form-sub">
+						<p class="btn_sub">提交资料</p>
+					</div>
+				<!-- </form> -->
+			</div>
+		</div>
+		<div class="user-cover"></div>
+	</div>	
+	<!-- 底部 -->
+	<!--试用申请end-->
+	<script src="./js/lib/jquery.1.10.2.js"></script>
+	<script src="./js/src/plugins/plugins-artemplate.js"></script>
+	<script src="./js/src/plugins/plugins-slider.js"></script>
+	<script src="./js/src/echarts.js"></script>
+	<script src="./js/src/jquery.qrcode.min.js"></script>
+	<script src="./js/src/plugins/plugins-lazyloadindex.js"></script>
+	<script src="./js/src/users/pageIndex.js"></script>
+	<!--js模板===================================-->
+	<!--焦点图start-->
+	<script type="text/html" id="f-slider">
+		<div class="g-fl01-pic" id="g-fl01-spic">
+			<ul class="slider-ul">
+				<%if(list && list.length > 0){%>
+					<%for(var i=0;i<list.length; i++){%>
+						<li>
+							<a href="<%=list[i].contentUrl%>" target="_blank" style="background: url(<%=picServer + list[i].imgUrl%>) no-repeat top center">
+								<!--<img _src="<%=picServer + list[i].imgUrl%>" alt="<%=list[i].contentDesc%>">-->
+							</a>
+						</li>
+					<%}%>
+				<%}%>
+			</ul>
+		</div>
+		<div class="g-fl01-tit" id="g-fl01-stit">
+			<ul></ul>
+		</div>
+	</script>
+	<!--焦点图end-->
+	<!--鲜易指数start-->
+	<script type="text/html" id="xy-indexFlor">
+		<%if(cateMap && cateMap.length > 0){%>
+			<%for(var i=0;i<cateMap.length; i++){%>
+				<div class="xy-indexFlor xy-indexFlor0<%=i+1%>">
+					<div class="flor_hea clearfix">
+						<div class="florL_tit fl" data-catemapId="<%=cateMap[i].id%>"><%=cateMap[i].name%></div>
+						<ul class="florR_href fr clearfix">
+							<%for (var j = 0,len = cityMap.length;j < len;j++){%>
+							<%if(j===0){%>
+							<li class="flor_citylis fl active" data-cityid="<%=cityMap[j].id%>"><%=cityMap[j].name%></li>
+							<%}else{%>
+							<li class="flor_citylis fl" data-cityid="<%=cityMap[j].id%>"><%=cityMap[j].name%></li>
+							<%}%>
+							<%}%>
+						</ul>
+					</div>
+					<div class="florConBox clearfix">
+						<div class="indextLcont fl" id="indextLcont<%=i+1%>"></div>
+						<div class="indextRcont fl" id="indextRcont<%=i+1%>">
+						</div>
+						<div class="indextRcont empty fl">
+							<div class="empty" style="text-align: center;font-size: 16px;font-weight: 600;color: #999;line-height: 250px">暂无数据</div>
+						</div>
+					</div>
+				</div>
+			<%}%>
+		<%}%>
+	</script>
+	<script type="text/html" id="xyindexcontent">
+		<%if(averageList && averageList.length > 0){%>
+			<ul class="indexListFlor clearfix">
+				<%for(var i=0;i<averageList.length;i++){%>
+					<%if(i<4){%>
+						<li class="indexList hasRborder hasBborder fl">
+					<%}else{%>
+						<li class="indexList hasRborder fl">
+					<%}%>
+						<div class="index_fist clearfix">
+							<p class="fl maxWid160 ellipsis indexroName" data-prosku="<%=averageList[i].proSku%>"><%=averageList[i].proName%></p>
+							<a href="javascript:void(0)" title="<%=averageList[i].venName%>"><p class="fl maxWid95 ellipsis smaFont_col999 marL13"><%=averageList[i].venName%></p></a>
+							<p class="fr smaFont_col999 qr_code_hover">
+								<img width="18px" height="18px" src="./images/qrcode.png" alt="">
+							</p>
+							<div class="qr_codeImg">
+								<p class="proSku" data-spu="<%=averageList[i].proSku%>"></p>
+								<p style="font-size: 14px;color: #666;text-align: center;line-height: 14px">扫码购买</p>
+							</div>
+							<!--<p class="fr smaFont_col999"><img width="18px" height="18px" src="../images/qrcode.png" alt=""></p>-->
+							<!--<div class="qr_codeImg">-->
+							<!--<p><img width="68px" height="68px" src="../images/qrcode.png" alt=""></p>-->
+							<!--<p style="font-size: 14px;color: #666;text-align: center;line-height: 14px">扫码购买</p>-->
+							<!--</div>-->
+						</div>
+						<div class="index_secon clearfix">
+							<div class="fl secon_left clearfix">
+								<p>最高<%=averageList[i].highPrice%></p>
+								<p>最低<%=averageList[i].lowPrice%></p>
+								<p>平均<%=averageList[i].averagePrice%></p>
+							</div>
+							<div class="fl secon_right">
+								<%if(averageList[i].upPoint.toString().indexOf('-') !== -1){%>
+									<p class="bigFont_colgreen82a numCount">
+										<%=averageList[i].upPoint%>
+									</p>
+								<%}else if(averageList[i].upPoint === 0){%>
+									<p class="ellipsis numCount" style="font-size: 24px;color: #999">
+										<%=averageList[i].upPoint%>
+									</p>
+								<%}else{%>
+									<p class="bigFont_col256 ellipsis numCount">
+										+<%=averageList[i].upPoint%>
+									</p>
+								<%}%>
+							</div>
+						</div>
+					</li>
+				<%}%>
+		</ul>
+		<%}%>
+	</script>
+	<!--折线图start-->
+	<!--鲜易指数end-->
+	<!--新闻资讯start-->
+	<script type="text/html" id="flor09_art">
+		<%if(list){%>
+		<div class="newInforLbox fl">
+			<div class="newInforMain_Img">
+				<a href="<%=list.contentUrl%>" target="_blank">
+					<img src="<%=picServer + list.imgUrl%>">
+				</a>
+			</div>
+			<div class="newInfoType_Img">
+				<img src="./images/flor09_newInfor.jpg" alt="">
+			</div>
+			<div class="newInforMain_content">
+				<p class="content_hea"><%=list.contentTitle%></p>
+				<p class="content_all"><%=list.contentDesc%></p>
+			</div>
+		</div>
+		<ul class="newInforRbox fl clearfix">
+			<%if (listbox && listbox.length > 0){%>
+			<%for(var i=0;i<listbox.length; i++){%>
+			<li class="newInforlist fl">
+				<div class="list_img">
+					<!--<img src="../images/flor_08banner.jpg" alt="">-->
+					<a href="<%=listbox[i].contentUrl%>" target="_blank">
+						<img src="<%=picServer + listbox[i].imgUrl%>" alt="">
+					</a>
+				</div>
+				<div class="list_content">
+					<p class="cont_hea ellipsis"><%=listbox[i].contentDesc%></p>
+					<p class="cont_time ellipsis"><%=listbox[i].createDate%></p>
+				</div>
+			</li>
+			<%}%>
+			<%}%>
+		</ul>
+		<%}%>
+	</script>
+	<!--新闻资讯end-->
+</body>
+</html>

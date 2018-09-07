@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="always" name="referrer">
+    <link rel="Shortcut Icon" href="../images/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/api.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/api _sanji_comon.css">
+    <title>API列表 - 鲜易供应链开放平台-物流接口</title>
+</head>
+<body>
+    <div class="warp" style="height:66px">
+        <div class="filex_top">
+          <div class="filex_top_div">
+                <div class="filex_top_left"><small><img src="../images/logo-4.png" alt=""></small></div>
+                    <div class="filex_top_right">
+                        <ul class="filex_top_right_ul">
+                            <li><a href="index.html">首页</a>|</li>
+                            <li><a href="#">文档中心</a>|</li>
+                            <li><a href="Api.html">API</a>|</li>
+                            <li><a href="#">控制台</a>|</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+         <header class="header" style="height:66px">
+             <nav class="header_nav">
+                <div class="header_nav_div">
+                     <div class="header_nav_left">
+                         <small><img src="../images/logo-3.png" alt=""></small>
+                     </div>
+                     <div class="header_nav_right">
+                         <ul class="header_nav_right_ul">
+                            <li><a href="index.html">首页</a><span></span></li>
+                            <li><a href="#">文档中心</a><span></span></li>
+                            <li class="onbg"><a href="Api.html" class="onbg">API</a><span></span></li>
+                            <li><a href="#">控制台</a><span></span></li>
+                          </ul>
+                          <div class="header_nav_right_sea">
+                              <input type="text" placeholder="Api搜索">
+                              <button class="header_nav_right_sea_btn">搜索</button>
+                          </div>
+                     </div>
+                 </div>
+             </nav>
+         </header>
+   </div>
+       <!-- 中间区域设置====================================== -->
+   <section class="content1 nm-content1 clearfix" style="height: auto;">
+    <!--左侧导航条======================  -->
+    <div class="a_title fl">
+      <ul>        
+        <li class="access">物流接口</li>
+        <li class="storage">物流状态查询</li>
+        <li class="storage">物流状态同步</li>
+      </ul>
+    </div>
+    <!-- 右侧============================ -->
+    <div class="fr">
+      <!-- 右侧导航信息显示====== -->
+      <div class="a_theme">
+        <p class="one">首页></p>
+        <p class="two">物流接口></p>
+        <p class="n-tit-three">物流状态查询</p>
+        <!-- <p class="interva"></p> -->
+        <!-- <p class="two">订单接口</p> -->
+      </div>
+      <!-- 右侧三级页面展示start================================== -->
+      <!-- 5.1 物流状态查询======================= -->
+      <div class="nm-public" style="display: block;">
+         <!-- API描述 -->
+         <div class="nm-poplis nm-pub_1">
+             <h3 class="nm-tit clearfix">
+               <span class="fl">API描述</span>
+               <span class="fr u-arrow_show">
+                 <i class="u-arrow"></i>
+                 <i class="u-arrow_"></i>
+               </span>
+             </h3>
+             <div class="nm-pro-show">
+                此接口供客户系统查询运输单的全量执行信息。
+             </div>
+         </div>
+         <!-- 5.1.2 授权类型 -->
+         <div class="nm-poplis nm-pub_1">
+             <h3 class="nm-tit clearfix">
+               <span class="fl">授权类型</span>
+               <span class="fr u-arrow_show">
+                 <i class="u-arrow"></i>
+                 <i class="u-arrow_"></i>
+               </span>
+             </h3>
+             <div class="nm-pro-show">  
+                 <ul>
+                   <li class="nu-lis"><i class="nu-typ"></i>需要</li>
+                 </ul>
+             </div>
+         </div>
+         <!-- 5.1.3 应用场景 -->
+         <div class="nm-poplis nm-pub_1">
+             <h3 class="nm-tit clearfix">
+               <span class="fl">应用场景</span>
+               <span class="fr u-arrow_show">
+                 <i class="u-arrow"></i>
+                 <i class="u-arrow_"></i>
+               </span>
+             </h3>
+             <!-- <div class="nm-pro-show">  
+             </div> -->
+         </div>
+         <!-- 5.1.4 系统级别输入参数 -->
+         <div class="nm-poplis nm-pub_2">
+             <h3 class="nm-tit clearfix">
+               <span class="fl">系统级别输入参数</span>
+               <span class="fr u-arrow_show">
+                 <i class="u-arrow"></i>
+                 <i class="u-arrow_"></i>
+               </span>
+             </h3>
+             <div class="nm-pro-show">
+                 <table class="nm-tabCon" cellpadding='0' cellspacing='0'>
+                   <colgroup>
+                       <col width="181">
+                       <col width="176">
+                       <col width="133">
+                       <col width="212">
+                       <col width="270">
+                   </colgroup>
+                   <tbody>
+                     <tr class="nm-trlis_tit">
+                       <th class="nu-fistd">名称</th>
+                       <th>类型</th>
+                       <th>是否必须</th>
+                       <th>描述</th>
+                       <th>实例值</th>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">method</td>
+                       <td>String</td>
+                       <td>是</td>
+                       <td>具体API接口名称</td>
+                       <td></td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">requestTime</td>
+                       <td>String</td>
+                       <td>是</td>
+                       <td>时间戳，格式为yyyy-mm-ddHH:mm:ss</td>
+                       <td>例如：2013-05-06 13:52:03</td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">appkey</td>
+                       <td>String</td>
+                       <td>是</td>
+                       <td>公钥</td>
+                       <td>例如：2013-05-06 13:52:03</td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">secret</td>
+                       <td>String</td>
+                       <td>是</td>
+                       <td>密钥</td>
+                       <td></td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">fromSYS</td>
+                       <td>String</td>
+                       <td>是</td>
+                       <td>数据来源系统名称</td>
+                       <td></td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">requestContent</td>
+                       <td>String</td>
+                       <td>是</td>
+                       <td>传递的报文</td>
+                       <td></td>
+                     </tr>
+                   </tbody>
+                 </table>
+             </div>
+         </div>
+         <!-- 5.1.5应用级别输入参数 -->
+         <div class="nm-poplis nm-pub_2">
+             <h3 class="nm-tit clearfix">
+               <span class="fl">应用级别输入参数</span>
+               <span class="fr u-arrow_show">
+                 <i class="u-arrow"></i>
+                 <i class="u-arrow_"></i>
+               </span>
+             </h3>
+             <div class="nm-pro-show">
+                 <table class="nm-tabCon" cellpadding='0' cellspacing='0'>
+                   <colgroup>
+                       <col width="181">
+                       <col width="176">
+                       <col width="133">
+                       <col width="212">
+                       <col width="270">
+                   </colgroup>
+                   <tbody>
+                     <tr class="nm-trlis_tit">
+                       <th class="nu-fistd">名称</th>
+                       <th>类型</th>
+                       <th>是否必须</th>
+                       <th>描述</th>
+                       <th>实例值</th>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">customerCode</td>
+                       <td>String</td>
+                       <td>Y</td>
+                       <td>客户编码</td>
+                       <td></td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">billNo</td>
+                       <td>String</td>
+                       <td>Y</td>
+                       <td>订单编号</td>
+                       <td></td>
+                     </tr>
+                   </tbody>
+                 </table>
+             </div>
+         </div>
+         <!-- 5.1.6 返回结果======== -->
+         <div class="nm-poplis nm-pub_2">
+             <h3 class="nm-tit clearfix">
+               <span class="fl">返回结果</span>
+               <span class="fr u-arrow_show">
+                 <i class="u-arrow"></i>
+                 <i class="u-arrow_"></i>
+               </span>
+             </h3>
+             <div class="nm-pro-show">
+                 <table class="nm-tabCon" cellpadding='0' cellspacing='0'>
+                   <colgroup>
+                       <col width="181">
+                       <col width="176">
+                       <col width="133">
+                       <col width="212">
+                       <col width="270">
+                   </colgroup>
+                   <tbody>
+                     <tr class="nm-trlis_tit">
+                       <th class="nu-fistd">名称</th>
+                       <th>类型</th>
+                       <th>是否必须</th>
+                       <th>描述</th>
+                       <th>实例值</th>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">customerCode</td>
+                       <td>String</td>
+                       <td></td>
+                       <td>客户编码</td>
+                       <td></td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">billNo</td>
+                       <td>String</td>
+                       <td>Y</td>
+                       <td>订单编号</td>
+                       <td></td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">status</td>
+                       <td>String</td>
+                       <td>Y</td>
+                       <td>操作类型</td>
+                       <td>收货、发运、中转入、中转出、在途、签收</td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">coord</td>
+                       <td>String</td>
+                       <td></td>
+                       <td>当前位置</td>
+                       <td>坐标</td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">nowTemp</td>
+                       <td>String</td>
+                       <td></td>
+                       <td>当前温度</td>
+                       <td></td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">operator</td>
+                       <td>String</td>
+                       <td></td>
+                       <td>操作员</td>
+                       <td></td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">operatorUnit</td>
+                       <td>String</td>
+                       <td>Y</td>
+                       <td>操作单位</td>
+                       <td>在途：车牌</td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">operatorTime</td>
+                       <td>String</td>
+                       <td>Y</td>
+                       <td>操作时间</td>
+                       <td></td>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd">descriptorMessage</td>
+                       <td>String</td>
+                       <td></td>
+                       <td>描述信息</td>
+                       <td style="text-align: left;"><br/>
+                       发&nbsp;&nbsp;&nbsp;运：从【操作单位】发车<br/>
+                            在&nbsp;&nbsp;&nbsp;途：搭乘【车牌】运输途中<br/>
+                            中转入：【操作单位】收货入库<br/>
+                            中转出：【操作单位】发货出库<br/>
+                            签&nbsp;&nbsp;&nbsp;收：货物已签收<br/><br/>
+                       </td>
+                     </tr>
+                   </tbody>
+                 </table>
+             </div>
+         </div>
+         <!-- 5.1.7 返回示例值 -->
+         <div class="nm-poplis nm-pub_1">
+            <h3 class="nm-tit clearfix">
+              <span class="fl">返回示例值</span>
+              <span class="fr u-arrow_show">
+                <i class="u-arrow"></i>
+                <i class="u-arrow_"></i>
+              </span>
+            </h3>
+            <!-- <div class="nm-pro-show">  
+            </div> -->
+         </div>
+         <!-- 5.1.8 错误码======== -->
+         <div class="nm-poplis nm-pub_2">
+             <h3 class="nm-tit clearfix">
+               <span class="fl">错误码</span>
+               <span class="fr u-arrow_show">
+                 <i class="u-arrow"></i>
+                 <i class="u-arrow_"></i>
+               </span>
+             </h3>
+             <!-- <div class="nm-pro-show">
+                 <table class="nm-tabCon" cellpadding='0' cellspacing='0'>
+                   <colgroup>
+                       <col width="181">
+                       <col width="176">
+                       <col width="133">
+                       <col width="212">
+                       <col width="270">
+                   </colgroup>
+                   <tbody>
+                     <tr class="nm-trlis_tit">
+                       <th class="nu-fistd">名称</th>
+                       <th>类型</th>
+                       <th>是否必须</th>
+                       <th>描述</th>
+                       <th>实例值</th>
+                     </tr>
+                     <tr  class="nm-trlis">
+                       <td  class="nu-fistd"></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                     </tr>
+                   </tbody>
+                 </table>
+             </div> -->
+         </div>
+      </div>
+      <!-- 5.2  物流状态同步====================-->
+      <div class="nm-public" style="display: none;">
+        <!-- 5.2.1 API描述 -->
+        <div class="nm-poplis nm-pub_1">
+            <h3 class="nm-tit clearfix">
+              <span class="fl">API描述</span>
+              <span class="fr u-arrow_show">
+                <i class="u-arrow"></i>
+                <i class="u-arrow_"></i>
+              </span>
+            </h3>
+            <div class="nm-pro-show">  
+                此接口供客户系统查询运输单的增量执行信息（按时间范围查询）。
+            </div>
+        </div>
+        <!-- 5.2.2 授权类型 -->
+        <div class="nm-poplis nm-pub_1">
+            <h3 class="nm-tit clearfix">
+              <span class="fl">授权类型</span>
+              <span class="fr u-arrow_show">
+                <i class="u-arrow"></i>
+                <i class="u-arrow_"></i>
+              </span>
+            </h3>
+            <div class="nm-pro-show">  
+                <ul>
+                  <li class="nu-lis"><i class="nu-typ"></i>需要</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 5.2.3 应用场景 -->
+        <div class="nm-poplis nm-pub_1">
+            <h3 class="nm-tit clearfix">
+              <span class="fl">应用场景</span>
+              <span class="fr u-arrow_show">
+                <i class="u-arrow"></i>
+                <i class="u-arrow_"></i>
+              </span>
+            </h3>
+            <!-- <div class="nm-pro-show">  
+                客户无需导出入库单，客户直接操作其订单系统，通过该接口将入库数据发送到平台。
+            </div> -->
+        </div>
+        <!-- 5.2.4 系统级别输入参数 -->
+        <div class="nm-poplis nm-pub_2">
+            <h3 class="nm-tit clearfix">
+              <span class="fl">系统级别输入参数</span>
+              <span class="fr u-arrow_show">
+                <i class="u-arrow"></i>
+                <i class="u-arrow_"></i>
+              </span>
+            </h3>
+            <div class="nm-pro-show">
+                <table class="nm-tabCon" cellpadding='0' cellspacing='0'>
+                  <colgroup>
+                      <col width="181">
+                      <col width="176">
+                      <col width="133">
+                      <col width="212">
+                      <col width="270">
+                  </colgroup>
+                  <tbody>
+                    <tr class="nm-trlis_tit">
+                      <th class="nu-fistd">名称</th>
+                      <th>类型</th>
+                      <th>是否必须</th>
+                      <th>描述</th>
+                      <th>实例值</th>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">method</td>
+                      <td>String</td>
+                      <td>是</td>
+                      <td>具体API接口名称</td>
+                      <td></td>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">requestTime</td>
+                      <td>String</td>
+                      <td>是</td>
+                      <td>时间戳，格式为yyyy-mm-ddHH:mm:ss</td>
+                      <td>例如：2013-05-06 13:52:03</td>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">appkey</td>
+                      <td>String</td>
+                      <td>是</td>
+                      <td>公钥</td>
+                      <td></td>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">secret</td>
+                      <td>String</td>
+                      <td>是</td>
+                      <td>密钥</td>
+                      <td></td>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">fromSYS</td>
+                      <td>String</td>
+                      <td>是</td>
+                      <td>数据来源系统名称</td>
+                      <td></td>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">requestContent</td>
+                      <td>String</td>
+                      <td>是</td>
+                      <td>传递的报文</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <!--  5.2.5 应用级别输入参数 -->
+         <div class="nm-poplis nm-pub_2">
+            <h3 class="nm-tit clearfix">
+              <span class="fl">应用级别输入参数</span>
+              <span class="fr u-arrow_show">
+                <i class="u-arrow"></i>
+                <i class="u-arrow_"></i>
+              </span>
+            </h3>
+            <div class="nm-pro-show">
+                <table class="nm-tabCon" cellpadding='0' cellspacing='0'>
+                  <colgroup>
+                      <col width="181">
+                      <col width="176">
+                      <col width="133">
+                      <col width="212">
+                      <col width="270">
+                  </colgroup>
+                  <tbody>
+                    <tr class="nm-trlis_tit">
+                      <th class="nu-fistd">名称</th>
+                      <th>类型</th>
+                      <th>是否必须</th>
+                      <th>描述</th>
+                      <th>实例值</th>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">customerCode</td>
+                      <td>String</td>
+                      <td>Y</td>
+                      <td>客户编码</td>
+                      <td></td>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">billNo</td>
+                      <td>String</td>
+                      <td></td>
+                      <td>订单编号</td>
+                      <td></td>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">status</td>
+                      <td>String</td>
+                      <td></td>
+                      <td>收货、发运、中转入、中转出、在途、签收</td>
+                      <td></td>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">startTiem</td>
+                      <td>String</td>
+                      <td></td>
+                      <td>起始时间</td>
+                      <td></td>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd">endTime</td>
+                      <td>String</td>
+                      <td></td>
+                      <td>结束时间</td>
+                      <td>时间间隔：建议小于30分钟，最多只能返回5000条记录</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- 5.2.6 返回结果======== -->
+        <div class="nm-poplis nm-pub_2">
+            <h3 class="nm-tit clearfix">
+              <span class="fl">返回结果</span>
+              <span class="fr u-arrow_show">
+                <i class="u-arrow"></i>
+                <i class="u-arrow_"></i>
+              </span>
+            </h3>
+            <div class="nm-pro-show">
+               <table class="nm-tabCon" cellpadding='0' cellspacing='0'>
+                 <colgroup>
+                     <col width="181">
+                     <col width="176">
+                     <col width="133">
+                     <col width="212">
+                     <col width="270">
+                 </colgroup>
+                 <tbody>
+                   <tr class="nm-trlis_tit">
+                     <th class="nu-fistd">名称</th>
+                     <th>类型</th>
+                     <th>是否必须</th>
+                     <th>描述</th>
+                     <th>实例值</th>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">orderNo</td>
+                     <td>String</td>
+                     <td>Y</td>
+                     <td>平台物流跟踪ID</td>
+                     <td></td>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">customerCode</td>
+                     <td>String</td>
+                     <td>Y</td>
+                     <td>客户编码</td>
+                     <td></td>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">billNo</td>
+                     <td>String</td>
+                     <td>Y</td>
+                     <td>订单编号</td>
+                     <td></td>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">status</td>
+                     <td>String</td>
+                     <td>Y</td>
+                     <td>操作类型</td>
+                     <td>收货、发运、中转入、中转出、在途、签收</td>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">coord</td>
+                     <td>String</td>
+                     <td></td>
+                     <td>当前位置</td>
+                     <td>坐标</td>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">nowTemp</td>
+                     <td>String</td>
+                     <td></td>
+                     <td>当前温度</td>
+                     <td></td>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">operator</td>
+                     <td>String</td>
+                     <td></td>
+                     <td>操作员</td>
+                     <td></td>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">operatorUnit</td>
+                     <td>String</td>
+                     <td></td>
+                     <td>操作单位</td>
+                     <td>在途：车牌</td>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">operatorTime</td>
+                     <td>String</td>
+                     <td>Y</td>
+                     <td>操作时间</td>
+                     <td></td>
+                   </tr>
+                   <tr  class="nm-trlis">
+                     <td  class="nu-fistd">descriptorMessage</td>
+                     <td>String</td>
+                     <td>Y</td>
+                     <td>描述信息</td>
+                     <td style="text-align: left;"><br>
+                        发&nbsp;&nbsp;&nbsp;运：从【操作单位】发车<br>
+                        在&nbsp;&nbsp;&nbsp;途：搭乘【车牌】运输途中<br>
+                        中转入：【操作单位】收货入库<br>
+                        中转出：【操作单位】发货出库<br>
+                        签&nbsp;&nbsp;&nbsp;收：货物已签收<br><br>
+                     </td>
+                   </tr>
+                 </tbody>
+               </table>
+            </div>
+        </div>
+        <!-- 5.2.7.返回示例值 -->
+        <div class="nm-poplis nm-pub_1">
+            <h3 class="nm-tit clearfix">
+              <span class="fl">返回示例值</span>
+              <span class="fr u-arrow_show">
+                <i class="u-arrow"></i>
+                <i class="u-arrow_"></i>
+              </span>
+            </h3>
+            <!-- <div class="nm-pro-show">  
+            </div> -->
+        </div>
+        <!-- 5.2.8.错误码======== -->
+        <div class="nm-poplis nm-pub_2">
+            <h3 class="nm-tit clearfix">
+              <span class="fl">错误码</span>
+              <span class="fr u-arrow_show">
+                <i class="u-arrow"></i>
+                <i class="u-arrow_"></i>
+              </span>
+            </h3>
+            <!-- <div class="nm-pro-show">
+                <table class="nm-tabCon" cellpadding='0' cellspacing='0'>
+                  <colgroup>
+                      <col width="181">
+                      <col width="176">
+                      <col width="133">
+                      <col width="212">
+                      <col width="270">
+                  </colgroup>
+                  <tbody>
+                    <tr class="nm-trlis_tit">
+                      <th class="nu-fistd">名称</th>
+                      <th>类型</th>
+                      <th>是否必须</th>
+                      <th>描述</th>
+                      <th>实例值</th>
+                    </tr>
+                    <tr  class="nm-trlis">
+                      <td  class="nu-fistd"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div> -->
+        </div>
+      </div>
+      <!-- 右侧三级页面展示end===================================== -->
+    </div>
+  </section>
+  <!-- foot========================================================== -->
+  <div class="ftrdbsp">
+      <div class="sp_div">
+          <ul>
+              <li><img src="../images/pass_nby_120.png" alt=""></li>
+              <li><img src="../images/pass_nby_122.png" alt=""></li>
+              <li><img src="../images/pass_nby_124.png" alt=""></li>
+              <li><img src="../images/pass_nby_126.png" alt=""></li>
+              <li><img src="../images/pass_nby_128.png" alt=""></li>
+          </ul>
+      </div>
+  </div>
+  <footer class="footer">
+      <div class="ft_div">
+          <div class="ft_div1">
+              <h3>快速入门</h3>
+              <ul>
+                  <li>注册流程</li>
+                  <li>认证流程</li>
+                  <li>发布流程</li>
+                  <li>交易流程</li>
+                  <li>交易规则</li>
+              </ul>
+          </div>
+          <div class="ft_div1">
+              <h3>服务指南</h3>
+              <ul>
+                  <li>平台服务协议</li>
+                  <li>商务合作</li>
+                  <li>售后说明</li>
+                  <li>发票须知</li>
+                  <li>免费声明</li>
+              </ul>
+          </div>
+          <div class="ft_div1">
+              <h3>关于平台</h3>
+              <ul>
+                  <li>平台简介</li>
+                  <li>新闻动态</li>
+                  <li>加入我们</li>
+                  <li>联系我们</li>
+              </ul>
+          </div>
+          <div class="ft_div1">
+              <h3>关注我们</h3>
+              <ul>
+                  <li><small><img src="../images/pass_nby_106.png" alt=""></small><a href="http://weibo.com/u/5135258609?refer_flag=1001030101_&is_hot=1">新浪微博</a></li>
+                  <li class="ewm"><small><img src="../images/pass_nby_108.png" alt=""></small><a href="API.html">官方微信</a>
+                      <img src="../images/pass_nby_71.png" alt="" class="ewm1">
+                  </li>
+                  <li>
+                      <small><img src="../images/tieba.png" alt=""></small><a href="http://tieba.baidu.com/f?ie=utf-8&kw=%E9%B2%9C%E6%98%93%E4%BE%9B%E5%BA%94%E9%93%BE&fr=search">官方贴吧</a>
+                      
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="ft_div2">
+              <ul>
+                  <li style="font-size:24px"><small></small>400-816-0366</li>
+                  <li><small></small>周一至周日 8:00-18:00</li>
+                  
+              </ul>
+          </div>
+      <p>©2014-2020 郑州鲜易供应链有限公司 京ICP备1330026504 服务热线:4006-080-04040</p>
+  </footer>
+  <script src="../js/jquery.min.js"></script>
+  <script src='../js/api_sanji_go.js'></script>
+</body>

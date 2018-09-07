@@ -1,0 +1,349 @@
+/*52-H订单详情--已完成\51-H订单详情--已取消（支付和未支付）\50-H订单详情--待收货
+\49-H订单详情--待评价\48-H订单详情--待付款\47-H订单详情--待发货*/
+.nm-dtby .nm-deTZ td{
+	height: 39px;
+	padding: 0 20px;
+	border-bottom: 1px solid #ebebeb;
+	border-right:1px solid #ebebeb;
+} 
+.ng-nopay .fr01{
+	padding: 30px 20px 15px 20px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+.fr01 .nm-tit{
+	height: 14px;
+	font-size: 14px;
+	line-height: 1;
+}
+.fr01 .nm-censh{
+	height: 47px;
+	line-height: 47px;
+}
+.nm-censh .nm-tpy{
+	margin:0 34px;
+}
+.nm-censh .u-btn{
+	font-size: 12px;
+	padding: 3px 20px;
+}
+.nm-censh .nm-money{
+	font-family: arial;
+}
+.nm-opea .u-btn-red-oe{
+	background: #f4f4f4;
+	color: #666;
+	border-color:#d9d9d9;
+}
+.nm-opea .u-btn-red-oe:hover{
+	background: #ebebeb;
+}
+.nm-opea .u-btn-red{
+	font-size: 12px;
+	padding: 3px 27px;
+}
+.nm-pay03 .u-btn-red{
+	padding: 3px 20px;
+	margin-right: 0;
+	font-size: 12px;
+}
+.ng-nopay .fr02{
+	padding: 69px 20px 42px 20px;
+	background: #fff;
+}
+.ng-nopay .nm-fr02no{
+	padding-top:20px; 
+}
+.fr02 .nm-jd{
+	padding-bottom: 108px;
+}
+.fr02 .nm-gogren{
+	padding-left: 50px;
+}
+.nm-gogren .nu-goline{
+	position: relative;
+	width: 148px;
+	height: 5px;
+	background: #c1c1c1;
+}
+.nu-goline .nu-gosp{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 20px;
+	height: 20px;
+	background: #c1c1c1;
+	border-radius: 100%;
+	margin-left: -10px;
+	margin-top: -10px;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+}
+.nu-goline .nu-ftim,.nu-goline .nu-time{
+	position: absolute;
+	left: 50%;
+	margin-left: -61px;
+	text-align: center;
+	width: 122px;
+}
+.nu-goline .nu-ftim{
+	top: 22px;
+	color: #ccc;
+}
+.nu-goline .nu-time{
+	top: 41px;
+	color: #666;
+}
+.nu-goline05{
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.nm-01flo .nu-gosp01,.nm-01flo .nu-goline01{
+	background: #67b53d;
+}
+.nm-02flo .nu-gosp01,.nm-02flo .nu-goline01,
+.nm-02flo .nu-gosp02,.nm-02flo .nu-goline02{
+	background: #67b53d;
+}
+.nm-03flo .nu-gosp01,.nm-03flo .nu-goline01,
+.nm-03flo .nu-gosp02,.nm-03flo .nu-goline02,
+.nm-03flo .nu-gosp03,.nm-03flo .nu-goline03{
+	background: #67b53d;
+}
+.nm-04flo .nu-gosp01,.nm-04flo .nu-goline01,
+.nm-04flo .nu-gosp02,.nm-04flo .nu-goline02,
+.nm-04flo .nu-gosp03,.nm-04flo .nu-goline03,
+.nm-04flo .nu-gosp04,.nm-04flo .nu-goline04{
+	background: #67b53d;
+}
+.nm-05flo .nu-gosp01,.nm-05flo .nu-goline01,
+.nm-05flo .nu-gosp02,.nm-05flo .nu-goline02,
+.nm-05flo .nu-gosp03,.nm-05flo .nu-goline03,
+.nm-05flo .nu-gosp04,.nm-05flo .nu-goline04,
+.nm-05flo .nu-gosp05,.nm-05flo .nu-goline05{
+	background: #67b53d;
+}
+
+
+
+/**/
+.nm-01flo .nu-ftim01{
+	color: #67b53d;
+}
+.nm-02flo .nu-ftim01,
+.nm-02flo .nu-ftim02{
+	color: #67b53d;
+}
+.nm-03flo .nu-ftim01,
+.nm-03flo .nu-ftim02,
+.nm-03flo .nu-ftim03{
+	color: #67b53d;
+}
+.nm-04flo .nu-ftim01,
+.nm-04flo .nu-ftim02,
+.nm-04flo .nu-ftim03,
+.nm-04flo .nu-ftim04{
+	color: #67b53d;
+}
+.nm-05flo .nu-ftim01,
+.nm-05flo .nu-ftim02,
+.nm-05flo .nu-ftim03,
+.nm-05flo .nu-ftim04,
+.nm-05flo .nu-ftim05{
+	color: #67b53d;
+}
+
+.nm-frmai .nu-tit{
+	height: 42px;
+	line-height: 42px;
+	padding-left: 20px;
+	font-size: 16px;
+}
+.nm-wlshow{
+	border:1px solid #ebebeb;
+	border-top:none;
+	padding: 12px 0 12px 20px;
+	margin-bottom:10px;
+}
+
+.nm-wfr .nu-sp{
+	padding-left: 15px;
+}
+.nm-wfr .nu-sp01{
+	padding: 0 14px;
+}
+.nm-wlshow .nm-wlist{
+	height: 28px;
+	line-height: 28px;
+}
+.nm-wlshow .nm-wlc{
+	height: 28px;
+	line-height: 28px;
+}
+.nm-frmai .nm-dancon{
+	padding: 0 20px;
+}
+.nm-dancon .nm-fr{
+	padding-top: 18px;
+	padding-bottom: 13px;
+	border-bottom:1px solid #ebebeb;
+}
+.nm-dancon .ng-my{
+	border:none;
+}
+.ng-my .u-icon{
+	position: relative;
+	top: -2px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	color: #1083ff;
+	-webkit-text-stroke-width:0;
+}
+.nm-fr .nu-ti{
+	padding: 5px 0;
+	font-weight: 600;
+	font-size: 12px;
+}
+.nm-fr .nu-co{
+	height: 28px;
+	line-height: 28px;
+}
+.nm-frmai .nm-dbox{
+	border:1px solid #ebebeb;
+	border-top:none;
+}
+.nm-dbox .nm-dtby{
+	border-left: 1px solid #ebebeb;
+	margin-right:20px;
+	margin-left: 20px;
+}
+.nm-dtby .nm-head{
+	height: 39px;
+	line-height: 39px;
+	border-right: 1px solid #ebebeb;
+}
+.nm-head .nm-td01{
+	text-align: center;
+}
+.nm-dttr .nm-td01{
+	width: 303px;
+	border-right: 1px solid transparent;
+}
+.nm-dttr .nm-td02{
+	width: 102px;
+	text-align: center;
+	border-right: 1px solid transparent;
+}
+.nm-tbr .nm-td02{
+	font-family: arial; 
+}
+.nm-tbr .nm-td06{
+	font-family: arial;
+}
+.nm-dttr .nm-td03,.nm-dttr .nm-td04{
+	width: 96px;
+	text-align: center;
+	border-right: 1px solid transparent;
+}
+.nm-dttr .nm-td05{
+	width: 71px;
+	text-align: center;
+	border-right: 1px solid transparent;
+}
+.nm-dttr .nm-td06{
+	width: 123px;
+	text-align: center;
+	border-right: 0px solid transparent;
+}
+.nm-dtby .nm-tbr{
+	height: 97px;
+	vertical-align: top;
+}
+.nm-tbr .nm-tdfr{
+	padding-top: 14px;
+	height: 83px;
+	border-right:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+}
+.nm-td01 .nm-td01L{
+	position: relative;
+	width: 70px;
+	padding-left: 14px;
+	margin-right: 10px;
+	height:70px; 
+}
+.nm-td01L .nm-Limg{
+	width:70px;
+	height: 70px; 
+}
+.nm-td01L .nu-Lys,.nm-td01L .nu-ys{
+	position: relative;
+	left: 0;
+	top: -70px;
+}
+.nm-td01L .nu-Lblgo{
+	position: absolute;
+	right: 0;
+	bottom:0px;
+	padding:0 3px;
+	color: #fff;
+	background: #e42c25;
+}
+.nm-td01 .nm-td01R{
+	width: 190px;
+}
+.nm-rdfR .nm-Rgz{
+	width: 190px;
+	height: 20px;
+}
+.nm-rdfR .nm-Rzp{
+	width: 190px;
+	height: 24px;
+}
+.nm-rdfR .nu-Rzd{
+	height: 16px;
+    line-height: 15px;
+    background: #ff8533;
+    color: #fff;
+    padding: 0 6px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 1px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: default;
+    border: 1px solid #ff8533;
+
+}
+.nm-dbox .nm-Fmcon{
+	padding: 24px 20px 20px 0;
+	text-align: right;
+}
+.nm-Fmcon .u-btn-blush{
+	margin-right: 0;
+}
+.nm-Fmcon .nm-Fmlist{
+	height: 20px;
+}
+.nm-Fmcon .nm-Fmliall{
+	padding: 20px 0;
+}
+.nm-Fmliall .ns-colred{
+	font-size: 26px;
+}
+.nm-Fmliall em{
+	font-size: 24px;
+}
+.nm-goshop .u-btn-blush{
+	padding: 6px 27px;
+}
+/*弹框样式设置*/
+.example.nm-Malert{
+	padding-top: 57px;
+    height: 43px;
+    color: #666666;
+    text-align: center;
+}

@@ -1,0 +1,476 @@
+	.s-red{color:#c81a25;}
+	.wrapSmall{width: 1060px;margin: 0 auto;position: relative;}
+	.bg-banner{background: url('../images/bg-banCooperate.jpg') no-repeat top center;height: 420px}
+	.btn-normal{background: #fff}
+	.regist-box{position: absolute; left: 50%; width: 165px;border-radius: 20px; border: 1px solid #fff;bottom: 120px;text-align: center;margin-left: -83px;}
+	.regist-box p{background: #fff; opacity: .2; filter: alpha(opacity=20);width: 100%; height: 40px;border-radius: 20px;}
+	.regist-box:hover p{opacity: 0;filter: alpha(opacity=0);}
+	.regist-box a{line-height: 40px;color: #fff;position: absolute;width: 100%;left: 0;top: 0;font-size: 16px;}
+	.wrap1650{width: 100%;margin: 0 auto;position: relative;}
+	.bg-bannerNew{background: url(../images/banner-d01.jpg) no-repeat top center;}
+	.f-content{min-height: 500px;}
+	.regist-box img{
+		position: absolute;
+		top: 50px;
+		left: 20px;
+		display: none;
+	}
+	.regist-box:hover img{
+		display: block;
+		z-index: 33;
+	}
+	.des-cooperate{
+		position: absolute;
+		left: 50%;
+		bottom: -120px;
+		width: 820px;
+		padding-left: 180px;
+		height: 180px;
+		background: #e8604c;
+		color: #fff;
+		margin-left: -500px;
+	}
+	.des-tips{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 180px;
+		height: 180px;
+		background: #373f62;
+		text-align: center;
+	}
+	.des-tips h4{
+		margin-top: 45px;
+		line-height: 40px;
+		font-size: 18px;
+	}
+	.des-tips h5{
+		line-height: 38px;
+	}
+	.des-cooContent{
+		padding: 17px 24px;
+		line-height: 21px;
+		text-indent: 24px;
+	}
+	.wrap-function{position: relative;height: 520px;}
+	.pic-desCoo{float: left;width: 50%;background: #f7f7f7;position: relative;height: 100%;}
+	.bg-funcCoo{background: url('../images/coo-function.jpg') no-repeat; width: 423px;height: 382px;position: absolute;right: 28px;top: 110px;}
+	.txt-desCoo{background: #efefef;width: 50%;float: right; height: 100%;}
+	.txt-mainIn{margin: 170px 0 0 30px;line-height: 30px; }
+	.txt-mainIn p{text-indent: 24px;width: 450px;}
+	.fs-16{font-size: 16px;}
+	.floor-Cooitem{position: absolute;left: 50%;width: 160px;margin-left: -80px;text-align: center;top: 0;z-index: 10;padding-top: 30px;}
+	.floor-Cooitem .point-arr{position: absolute;top: 0;left: 50%;border-width: 10px;border-color: #fff transparent transparent transparent;z-index: 11;width: 0;height: 0;border-style: solid;margin-left: -10px;}
+	.floor-Cooitem h4{line-height: 36px;font-size: 18px;color: #5a5a5a;font-weight: bold;}
+	.floor-Cooitem h5{line-height: 26px;color: #666;}
+	.lineUnder{height: 4px;width: 20px;margin: 0 auto;background: #e8604c;}
+	.wrap-cooLine{background: #f4f4f4;height: 230px;}
+	.bg-cooLine{background: url('../images/coo-lines.png') no-repeat center 36px;height: 100%;width: 890px;}
+	.wrap-merchant{height: 500px;position: relative}
+	.wrap-merchant .point-arr{border-color: #f7f7f7 transparent transparent transparent;}
+	.list-conBox{padding-left: 85px;position: relative;padding-top: 110px;}
+	.list-cooMerchant{width: 940px;margin-right: -10px;overflow: hidden;height: 340px;}
+	.list-cooMerchant .slide{transition: all 0.3s ease;float: left;width: 228px;height: 338px;background: #fff;overflow: hidden;color: #666;position: relative;margin-right: 5px;border: 1px solid #e5e5e5;}
+	.list-cooMerchant .slide:hover{box-shadow: 0px 0px 6px rgba(0,0,0,.2);}
+	.list-cooMerchant h4{text-align: center;line-height: 43px;margin-top: 10px;font-size: 18px;height: 43px;overflow:hidden}
+	.list-cooMerchant .mer-describe{line-height: 24px;padding: 0 20px;height: 72px;overflow: hidden;}
+	.list-cooMerchant .logo-merchant{text-align: center;margin-top: 15px;}
+	.merchant-goods{}
+	.bg-cover{background: #000;opacity: .1;filter:alpha(opacity: 10); position: absolute;left: 0;top: 0;width: 100%; height: 100%;transition: all .3s ease;}
+	.list-cooMerchant li:hover .bg-cover{opacity: 0;filter:alpha(opacity: 0);display: none;}
+
+	.bg-bannerNews .bg-banner{background-image: url('../images/news/bg-newsBanner.jpg'); height: 250px;}
+	.c-newsTitle{border-bottom: 1px solid #e4e4e4;padding-top: 28px;line-height: 48px;color: #333;font-size: 18px;text-align: center;}
+	.c-newsTitle span{width: 163px;display: inline-block;cursor: pointer;}
+	.c-newsTitle span.active{color: #c81a25;border-bottom: 2px solid #c81a25;margin-bottom: -1px;font-size: 24px;}
+	.c-newItem{display: none;}
+	/* .list-news ul{display: none;} */
+	.list-news li{position: relative;padding: 30px 0 20px 140px;border-bottom: 1px solid #e4e4e4;}
+	.list-news li.news-headLine{padding: 30px 0 30px 285px;min-height: 140px;}
+	.list-news li h3{font-size: 24px;line-height: 30px;color: #070707;}
+	.list-news li p{line-height: 24px;color: #666;}
+	.list-news li i{width: 120px;height: 45px;line-height: 45px;color: #333;background: #f2f2f2;text-align: center;position: absolute;left: 0;top: 30px;font-size: 18px;}
+	.pic-news{position: absolute;left: 0;top: 30px;}
+	.list-news li.news-headLine h3{line-height: 41px;}
+	.list-news li.news-headLine p{line-height: 24px;margin: 10px 0;font-size: 14px;max-height: 48px;overflow: hidden;}
+	.news-headLine a.s-blue{display: block;line-height: 28px;}
+	.s-blue{color: #369;}
+	.news-paging{padding: 40px 0 50px;}
+
+	.m-breadcrumb{color: #666;line-height: 50px;padding-top: 20px;}
+	.news-title{line-height: 60px;font-size: 24px;font-weight: bold;text-align: center;color: #070707;}
+	.sub-newsTitle{color: #333;font-size: 14px;text-align: center;background: #f5f6f9;line-height: 24px;padding-top: 1px;margin-bottom: 30px;}
+	.news-content{}
+	.m-characterCont{line-height: 2;color: #333;font-size: 14px;}
+
+	.bg-manager .bg-banner{height: 440px;background-image: url('../images/manager/bg-manager.jpg');padding-bottom: 105px;}
+	.sub-banner{position: absolute;left: 50%;bottom: -105px;margin-left: -305px;}
+	.f-tryTouse{text-align: center;margin-bottom: 80px;}
+	/* .f-tryTouses{text-align: center;margin-bottom: 80px;} */
+	.btn-primary{line-height: 50px;width: 200px;text-align: center;font-size: 20px;border-radius: 25px;display: inline-block;}
+	.btn-red,.btn-red:hover{background: #ef2e04;color: #fff;}
+	.u-center{text-align: center;}
+	.title-manager{line-height: 44px;font-size: 26px;color: #333;text-align: center;}
+	.sub-titleManager{line-height: 32px;color: #999;text-align: center;}
+	.under-manager{text-align: center;font-size: 0;padding: 16px 0;line-height: 0;}
+	.c-dott{height: 4px;width: 4px;border-radius: 50%;background: #ef2e04;display: inline-block;margin: 0 15px;}
+	.under-manager span{line-height: 0;height: 1px; width: 60px;background: #999;display: inline-block;margin-bottom: 1px}
+	.manager-function ul{padding: 0 0px 80px 170px;}
+	.manager-function li{width: 380px;padding-left: 65px;margin-top: 30px;position: relative;float: left;}
+	.manager-function ul h4{line-height: 24px;font-size: 18px;color: #333;}
+	.manager-function ul p{line-height: 24px;font-size: 14px;color: #999;}
+	.icon-manager{position: absolute;left: 0;top: 0;width: 47px;height: 47px;background: url('../images/manager/manager_01.jpg') no-repeat 0 0;}
+	.icon_M02{background-image: url('../images/manager/manager_02.jpg')}
+	.icon_M03{background-image: url('../images/manager/manager_03.jpg')}
+	.icon_M04{background-image: url('../images/manager/manager_04.jpg')}
+	.icon_M05{background-image: url('../images/manager/manager_05.jpg')}
+	.icon_M06{background-image: url('../images/manager/manager_06.jpg')}
+	.icon_M07{background-image: url('../images/manager/manager_07.jpg')}
+	.icon_M08{background-image: url('../images/manager/manager_08.jpg')}
+	.manager-video{padding: 50px; background: #eceef5;}
+	.manager-brandList{padding: 55px 0 60px;}
+	.brand_ul{margin-top: 30px;}
+	.brand_ul li{float: left; width: 50%;}
+	.brand_ul .brand-txt{float: left;width: 225px;padding: 20px;background: #739ec8;color: #fff;height: 210px;position: relative;}
+	.brand-txt h4{line-height: 44px;font-size: 20px;}
+	.brand-txt span{width: 30px;display: block;background: #fff;height: 2px;font-size: 0;}
+	.brand-txt p{line-height: 20px;margin-top: 25px;}
+	.brand-txt i{position: absolute;top: 50%;border-width: 20px;border-style: solid; border-color: transparent #739ec8 transparent transparent;margin-top: -20px;}
+	.brand-txt i.arr-right{left: -40px;}
+	.brand-txt i.arr-left{border-color: transparent transparent transparent #739ec8;right: -40px;}
+	.manager-brand02{background: #eceef5;padding: 40px 0 80px}
+	.ol-brand{padding: 35px 0 0 15px;margin-right: -10px;}
+	.pic-list{width: 190px;background: #fff;margin: 0 20px 20px 0;float: left;}
+	.pic-list a{padding: 20px 35px;display: block;}
+/* 1.2 rev 1412181400 */
+
+/*
+    Main carousel wrapper.
+*/
+.kc-wrap {
+    /* Various commands to stop items being selected when mouse-dragging/touching. */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* Disable IE10/11 default actions */
+    -ms-touch-action: none;
+    overflow:hidden;
+    position:relative;
+    // background-image:url('background.png');
+    background-position: center;
+    width:100%;
+    /* This makes wrapper scale vertically in proportion to width */
+    padding-bottom:35%;
+}
+.kc-horizon {
+    visibility:hidden;
+}
+/* 
+    This wraps carousel items.
+*/
+.kc-item {
+    position:absolute;
+    /* These sizes are from the examples - change as appropriate */
+    width:188px;
+    height:250px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0); 
+    visibility:hidden;
+}
+
+
+/*
+    Item Shadows are made from three sections, bottom, left and right.
+    This appears to give better performance than using CSS shadows, and minimizes the
+    pixel area of shadow drawn.
+    The image URLs used for the shadows will actually be copied into <img> elements.
+    You can of course change the images if required.
+*/
+
+.kc-shadow-bottom {
+    position:absolute !important;
+    top:100% !important;
+    width:100% !important;
+    height:10% !important;
+	/*background-image:url(shadow-bottom.png);*/
+    left:0px !important;
+}
+.kc-shadow-left,.kc-shadow-right {
+    position:absolute !important;
+    top:0% !important;    
+    width:10% !important;
+    height:100% !important;
+    left:-10% !important;
+   	/*background-image:url(shadow-left.png);*/
+}
+.kc-shadow-right {
+    left:100% !important;
+    /*background-image:url(shadow-right.png);*/
+}
+
+@-moz-document url-prefix() {
+    /* Fix for FireFox specific dark edge showing on shadows */
+    .kc-shadow-bottom,.kc-shadow-left,.kc-shadow-right {
+         outline: 1px solid transparent;
+    }
+    .kc-reflection {
+         outline: 1px solid transparent;
+    }
+}
+
+/*
+    Reflection.
+    This is applied to an inserted <canvas> element that is the reflection.
+*/
+
+.kc-reflection {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:0px;
+}
+
+/* The wrapping element of navigation buttons (if used) */
+.kc-nav-wrap {
+    display:inline-block;
+    position:absolute;
+    z-index:1000;
+}
+/* Navigation button */
+.kc-nav-button, .kc-nav-button-active {
+    width:16px;
+    height:16px;
+    background-color: #888;
+    float:left;
+    margin-right:10px;
+    cursor: pointer;
+    border-radius: 16px;
+    border:1px solid rgba(0,0,0,0.5);
+}
+/* Navigation button active */
+.kc-nav-button.active {
+    background-color: #fff;
+}
+
+/* No margin on  last one. */
+.kc-nav-button.last {
+    margin-right:0;
+}
+.kc-wrap{background: #fff;}
+
+.kc-item img {
+    position:absolute;
+    pointer-events: none;   /* Make images non-selectable. */
+    width:100%;             /* Make images expand to wrapper size (used in 2d modes). */
+}
+.bg-txt{position: absolute;bottom: 0;width: 40px;height: 40px;}
+
+
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+/*// .bx-wrapper {*/
+/*// 	position: relative;*/
+/*// 	margin: 0 auto 60px;*/
+/*// 	padding: 0;*/
+/*// 	*zoom: 1;*/
+/*// 	max-width: 100%!important;*/
+/*// }*/
+
+/*// .bx-wrapper img {*/
+/*// 	max-width: 100%;*/
+/*// 	display: block;*/
+/*// }*/
+
+/*// !** THEME*/
+/*// ===================================*!*/
+
+/*// .bx-wrapper .bx-viewport {*/
+/*// 	// -moz-box-shadow: 0 0 5px #ccc;*/
+/*// 	// -webkit-box-shadow: 0 0 5px #ccc;*/
+/*// 	// box-shadow: 0 0 5px #ccc;*/
+/*// 	border:  5px solid #fff;*/
+/*// 	left: -5px;*/
+/*// 	background: #fff;*/
+	/**/
+/*// 	!*fix other elements on the page moving (on Chrome)*!*/
+/*// 	-webkit-transform: translatez(0);*/
+/*// 	-moz-transform: translatez(0);*/
+/*//     	-ms-transform: translatez(0);*/
+/*//     	-o-transform: translatez(0);*/
+/*//     	transform: translatez(0);*/
+/*// }*/
+
+/*// .bx-wrapper .bx-pager,*/
+/*// .bx-wrapper .bx-controls-auto {*/
+/*// 	position: absolute;*/
+/*// 	bottom: -30px;*/
+/*// 	width: 100%;*/
+/*// 	display: none;*/
+/*// }*/
+
+/*// !* LOADER *!*/
+
+/*// .bx-wrapper .bx-loading {*/
+/*// 	min-height: 50px;*/
+/*// 	background: url(../images/bx_loader.gif) center center no-repeat #fff;*/
+/*// 	height: 100%;*/
+/*// 	width: 100%;*/
+/*// 	position: absolute;*/
+/*// 	top: 0;*/
+/*// 	left: 0;*/
+/*// 	z-index: 2000;*/
+/*// }*/
+
+/*// !* PAGER *!*/
+
+/*// .bx-wrapper .bx-pager {*/
+/*// 	text-align: center;*/
+/*// 	font-size: .85em;*/
+/*// 	font-family: Arial;*/
+/*// 	font-weight: bold;*/
+/*// 	color: #666;*/
+/*// 	padding-top: 20px;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-pager .bx-pager-item,*/
+/*// .bx-wrapper .bx-controls-auto .bx-controls-auto-item {*/
+/*// 	display: inline-block;*/
+/*// 	*zoom: 1;*/
+/*// 	*display: inline;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-pager.bx-default-pager a {*/
+/*// 	background: #666;*/
+/*// 	text-indent: -9999px;*/
+/*// 	display: block;*/
+/*// 	width: 10px;*/
+/*// 	height: 10px;*/
+/*// 	margin: 0 5px;*/
+/*// 	outline: 0;*/
+/*// 	-moz-border-radius: 5px;*/
+/*// 	-webkit-border-radius: 5px;*/
+/*// 	border-radius: 5px;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-pager.bx-default-pager a:hover,*/
+/*// .bx-wrapper .bx-pager.bx-default-pager a.active {*/
+/*// 	background: #000;*/
+/*// }*/
+
+/*// !* DIRECTION CONTROLS (NEXT / PREV) *!*/
+
+/*// .bx-wrapper .bx-prev {*/
+/*// 	left: 10px;*/
+/*// 	background: url(../images/controls.png) no-repeat 0 -32px;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-next {*/
+/*// 	right: 10px;*/
+/*// 	background: url(../images/controls.png) no-repeat -43px -32px;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-prev:hover {*/
+/*// 	background-position: 0 0;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-next:hover {*/
+/*// 	background-position: -43px 0;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-controls-direction a {*/
+/*// 	position: absolute;*/
+/*// 	top: 50%;*/
+/*// 	margin-top: -16px;*/
+/*// 	outline: 0;*/
+/*// 	width: 32px;*/
+/*// 	height: 32px;*/
+/*// 	text-indent: -9999px;*/
+/*// 	z-index: 9999;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-controls-direction a.disabled {*/
+/*// 	display: none;*/
+/*// }*/
+
+/*// !* AUTO CONTROLS (START / STOP) *!*/
+
+/*// .bx-wrapper .bx-controls-auto {*/
+/*// 	text-align: center;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-controls-auto .bx-start {*/
+/*// 	display: block;*/
+/*// 	text-indent: -9999px;*/
+/*// 	width: 10px;*/
+/*// 	height: 11px;*/
+/*// 	outline: 0;*/
+/*// 	background: url(../images/controls.png) -86px -11px no-repeat;*/
+/*// 	margin: 0 3px;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-controls-auto .bx-start:hover,*/
+/*// .bx-wrapper .bx-controls-auto .bx-start.active {*/
+/*// 	background-position: -86px 0;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-controls-auto .bx-stop {*/
+/*// 	display: block;*/
+/*// 	text-indent: -9999px;*/
+/*// 	width: 9px;*/
+/*// 	height: 11px;*/
+/*// 	outline: 0;*/
+/*// 	background: url(../images/controls.png) -86px -44px no-repeat;*/
+/*// 	margin: 0 3px;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-controls-auto .bx-stop:hover,*/
+/*// .bx-wrapper .bx-controls-auto .bx-stop.active {*/
+/*// 	background-position: -86px -33px;*/
+/*// }*/
+
+/*// !* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT *!*/
+
+/*// .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {*/
+/*// 	text-align: left;*/
+/*// 	width: 80%;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {*/
+/*// 	right: 0;*/
+/*// 	width: 35px;*/
+/*// }*/
+
+/*// !* IMAGE CAPTIONS *!*/
+
+/*// .bx-wrapper .bx-caption {*/
+/*// 	position: absolute;*/
+/*// 	bottom: 0;*/
+/*// 	left: 0;*/
+/*// 	background: #666\9;*/
+/*// 	background: rgba(80, 80, 80, 0.75);*/
+/*// 	width: 100%;*/
+/*// }*/
+
+/*// .bx-wrapper .bx-caption span {*/
+/*// 	color: #fff;*/
+/*// 	font-family: Arial;*/
+/*// 	display: block;*/
+/*// 	font-size: .85em;*/
+/*// 	padding: 10px;*/
+/*// }*/

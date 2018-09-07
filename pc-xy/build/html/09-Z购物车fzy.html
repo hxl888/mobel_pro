@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>进货单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../css/common/bundle.min.css" type="text/css">
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- 单个页面css -->
+    <link rel="stylesheet" href="../css/page-order.css">
+</head>
+<body class="root990">
+<!-- 头部============ -->
+    <div class="g-header g-header-search">
+        <input id="h_loginPath" type="hidden" value="http://qa-login.xebest.com/">
+        <input id="h_myPath" type="hidden" value="http://qa-i.xebest.com/">
+        <input id="h_searchPath" type="hidden" value="http://qa-news.xebest.com/">
+        <input id="h_cartPath" type="hidden" value="http://qa-cart.xebest.com/">
+        <input id="imgPath" type="hidden" value="http://qa-pic.xebest.com/">
+        <input id="itemPath" type="hidden" value="http://qa-detail.xebest.com/">
+        <input id="apiPath" type="hidden" value="http://qa-newapi.cy.xebest.com/">
+        <input id="xeMainUrl" type="hidden" value="http://qa-www.xebest.com/">
+        <input id="basePath" type="hidden"  value="https://miscssl.xebest.com/" />
+        <div class="m-topNav">
+            <div class="g-wrap clearfix">
+                <ul class="m-nt m-nav-l fl">
+                    <li class="vm-nav-adr0">
+                        配送至：<span class="ac">许昌市<i class="arrow"></i></span>
+                    </li>
+                    <li class="J-drop" id="appdl">
+                        <div class="vm-nav-adr1">
+                            <i class="u-icon ic">&#xe612;</i>
+                            手机鲜易
+                            <em class="u-icon arrow">&#xe600;</em>
+                        </div>
+                        <div class="dr01 J-dropdown">
+                            <div class="dd-spacer"></div>
+                            <div class="pqrd clearfix">
+                                <h5 class="fl">
+                                    <img src="../images/qrc-01.jpg" width="75" height="75" alt="" />
+                                </h5>
+                                <div class="pqrd-div fr">
+                                    <p>鲜易网客户端下载</p>
+                                    <p><a href="#">更多优惠好礼</a></p>
+                                    <div class="pqrd-col">
+                                        <div class="fl pqrd-ios">
+                                            <span></span>
+                                            <p>iPhone</p>
+                                        </div>
+                                        <div class="fr pqrd-and">
+                                            <span></span>
+                                            <p>Android</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vm-nav-adr2 vm-drop">
+                            <i class="u-icon ic">&#xe625;</i>
+                            <a id="J-afv" href="#">收藏鲜易</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="m-nt m-nav-r fr">
+                    <li>
+                        <div class="z-logined">
+                            <span>用户名，欢迎您来到鲜易网！</span>
+                            <a href="#">退出</a>
+                        </div>
+                        <div class="z-reg">
+                            <a href="#" target="_blank">登录</a><a href="#" target="_blank">免费注册</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vm-nav-adr1">
+                            <a href="#" target="_blank">我的鲜易</a>
+                        </div>
+                    </li>
+                    <li class="m-nt-pipe">|</li>
+                    <li>
+                        <div class="vm-nav-adr1">
+                            <a href="#" target="_blank">商家入驻</a>
+                        </div>
+                    </li>
+                    <li class="m-nt-pipe">|</li>
+                    <li class="J-drop">
+                        <div class="vm-nav-adr1 vm-drop">
+                            <a href="#" target="_blank">帮助中心</a>
+                            <em class="u-icon arrow">&#xe600;</em>
+                        </div>
+                        <div class="J-dropdown">
+                            <div class="dd-spacer"></div>
+                            <div class="vm-tlst">
+                                <a target="_blank" href="#">新手入门</a>
+                                <a target="_blank" href="#">购物指南</a>
+                                <a target="_blank" href="#">配送方式</a>
+                                <a target="_blank" href="#">售后服务</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-nt-pipe">|</li>
+                    <li class="J-drop">
+                        <div class="vm-nav-adr1 vm-drop">
+                            网站导航
+                            <em class="u-icon arrow">&#xe600;</em>
+                        </div>
+                        <div class="J-dropdown vm-wesite">
+                            <div class="dd-spacer"></div>
+                            <div class="vm-west">
+                                <ul>
+                                    <li>
+                                        <h5>特色市场</h5>
+                                        <p>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">批发市场</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>品类</h5>
+                                        <p>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">批发市场</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>帮助中心</h5>
+                                        <p>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">批发市场</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                            <a href="#" target="_blank">生鲜自营</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="m-tbr">
+            <div class="g-wrap">
+                <a href="#">
+                    <img src="../images/top_banner.jpg" width="1200" height="82" alt="活动信息">
+                </a>
+                <div class="m-tbr-close u-icon">&#xe60d;</div>
+            </div>
+        </div>
+
+        <div class="g-wrap clearfix">
+            <div class="vm-logo fl">
+                <a href="#" class="vm-logo1">鲜易网 http://wwww.xebest.com</a>
+                <span class="vm-sgn">鲜天下品 易万家味</span>
+            </div>
+            <p class="mu-logoLabel">进货单</p>
+            <div class="vm-search fr">
+                <div class="vm-s-cons">
+                    <input class="vm-s-input" id="J-search" placeholder="请输入关键词" type="text">
+                    <a href="#" class="u-btn u-btn-red u-btn-lg">搜索</a>
+                    <div class="search_drop search_drop_else"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- 内容区========================= -->
+    <div class="g-main g-main-white">
+        <div class="g-wrap clearfix">
+            <div class="cart-order">
+                <div class="tit-orderMain clearfix">
+                    <h5 class="fl">
+                        进货单（<a class="s-red" href="javascript:;">99</a>）
+                    </h5>
+                    <div class="tit-placeSel fr clearfix">
+                        配送至：<div id='buycart-adrs' class="selectedPlace clearfix"></div>
+                    </div>
+                </div>
+                <div class="cart-orderCont">
+                    <div class="floor-orderHead">
+                        <p class="xe-column cell-orderTit01">
+                            <input type="checkbox" class="y-radio"  name="allCheck01">全选
+                        </p>
+                        <p class="xe-column cell-orderTit02">
+                            商品
+                        </p>
+                        <p class="xe-column cell-orderTit03">
+                            单价(元)
+                        </p>
+                        <p class="xe-column cell-orderTit04">数量</p>
+                        <p class="xe-column cell-orderTit05">积分</p>
+                        <p class="xe-column cell-orderTit06">小计（元）</p>
+                        <p class="xe-column cell-orderTit07">操作</p>
+                    </div>
+                    <div class="cart-list">
+                        <div class="cart-item-list">
+                             <!-- cart-titleSel -->
+                            <h5 class="cart-item-title">
+                                <!-- <input type="checkbox" class="y-radio"> 彪马旗舰店 <i class="u-icon s-lBlue">&#xe61c;</i> -->
+                                <input type="checkbox" class="y-radio"  name="supCheck01">
+                                <span class="mxe-label"    data-tooltext="手机鲜易">
+                                    生鲜自营
+                                </span>
+                            </h5>
+                            <!-- 订单次主题 品类满折 满减等 选中状态 开发记得找我  cart-item-selected-->
+                            <div class="cart-item-main">
+                                <div class="cart-item-title sub-item-title clearfix">
+                                    <div class="fl">
+                                        <span class="s-red">【满换购】</span>活动商品已满200.00元，加20.00元可换购
+                                    </div>
+                                    <!-- 促销优惠label下拉  cart-tips-selected-->
+                                    <div class="cart-tips fl">
+                                        <span class="mxe-label mxe-orange-label mxe-label-empty">
+                                            促销优惠<i class="u-icon u-arrDown">&#xe600;</i>
+                                        </span>
+                                        <div class="sub-labelBox">
+                                            <p>
+                                                活动品类商品已满200.00，减30.00
+                                                <span class="mxe-label mxe-orange-label" data-tooltext="活动品类商" id="a123">
+                                                    促销11优惠
+                                                </span>
+                                            </p>
+                                            <p>活动品类商品已满200.00，减 <em class="mxe-label mxe-orange-label">促销优惠</em></p>
+                                            <p>
+                                                <label>
+                                                    <input type="radio" class="y-radio"> 活动商品已满200.00元，加20.00元可换购
+                                                </label>
+                                            </p>
+                                            <div class="mu-center">
+                                                <a href="javascript:;" class="u-btn u-btn-blush u-btn-xs">确定</a>
+                                                <a href="javascript:;" class="u-btn u-btn-white u-btn-xs">取消</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 订单商品详情 -->
+                                <div class="cart-item-detailBox">
+                                    <div class="mc-item-list">
+                                        <input type="checkbox" class="y-radio"  name="supCheck03">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        <!-- 文字遮罩层 -->
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy f-markPrice">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin" data-value="10" data-min="10" data-length="7" data-max="120">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为2111111箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-item-list">
+                                        <input type="checkbox" class="y-radio" name="supCheck03">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        <!-- 文字遮罩层 -->
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy f-markPrice">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 订单次主题 品类满折 满减等-->
+                            <div class="cart-item-main">
+                                <div class="cart-item-title sub-item-title clearfix">
+                                    <div class="fl">
+                                        <span class="s-red">【品类满折】</span>活动商品已满200.00元，加20.00元可换购
+                                    </div>
+                                    <!-- 促销优惠label下拉  cart-tips-selected-->
+                                    <div class="cart-tips fl">
+                                        <span class="mxe-label mxe-orange-label mxe-label-empty">
+                                            促销优惠<i class="u-icon u-arrDown">&#xe600;</i>
+                                        </span>
+                                        <div class="sub-labelBox">
+                                            <p>活动品类商品已满200.00，减30.00</p>
+                                            <div class="mu-center">
+                                                <a href="javascript:;" class="u-btn u-btn-blush u-btn-xs">确定</a>
+                                                <a href="javascript:;" class="u-btn u-btn-white u-btn-xs">取消</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 订单商品详情 -->
+                                <div class="cart-item-detailBox">
+                                    <div class="mc-item-list">
+                                        <input type="checkbox" class="y-radio"  name="supCheck03">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        <!-- 文字遮罩层 -->
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                    <p>
+                                                        <span class="mxe-label mxe-orange-label" data-tooltext="商品按固定价出售">打1折</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy f-markPrice">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-item-list">
+                                        <input type="checkbox" class="y-radio"  name="supCheck03">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        <!-- 文字遮罩层 -->
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy f-markPrice">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 订单次主题 套餐-->
+                            <div class="cart-item-main">
+                                <div class="cart-item-title sub-item-title clearfix">
+                                    <div class="fl">
+                                        <input type="checkbox" class="y-radio"  name="supCheck02"> <span class="s-red">【套装】</span>活动商品已满200.00元，加20.00元可换购
+                                    </div>
+                                    <!-- 促销优惠label下拉  cart-tips-selected-->
+                                    <div class="cart-tips fl">
+                                        <span class="mxe-label mxe-orange-label mxe-label-empty">
+                                            促销优惠<i class="u-icon u-arrDown">&#xe600;</i>
+                                        </span>
+                                        <div class="sub-labelBox">
+                                            <p>活动品类商品已满200.00，减30.00</p>
+                                            <div class="mu-center">
+                                                <a href="javascript:;" class="u-btn u-btn-blush u-btn-xs">确定</a>
+                                                <a href="javascript:;" class="u-btn u-btn-white u-btn-xs">取消</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="z-hide">
+                                        <input type="hidden" class="f-markPrice">
+                                    </div>
+                                    <!-- 套餐加减 插件-->
+                                    <div class="count-plugin" data-belongs="tcCount">
+                                        
+                                    </div>
+                                    <div class="fr cart-tc">
+                                        套餐合计：<span class="rmb">&yen; <i class="supTotle">3645.00</i></span>
+                                    </div>
+                                </div>
+                                <!-- 订单商品详情 -->
+                                <div class="cart-item-detailBox">
+                                    <div class="mc-item-list">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        <!-- 文字遮罩层 -->
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-item-list">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        <!-- 文字遮罩层 -->
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div class="cart-list">
+                        <div class="cart-item-list">
+                            <h5 class="cart-item-title cart-titleSel">
+                                <input type="checkbox" class="y-radio"> 彪马旗舰店 <i class="u-icon s-lBlue">&#xe61c;</i>
+                                <input type="checkbox" class="y-radio">
+                                <span class="mxe-label">
+                                    生鲜自营
+                                </span>
+                            </h5>
+                            订单次主题 品类满折 满减等 选中状态 开发记得找我
+                            <div class="cart-item-main cart-item-selected">
+                                <div class="cart-item-title sub-item-title clearfix">
+                                    <div class="fl">
+                                        <input type="checkbox" class="y-radio"> <span class="s-red">【满换购】</span>活动商品已满200.00元，加20.00元可换购
+                                    </div>
+                                    促销优惠label下拉  cart-tips-selected
+                                    <div class="cart-tips fl">
+                                        <span class="mxe-label mxe-orange-label mxe-label-empty">
+                                            促销优惠<i class="u-icon u-arrDown">&#xe600;</i>
+                                        </span>
+                                        <div class="sub-labelBox">
+                                            <p>活动品类商品已满200.00，减30.00</p>
+                                            <div class="mu-center">
+                                                <a href="javascript:;" class="u-btn u-btn-blush u-btn-xs">确定</a>
+                                                <a href="javascript:;" class="u-btn u-btn-white u-btn-xs">取消</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                订单商品详情
+                                <div class="cart-item-detailBox">
+                                    <div class="mc-item-list">
+                                        <input type="checkbox" class="y-radio">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        文字遮罩层
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            订单次主题 套餐
+                            <div class="cart-item-main">
+                                <div class="cart-item-title sub-item-title clearfix">
+                                    <div class="fl">
+                                        <input type="checkbox" class="y-radio"> <span class="s-red">【套装】</span>活动商品已满200.00元，加20.00元可换购
+                                    </div>
+                                    促销优惠label下拉  cart-tips-selected
+                                    <div class="cart-tips fl">
+                                        <span class="mxe-label mxe-orange-label mxe-label-empty">
+                                            促销优惠<i class="u-icon u-arrDown">&#xe600;</i>
+                                        </span>
+                                        <div class="sub-labelBox">
+                                            <p>活动品类商品已满200.00，减30.00</p>
+                                            <div class="mu-center">
+                                                <a href="javascript:;" class="u-btn u-btn-blush u-btn-xs">确定</a>
+                                                <a href="javascript:;" class="u-btn u-btn-white u-btn-xs">取消</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    套餐加减 插件
+                                    <div class="count-plugin">
+                                        
+                                    </div>
+                                    <div class="fr cart-tc">
+                                        套餐合计：<span class="rmb">&yen; <i class="supTotle">3645.00</i></span>
+                                    </div>
+                                </div>
+                                订单商品详情
+                                <div class="cart-item-detailBox">
+                                    <div class="mc-item-list">
+                                        <input type="checkbox" class="y-radio">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        文字遮罩层
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                    
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-item-list">
+                                        <input type="checkbox" class="y-radio">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        文字遮罩层
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                    
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="cart-list">
+                        <div class="cart-item-list">
+                            订单次主题 套餐
+                            <div class="cart-item-main cart-item-selected">
+                                <div class="cart-item-title sub-item-title clearfix">
+                                    <div class="fl">
+                                        <input type="checkbox" class="y-radio"> <span class="s-red">【套装】</span>活动商品已满200.00元，加20.00元可换购
+                                    </div>
+                                    促销优惠label下拉  cart-tips-selected
+                                    <div class="cart-tips fl">
+                                        <span class="mxe-label mxe-orange-label mxe-label-empty">
+                                            促销优惠<i class="u-icon u-arrDown">&#xe600;</i>
+                                        </span>
+                                        <div class="sub-labelBox">
+                                            <p>活动品类商品已满200.00，减30.00</p>
+                                            <div class="mu-center">
+                                                <a href="javascript:;" class="u-btn u-btn-blush u-btn-xs">确定</a>
+                                                <a href="javascript:;" class="u-btn u-btn-white u-btn-xs">取消</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    套餐加减 插件
+                                    <div class="count-plugin">
+                                        
+                                    </div>
+                                    <div class="fr cart-tc">
+                                        套餐合计：<span class="rmb">&yen; <i class="supTotle">3645.00</i></span>
+                                    </div>
+                                </div>
+                                订单商品详情
+                                <div class="cart-item-detailBox">
+                                    <div class="mc-item-list">
+                                        <input type="checkbox" class="y-radio">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        文字遮罩层
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-item-list">
+                                        <input type="checkbox" class="y-radio">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        文字遮罩层
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div> -->
+                    <!-- disable -->
+                    <!-- <div class="cart-list">
+                        <div class="cart-item-list">
+                            订单次主题 套餐
+                            <div class="cart-item-main cart-item-disable">
+                                <div class="cart-item-title sub-item-title clearfix">
+                                    <div class="fl">
+                                        <span class="y-radio">失效</span> <span class="s-red">【套装】</span>活动商品已满200.00元，加20.00元可换购
+                                    </div>
+                                    促销优惠label下拉  cart-tips-selected
+                                    <div class="cart-tips fl">
+                                        <span class="mxe-label mxe-orange-label mxe-label-empty">
+                                            促销优惠<i class="u-icon u-arrDown">&#xe600;</i>
+                                        </span>
+                                        <div class="sub-labelBox">
+                                            <p>活动品类商品已满200.00，减30.00</p>
+                                            <div class="mu-center">
+                                                <a href="javascript:;" class="u-btn u-btn-blush u-btn-xs">确定</a>
+                                                <a href="javascript:;" class="u-btn u-btn-white u-btn-xs">取消</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    套餐加减 插件
+                                    <div class="count-plugin">
+                                        <span class="cover-disable"></span>
+                                        
+                                    </div>
+                                    <div class="fr cart-tc">
+                                        <a href="javascript:;" class="s-gray">删除</a>
+                                    </div>
+                                </div>
+                                订单商品详情
+                                <div class="cart-item-detailBox">
+                                    <div class="mc-item-list">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        文字遮罩层
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-item-list">
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        文字遮罩层
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div> -->
+                    <!-- 单品 -->
+                    <!-- <div class="cart-list">
+                        <div class="cart-item-list">
+                            订单次主题 套餐
+                            <div class="cart-item-main cart-item-disable cart-item-single">
+                                订单商品详情
+                                <div class="cart-item-detailBox">
+                                    <div class="mc-item-list">
+                                        <span class="y-radio">失效</span>
+                                        <div class="mc-item-cell clearfix">
+                                            <div class="xe-cartCell xe-cartCell01 clearfix">
+                                                <div class="nc-listPic">
+                                                    <a href="#">
+                                                        <img src="http://3.im.guokr.com/ZO0XKMgJebbTBqB0S8FAxEO2pcf1_lijDWWQIzX8GiMcAgAAaAEAAEpQ.jpg?imageView2/1/w/135/h/90" alt="" width="65" height="65">
+                                                        <img src="../images/nu-yushou.png" alt="" class="label-corner" width="30" height="30">
+                                                        文字遮罩层
+                                                        <div class="box-shawdon z-show">
+                                                            <p class="txt-shawdon"></p>
+                                                            <p class="txt-cover">无货</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="xe-cartDes">
+                                                    <p>
+                                                        <a href="#" class="f-ellipsis">增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡增值羊饲料鸡蛋牛肉就料鸡蛋牛鸡</a>
+                                                    </p>
+                                                    <p class="s-grayL">规格：4KG</p>
+                                                </div>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell02">
+                                                <del><span class="rmb">&yen;</span><span class="mc-priceBy">130.00</span>/袋</del>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice01">130.00</span>/袋</p>
+                                                <p><span class="rmb">&yen;</span><span class="mc-priceBy unitPrice02">130.00</span>/袋</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell03">
+                                                <div class="count-plugin">
+                                                    <span class="cover-disable"></span>
+                                                    
+                                                </div>
+                                                <p class="s-grayL">商品最小起订量为20箱</p>
+                                                <p class="s-grayL">促销商品<span class="s-orange unitNum01">10.0</span>件，会员商品<span class="s-orange unitNum02">10.0</span>件</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell04">
+                                                <p>1300</p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell05">
+                                                <p class="s-red"><span class="rmb">&yen;</span><i class="minTotle">384.00</i></p>
+                                            </div>
+                                            <div class="xe-cartCell xe-cartCell06">
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">移至收藏夹</a>
+                                                </p>
+                                                <p>
+                                                    <a href="javascript:;" class="s-grayL">删除</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div> -->
+                    <div class="floor-orderFooter">
+                        <div class="clearfix floor-orderNext">
+                            <button class="u-btn u-btn-red u-btn-lg">去下单</button>
+                            <div class="fl clearfix">
+                                <label class="fl"><input type="checkbox" class="y-radio" name="allCheck02"> 全选</label>
+                                <a href="#" class="fl s-gray">删除</a>
+                                <a href="#" class="fl s-gray">清除失效宝贝</a>
+                            </div>
+                            <div class="fr">
+                                <p class="s-grayL u-right">
+                                    应付总金额：
+                                    <span class="rmb" style="color:#e42c25;font-size:18px;">
+                                        &yen;<i id="oTotle">11900.00</i>
+                                    </span>
+
+                                </p>
+                                <p class="clearfix s-grayL">
+                                    <span class="fl">
+                                        已优惠：
+                                        <i class="rmb s-gray">
+                                            -&yen;<em id="oSales">50.00</em>
+                                        </i>
+                                    </span>
+                                    <span class="fl" style="margin-left:16px;">
+                                        换购：
+                                        <i class="rmb s-gray">
+                                            +&yen;<em id="oChange">50.00</em>
+                                        </i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-recommend">
+                <div class="rec-title rec-more-title">
+                    <h4 class="active">为您推荐</h4>
+                    <h4>常购商品</h4>
+                    <!-- <span class="mc-asBorder"></span> -->
+                </div>
+                <div class="m-slidebase">
+                    <a class="prev" href="javascript:void(0)"></a>
+                    <ul class="clearfix">
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img11.360buyimg.com/n1/s130x130_jfs/t178/267/527153713/133385/291d0b94/53900774Nb7d71e1a.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img11.360buyimg.com/n1/s130x130_jfs/t178/267/527153713/133385/291d0b94/53900774Nb7d71e1a.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                    </ul>
+                    <a class="next" href="javascript:void(0)"></a>
+                </div>
+                <div class="m-slidebase" style="display:none">
+                    <a class="prev" href="javascript:void(0)"></a>
+                    <ul class="clearfix">
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">2去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img12.360buyimg.com/n1/s130x130_jfs/t316/157/2078785430/111561/38255ecd/545355d8N7734daff.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img11.360buyimg.com/n1/s130x130_jfs/t178/267/527153713/133385/291d0b94/53900774Nb7d71e1a.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                        <li>
+                            <p class="rec-pic">
+                                <a href="#">
+                                    <img _src="http://img11.360buyimg.com/n1/s130x130_jfs/t178/267/527153713/133385/291d0b94/53900774Nb7d71e1a.jpg" alt="" width="160" height="160">
+                                </a>
+                            </p>
+                            <p class="rec-name">
+                                <a href="#">去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄去筋一级猪蹄鲜一级猪蹄猪蹄</a>
+                            </p>
+                            <p class="rec-price clearfix">
+                                <span class="fl s-red rmb">
+                                    &yen;28.28
+                                </span>
+                                <span class="fl mu-unit">
+                                    /箱
+                                </span>
+                                <span class="fl mu-unit-price">
+                                    8.00/kg
+                                </span>
+                                <!-- <span class="fl s-red">
+                                    面议
+                                </span> -->
+                            </p>
+                        </li>
+                    </ul>
+                    <a class="next" href="javascript:void(0)"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 底部============================= -->
+
+<script src="../js/src/xeplugins.min.js"></script>
+
+
+
+
+
+
+
+<script src="../js/src/page-wl.js"></script>
+<script>
+    $(function(){
+        $(window).scroll(function(){//总价悬浮
+            var offsetTop = $('.floor-orderFooter').offset().top - $(window).height();
+            if ($(window).scrollTop()<=offsetTop&&$(window).scrollTop()>200) {
+                $('.floor-orderNext').addClass('floor-orderFixed');
+            }else{
+                $('.floor-orderNext').removeClass('floor-orderFixed');
+            }
+        })
+        $(".count-plugin").each(function(index, item) {// 初始化数量匡
+            var dataValue = $(this).attr("data-value");
+            var dataMin = $(this).attr("data-min");
+            var dataLength = $(this).attr("data-length");
+            var dataMax = $(this).attr("data-max");
+            $(this).Spinner({
+                value : dataValue,
+                min : dataMin,
+                len : dataLength,
+                max : dataMax,
+                decimal :true
+            }, true);
+        });
+        //初始计算
+        proOper()
+        function countPriItem(obj, tpr, num, mart,tprs,nums) {//计算价格相乘
+            var oTotal = tpr * num+tprs*nums;
+            var oMart = mart * (parseFloat(num)+parseFloat(nums));
+            obj.find('.minTotle').html(oTotal.toFixed(2));
+            obj.find("del .mc-priceBy").attr("data-martTo", oMart);
+        }
+        function proOper(){//先计算行  再调用总价统计计算所有价格
+            $('.cart-item-main').each(function(){
+                if ($(this).find('input[name=supCheck02]').length>0) {//有二级复选框   即套餐
+                    var tcMarkPrice = 0;
+                    var tcAllPrice = 0;
+                    $(this).find('.mc-item-list').each(function(){//循环小列表
+                        var fObj = $(this);
+                        floorCount(fObj);
+                        tcMarkPrice += parseFloat(fObj.find('del .mc-priceBy').attr('data-martto'));
+                        tcAllPrice += parseFloat(fObj.find('.minTotle').html());
+                    })
+                    $(this).find('input.f-markPrice').val(tcMarkPrice);
+                    $(this).find('.supTotle').html(tcAllPrice.toFixed(2));
+                }else{
+                    $(this).find('.mc-item-list').each(function(){//循环小列表
+                        var fObj = $(this);
+                        floorCount(fObj);
+                    })
+                }
+            });
+            tPCount ()     
+        }
+
+        function floorCount(obj){//计算行价格
+            var tpr=obj.find(".unitPrice01").text();
+            var tprs=obj.find(".unitPrice02").text();
+            var num=parseFloat(obj.find('.unitNum01').text());
+            var nums=parseFloat(obj.find('.unitNum02').text());
+            var oMarkPrice = parseFloat(obj.find('del .mc-priceBy').text());
+            //alert("num"+num+",nums"+nums+".tpr"+tpr+",tprs"+tprs);
+            countPriItem(obj, tpr, num, oMarkPrice,tprs,nums);  
+        }
+        function tPCount (){//统计总价
+            var toatalPri = 0;
+            var martPri = 0;
+            var score = 0;
+            $(".minTotle").each(function(index, el) {// 统计
+                var oParent = $(this).parents('.mc-item-list');
+                if (oParent.find("input[name=supCheck03]").length==0) {//是套餐取消 在下面算   前面没有复选框
+                    return true;
+                };
+                if (!oParent.find("input[name=supCheck03]").is(":checked")) {//单品未被选中
+                    return true;
+                }
+                toatalPri += parseFloat($(this).text());
+                martPri += parseFloat(oParent.find('.f-markPrice').attr("data-martto"));
+                score += parseInt(oParent.find('.xe-cartCell04 p').text());
+            });
+            $('.supTotle').each(function(index, el){//套餐计算
+                var oParents = $(this).parents('.cart-item-main');
+                if (!oParents.find("input[name=supCheck02]").is(":checked")) {
+                    return true;
+                };
+                toatalPri += parseFloat($(this).text());
+                martPri += parseFloat(oParents.find('input.f-markPrice').attr("data-martto"));
+                //套餐积分？怎么算  改在下面
+                score += parseInt(oParents.find('.xe-cartCell04 p').text());
+            })
+            //$(".payTotal").html(martPri.toFixed(2));
+            $("#oTotle").html(toatalPri.toFixed(2));
+            //$("xxxx").html(score);
+            if ((martPri.toFixed(2) - toatalPri.toFixed(2)) > 0) {
+                $("#oSales").html((martPri.toFixed(2) - toatalPri.toFixed(2)).toFixed(2));
+            } else {
+                $("#oSales").html("0.00");
+            }
+        }
+        // 数量修改
+        $('body').on('click','.count-plugin a',function() {
+            var oPluginsA = $(this);
+            pluginsCount(oPluginsA);
+            proOper()
+        })
+
+        $('body').on('blur','.count-plugin .Amount',function() {
+            var max = parseFloat($(this).parents('.count-plugin').attr('data-max'));
+            var min = parseFloat($(this).parents('.count-plugin').attr('data-min'));
+            var oPluginsA = $(this);
+            var amount=oPluginsA.parent().find('.Amount').val();
+            if (parseFloat($(this).val())>max) {
+                $(this).val(max);
+            }else if(parseFloat($(this).val())<min){
+                $(this).val(min);
+            }else{
+                $(this).val(parseFloat($(this).val()).toFixed(2));
+            }
+            $(this).val(amount);
+            pluginsCount(oPluginsA);
+            proOper()
+        })
+        // 数量修改
+        function pluginsCount(obj){
+            if (obj.closest('.count-plugin').attr('data-belongs')=='tcCount') {//套餐上的盒子加data-belongs
+                obj.closest('.cart-item-main').find('.unitNum01').html(obj.parent().find('.Amount').val());//促销商品数量
+                obj.closest('.cart-item-main').find('.unitNum02').html(0);//会员商品数量
+            }else{
+                obj.parents('.xe-cartCell03').find('.unitNum01').html(obj.parent().find('.Amount').val());
+                obj.parents('.xe-cartCell03').find('.unitNum02').html(0);
+            }
+        }
+        // 全选
+        $('input[name^="allCheck"]').change(function(){//2个全选按钮
+            if ($(this).is(':checked')) {
+                $('input[name^="supCheck"]').prop('checked',true);
+                $('input[name^="allCheck"]').prop('checked',true);
+            }else{
+                $('input[name^="allCheck"]').prop('checked',false);
+                $('input[name^="supCheck"]').prop('checked',false);
+            }
+            tPCount ()
+        });
+        var sup01Len = $('input[name="supCheck01"]').length;
+        $('input[name="supCheck01"]').change(function(){// 自营与店铺  全选
+            var sup01ed = $('input[name="supCheck01"]:checked').length;
+            if ($(this).is(':checked')) {// 影响子菜单
+                if (sup01ed==sup01Len) {// 影响全选
+                    $('input[name^="allCheck"]').prop('checked',true);
+                };
+                $(this).parents('.cart-list').find('input[name^="supCheck"]').prop('checked',true);
+            }else{
+                $('input[name^="allCheck"]').prop('checked',false);
+                $(this).parents('.cart-list').find('input[name^="supCheck"]').prop('checked',false);
+            };
+            tPCount ()
+        });
+        function checkSup (obj){// 自营与店铺  子菜单下面反选
+            var sup02Len = obj.parents('.cart-list').find('input[name="supCheck02"]').length;
+            var sup03Len = obj.parents('.cart-list').find('input[name="supCheck03"]').length;
+            var sup023ed = obj.parents('.cart-list').find('input[name="supCheck02"]:checked').length+obj.parents('.cart-list').find('input[name="supCheck03"]:checked').length;
+            if (sup023ed==(sup02Len+sup03Len)) {
+                $('input[name^="allCheck"]').prop('checked',true);
+                obj.parents('.cart-list').find('input[name="supCheck01"]').prop('checked',true);
+            }else{
+                $('input[name^="allCheck"]').prop('checked',false);
+                obj.parents('.cart-list').find('input[name="supCheck01"]').prop('checked',false);
+            }
+            tPCount ()
+        }
+        $('input[name="supCheck03"]').change(function(){
+            checkSup ($(this))
+        })
+        $('input[name="supCheck02"]').change(function(){
+            checkSup ($(this))
+        })
+        $('.rec-more-title h4').click(function(){
+            $(this).addClass('active').siblings().removeClass("active");
+            $('.m-slidebase').hide().eq($(this).index()).show();
+        })
+        $('.cart-tips').mouseenter(function(){
+            $(this).find('.sub-labelBox').show();
+        }).mouseleave(function(){
+            $(this).find('.sub-labelBox').hide();
+        })
+        $('body').on('click','.sub-labelBox .u-btn-xs',function(){
+            $('.sub-labelBox').hide();
+        })
+        console.log($('#a123').offset().top+':'+$('#a123').offset().left)
+
+    })
+</script>
+</body>
+</html>

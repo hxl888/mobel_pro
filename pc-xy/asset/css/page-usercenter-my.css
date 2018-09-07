@@ -1,0 +1,91 @@
+/*58-H个人信息-----------*/
+.ng-usmco{
+	padding: 20px;
+	padding-bottom: 155px;
+	background: #fff;
+}
+.ng-usmco .nm-ustit{
+	height: 40px;
+	border-bottom: 1px solid #ebebeb;
+}
+.nm-ustit .nm-bor{
+	position: relative;
+	top: 4px;
+	margin: 0 12px 0 13px;
+	border-right: 1px solid #ebebeb;
+	height: 12px;
+}
+.nm-ustit .nm-gr{
+	font-size: 18px;
+}
+.ng-usmco .nm-usmai{
+	padding-top: 23px;
+}
+.nm-usmai .nm-usfr{
+	height: 32px;
+	margin-bottom: 10px;
+	line-height: 32px;
+}
+.nm-usfr .nm-usL{
+	width: 95px;
+	text-align: right;
+	padding-right: 10px;
+}
+.nm-usfr .nm-usR{
+	min-width: 160px;
+}
+.nm-usR select{
+	width: 152px;
+	height: 32px;
+	margin-right: 0;
+	border:1px solid #ebebeb; 
+}
+.nm-usR .nu-rad{
+	margin-right: 12px;
+	vertical-align: middle;
+}
+.nm-usR .nu-la{
+	display: inline-block;
+	width: 80px;
+}
+.nm-usR .nu-Ipt{
+	padding-left: 10px;
+	width: 140px;
+	height: 30px;
+	border:1px solid #ebebeb;
+}
+.nm-usR .nm-yz{
+	padding: 0 20px 0 15px;
+}
+.nm-usfr .select-box{
+	width: 152px;
+	height: 32px;
+}
+.nm-usfr .select-text{
+	border:1px solid #ebebeb;
+}
+.nm-usR .nm-se{
+	margin-right: 5px;
+}
+.nm-usR.nm-usRL{
+	margin-left: 105px;
+}
+.nm-usfr textarea{
+	width: 445px;
+	height: 40px;
+	resize: none;
+	border:1px solid #ebebeb;
+	padding: 10px;
+}
+.nm-usmai .nm-ustext{
+	height: 60px;
+	margin-bottom: 0;
+}
+.nm-usmai .nm-usdq{
+	height: 26px;
+	line-height: 26px;
+}
+.nm-usRL .u-btn-blush{
+	padding: 10px 30px;
+	margin-top: 10px
+}

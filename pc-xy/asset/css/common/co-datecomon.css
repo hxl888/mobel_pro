@@ -1,0 +1,37 @@
+/*日期*/
+.p-inpIime .c-input{
+	text-align: left;
+	position: relative;
+}
+
+.time-sel-cons{
+	width: 168px;
+	height: 32px;
+	padding-left: 0;
+	cursor: pointer;
+	overflow: hidden;
+	border:1px solid #e1e1e1;
+	position: relative;
+}
+
+.time-sel-cons .time-sel-inputs {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:148px;
+	height: 17px;
+	line-height: 17px;
+	border:none;
+	background: none;
+	padding:7px 30px 8px 10px;
+	z-index: 2;
+}
+.time-sel-cons i{
+    background:url(../../images/spriter-images/bg-inputTime.png?__spriter);
+    width: 28px;
+    height: 30px;
+    position: absolute;
+    right: 2px;
+    top: 2px
+}
+

@@ -1,0 +1,369 @@
+.ng-myinqu .nm-fl01{
+	padding: 20px 8px 20px 10px;
+	background: #fff;
+	margin-bottom: 10px;
+}
+.nm-fl01 .nm-nav{
+	border-bottom:2px solid #e6e6e6;
+	cursor: pointer;
+}
+.nm-nav .a-pi{
+	padding: 0 30px;
+	border-right: 1px solid #cccccc;
+	font-size: 14px;
+	display: inline-block;
+}
+.ns-red{
+	color: #e42c25;
+}
+.nm-fl01 li{
+	height: 28px;
+	position: relative;
+}
+.nm-fl01  .ns-bored{
+	height: 28px;
+	position: relative;
+	border: none;
+}
+.nm-nav .ns-bored{
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	display: none;
+	border-bottom: 2px solid #e42c25;
+	font-size: 0;
+	overflow: hidden;
+	width: 100%;
+}
+.nm-nav li.active .ns-bored{
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	display: block;
+	border-bottom: 2px solid #e42c25;
+	font-size: 0;
+	overflow: hidden;
+	width: 100%;
+}
+.nm-nav li.active .a-pi{
+	color:#e42c25
+}
+.a-pi.nobor{
+	border:none;
+}
+.ns-red.ns-Themore{
+	position: relative;
+	top: -4px;
+}
+.ng-myinqu .nm-shopcar{
+	padding: 20px;
+	/*padding-bottom: 0;*/
+	background: #fff;
+}
+.nm-shopcar .nm-spcarTab{
+	width: 100%;
+	color: #333;
+}
+.nm-spcarTab .tabhea{
+	width: 100%;
+	 height: 40px;
+	 line-height: 40px;
+	 text-align: center;
+}
+.tabhea div{
+	border-right: 1px solid transparent;
+}
+.tabflo td{
+	vertical-align: top;
+}
+.tabflo .td01{
+	position: relative;
+	top: 1px;
+	width: 186px;
+}
+.tabflo .td02,.tabflo .td05{
+	width: 77px;
+	text-align:center;
+}
+.tabflo .td03,.tabflo .td07{
+	width: 79px;
+	text-align:center;
+}
+.tabflo .td04{
+	font-family: arial;
+	width: 95px;
+	text-align:center;
+}
+.tabflo .td06{
+	width: 78px;
+	text-align:center;
+}
+.tabflo .td08{
+	width: 61px;
+	text-align:center;
+}
+.tabflo .td09{
+	width: 98px;
+	text-align:center;
+}
+.td09 .z-show{
+	margin-bottom: 3px;
+}
+.Tbjgra{
+	background: #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+.nm-spcarTab .Tuser{
+	padding: 8px 16px 8px 10px;
+}
+.nm-shopcar .nm-spcarTab02{
+	margin-top: 10px;
+}
+.Tuser .nu-marl{
+	margin-left: 42px;
+}
+.Tuser input{
+	vertical-align:middle;
+	margin-right: 10px;
+}
+.nm-spcarTab .Talist{
+	height: 98px;
+	border-left: 1px solid #ebebeb;
+}
+.Talist .td01,
+.Talist .td02,
+.Talist .td03,
+.Talist .td04,
+.Talist .td05,
+.Talist .td06,
+.Talist .td07,
+.Talist .td08,
+.Talist .td09{
+	padding-top: 14px;
+	height: 84px;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+.td01 .imgle{
+	padding-left: 15px;
+	width: 70px;
+	margin-right: 10px;
+}
+.imgle img{
+	width: 70px;
+	height: 70px;
+}
+.td01 .imgcon{
+	width: 85px;
+}
+.imgcon p{
+	height: 40px;
+	overflow: hidden;
+}
+
+.nm-hopea{
+	height: 61px;
+	line-height: 61px;
+}
+.nm-hopea input{
+	margin:0 10px;
+	vertical-align: middle;
+}
+.nm-hopea a{
+	margin-left:10px;
+	font-size: 14px;
+	margin-top:11px;
+	margin-right: 0;
+	*margin-top: -50px;
+}
+/*弹出层------------------*/
+.nm-MYxjtk{
+	margin:auto;
+	background: #fff;
+	width: 902px;
+	padding: 15px 0 13px;
+	color: #333;
+}
+.nm-MYftr{
+	text-align: center;
+}
+.nm-MYxjtk .nm-hea{
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 2px solid #ebebeb;
+}
+.nm-MYxjtk .nm-bytr{
+	padding: 14px 0 27px;
+	border-bottom: 1px solid #ebebeb;
+}
+.nm-MYftr .nm-td01{
+	width: 141px;
+	line-height: 25px;
+}
+.nm-MYftr .nm-td02{
+	width: 137px;
+}
+.nm-MYftr .count-pluginBox{
+	padding: 0 0 0 17px;
+	width: 120px;
+}
+.nm-MYftr .nm-td03{
+	width: 101px;
+}
+.nm-MYftr .nm-td04{
+	width: 111px;
+}
+.nm-MYftr .nm-td05,.nm-MYftr .nm-td06{
+	width:98px; 
+}
+.nm-MYftr .nm-td07{
+	width: 95px;
+}
+.nm-MYftr .nm-td08{
+	width: 101px;
+}
+.nm-bytr .nu-HYIpt{
+	padding-left: 6px;
+	height: 20px;
+	width: 66px;
+	border:1px solid #dedede;
+}
+.nu-HYIpt.nu-YHbjgra{
+	cursor: no-drop;
+	background: #f7f7f7;
+}
+.nm-bytr .nm-td07{
+	font-family: arial;
+}
+.nm-HYslbox .select-box{
+	width: 74px;
+	height: 24px;
+	border:1px solid #dedede;
+}
+.nm-bytr .nm-td08{
+	position: relative;
+	line-height: normal;
+	/* padding-top: 16px; */
+}
+.nm-bytr .nu-opa{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 20px;
+	left: 0;
+	/* margin-top: 6px; */
+}
+.modal-xjdBox{
+	max-height: 345px;
+	overflow: auto;
+}
+.modal-xjdBox .nm-bytr .nm-td08{
+	width: 101px;
+}
+.tabflo .td07,.tabflo .td08{
+	font-family: arial;
+}
+/*弹出层中夹层*/
+.nm-MYxjtk{
+	position: relative;
+}
+.nm-MYxjtk .nm-HYrevise{
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 41px;
+	line-height: normal;
+	text-align: left;
+	color: #333;
+	background: #fff;
+	padding: 7px 20px 0 12px;
+	width: 160px;
+	border:1px solid #cecece;
+	z-index: 2;
+}
+.nm-HYrevise .nm-sp{
+	line-height: 28px;
+}
+.nm-sp label{
+	cursor: pointer;
+}
+.nm-HYrevise .nm-opa{
+	padding: 7px 0 10px;
+	text-align: right;
+}
+.nm-HYrevise .nu-HYrad{
+	margin-right: 6px;
+	vertical-align: middle;
+}
+.nm-HYrevise .u-btn-blush{
+	padding: 4px 10px 5px;
+	text-align: right;
+}
+.nm-MYxjtk .nm-SelNum{
+    position: relative;
+    margin:14px auto 0;
+    width: 91px;
+    height: 20px;
+    border:1px solid #dedede;
+}
+.nm-SelNum input{
+    width: 48px;
+    height: 20px;
+    text-align: center;
+    border:none;
+}
+.nm-SelNum span{
+    cursor: pointer;
+    display:inline-block;
+    width: 18px;
+    height: 20px;
+    color: #999999;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 12px;
+}
+.nm-SelNum .nm-L{
+    border-right: 1px solid #dedede;
+}
+.nm-SelNum .nm-R{
+    border-left: 1px solid #dedede;
+}
+/*白色尖角*/
+.nu-roaww01{
+			position: absolute;
+			left: 127px;
+			top: -5px;
+			width: 0;
+		    height: 0;
+		    border-style: dashed;
+		    border-top: none;
+		    border-right:5px solid transparent;
+		    border-left:5px solid transparent;
+		    border-bottom:5px solid #fff;
+		    overflow-x: hidden;
+		    display: inline-block;
+		    z-index: 8;
+		    font-size: 0 !important;
+}
+.nu-roaww02{
+			position: absolute;
+			left: 125px;
+			top: -7px;
+			width: 0;
+		    height: 0;
+		    background: #fff;
+		    border-style: dashed;
+		    border-top: none;
+		    border-right:7px solid transparent;
+		    border-left:7px solid transparent;
+		    border-bottom:7px solid #cecece;
+		    overflow-x: hidden;
+		    display: inline-block;
+		    font-size: 0 !important;
+}
+/*分页*/
+.pagingR.nm-MYxjd{
+	padding: 24px 0 38px;
+}
+/*46副本*/

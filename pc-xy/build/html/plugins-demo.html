@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>example project</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="icon" href="http://www.xebest.com/favicon.ico" mce_href="http://www.xebest.com/favicon.ico" type="image/x-icon">
+
+    <!--
+        公共样式 build后会变成
+        <link rel="stylesheet" href="../css/bundle.min.css" />
+    -->
+
+    <link rel="stylesheet" href="../css/common/bundle.min.css" type="text/css">
+    
+    
+
+    <!-- 单个页面css -->
+    <link rel="stylesheet" href="../css/page-index.css">
+
+</head>
+<body>
+
+    <div class="m-selCons" style=" width:400px; height:35px;">
+        <select class="selectfns" data-selfn="aa" name="" id="">
+            <option value="1">自定义下拉框1</option>
+            <option value="2">自定义下拉框2</option>
+            <option value="3">自定义下拉框3</option>
+            <option value="4">自定义下拉框4</option>
+        </select>
+    </div>
+
+    <!--
+        !!!!!!!!!重要!!!!!!!!!!与开发对接时要注意把引入css改成
+        <script href="http://misc.xebest.com/js/??jquery.1.10.2.js,aa.js"></script>
+    -->
+    <script src="../js/src/xeplugins.min.js"></script>
+    
+    <script>
+        function aa(val){
+            alert(val)
+        }
+    </script>
+</body>
+</html>

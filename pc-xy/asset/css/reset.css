@@ -1,0 +1,485 @@
+
+/*
+    布局（grid）（.g-）：将页面分割为几个大块，通常有头部、主体、主栏、侧栏、尾部等！
+    模块（module）（.m-）：通常是一个语义化的可以重复使用的较大的整体！比如导航、登录、注册、各种列表、评论、搜索等！
+    元件（unit）（.u-）：通常是一个不可再分的较为小巧的个体，通常被重复用于各种模块中！比如按钮、输入框、loading、图标等！
+    功能（function）（.f-）：为方便一些常用样式的使用，我们将这些使用率较高的样式剥离出来，按需使用，通常这些选择器具有固定样式表现，比如清除浮动等！不可滥用！
+    皮肤（skin）（.s-）：如果你需要把皮肤型的样式抽离出来，通常为文字色、背景色（图）、边框色等，非换肤型网站通常只提取文字色！非换肤型网站不可滥用此类！
+    状态（.z-）：为状态类样式加入前缀，统一标识，方便识别，她只能组合使用或作为后代出现（.u-ipt.z-dis{}，.m-list li.z-sel{}）
+
+    注：在你样式中的选择器总是要以上面前五类开头，然后在里面使用后代选择器。
+    如果这五类不能满足你的需求，你可以另外定义一个或多个大类，但必须符合单个字母+"-"为前缀的命名规则，即 .x- 的格式。
+
+　　特殊：.j-将被专用于JS获取节点，请勿使用.j-定义样式。
+
+    ===
+    为避免多人协作时CLASS名冲突
+    上面各功能CLASS名分别加个单独字母加以区分（！！！！通用的或者独特组件CSS无需加此独物字母，通用按上面规则起名，组件按组件功能起名即可）
+    ***张稳       （对应v------vg,vm,vu,vf,vs,vz）
+    ***张芹芹     （对应b------bg,bm,bu,bf,bs,bz）
+    ***胡新磊     （对应n）
+    ***冯振亚     （对应m）
+    ===
+
+    === 严格遵守此规范 ****** 选择器层级不要超过三层（写css严格注意） ===
+
+    === 两个元件共性的样式 ===
+    .vu-tip1,.vu-tip2{}
+    .vu-tip1 .itm,.u-tip2 .itm{}
+
+    === 在分别是两个元件各自的样式 ===
+
+    === tip1 ===
+    .u-tip1{}
+    .u-tip1 .itm{}
+
+    === tip2 ===
+    .u-tip2{}
+    .u-tip2 .itm{}
+
+
+
+    后代选择器命名
+    约定不以单个字母+"-"为前缀且长度大于等于2的类选择器为后代选择器，如：.item为m-list模块里的每一个项，.text为m-list模块里的文本部分：.m-list .item{}.m-list .text{}。
+    一个语义化的标签也可以是后代选择器，比如：.m-list li{}。
+    不允许单个字母的类选择器出现，原因详见下面的“模块和元件的后代选择器的扩展类”。
+    通过使用后代选择器的方法，你不需要考虑他的命名是否已被使用，因为他只在当前模块或元件中生效，同样的样式名可以在不同的模块或元件中重复使用，互不干扰；在多人协作或者分模块协作的时候效果尤为明显！
+
+    后代选择器不需要完整表现结构树层级，尽量能短则短。
+
+    注：后代选择器不要在页面布局中使用，因为污染的可能性较大；
+
+    这里的.itm和.cnt只在.m-list中有效
+    .m-list{margin:0;padding:0;}
+    .m-list .itm{margin:1px;padding:1px;}
+    .m-list .cnt{margin-left:100px;}
+
+    .m-list2{margin:0;padding:0;}
+    .m-list2 .itm{margin:1px;padding:1px;}
+    .m-list2 .cnt{margin-left:100px;}
+
+    这里的.cnt和.num只在.m-page中有效
+    .m-page{height:20px;}
+    .m-page .cnt{text-align:center;}
+    .m-page .num{border:1px solid #ddd;}
+
+
+    命名应简约而不失语义
+    反对：表现化的或没有语义的命名
+    .m-abc .green2{}
+    .g-left2{}
+
+    推荐：使用有语义的简短的命名
+    .m-list .wrap2{}
+    .g-side2{}
+    相同语义的不同类命名
+    方法：直接加数字或字母区分即可（如：.m-list、.m-list2、.m-list3等，都是列表模块，但是是完全不一样的模块）。
+
+    其他举例：.f-fw0、.f-fw1、.s-fc0、.s-fc1、.m-logo2、.m-logo3、u-btn、u-btn2等等。
+
+
+
+    //这是某个模块
+    .m-nav{} 模块容器
+    .m-nav li,.m-nav a{} 先共性  优化组合
+    .m-nav li{} 后个性  语义化标签选择器
+    .m-nav a{} 后个性中的共性 按结构顺序
+    .m-nav a.a1{} 后个性中的个性
+    .m-nav a.a2{} 后个性中的个性
+    .m-nav .z-crt a{} 交互状态变化
+    .m-nav .z-crt a.a1{}
+    .m-nav .z-crt a.a2{}
+    .m-nav .btn{} 典型后代选择器
+    .m-nav .btn-1{} 典型后代选择器扩展
+    .m-nav .btn-dis{} 典型后代选择器扩展（状态）
+    .m-nav .btn.z-dis{} 作用同上，请二选一（如果可以不兼容IE6时使用）
+    .m-nav .m-sch{} 控制内部其他模块位置
+    .m-nav .u-sel{} 控制内部其他元件位置
+    .m-nav-1{} 模块扩展
+    .m-nav-1 li{}
+    .m-nav-dis{} 模块扩展（状态）
+    .m-nav.z-dis{} 作用同上，请二选一（如果可以不兼容IE6时使用）
+*/
+
+@font-face{
+    font-family: 'xebestFont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /*  */
+    url('../fonts/iconfont.ttf') format('truetype'), /* */
+    url('../fonts/iconfont.svg#xeBestFont') format('svg'); /* iOS 4.1- */
+}
+.u-icon
+{
+    font-family: 'xebestFont' !important;
+    font-size: 16px;
+    font-style: normal;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* CSS reset Document cy zw */
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{
+    margin: 0;
+    padding: 0;
+}
+body,button,input,select,textarea{
+    font: 12px/150% tahoma,'Microsoft YaHei','微软雅黑','Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+    font-weight: normal;
+}
+:focus{
+    outline: 0;
+}
+small{
+    font-size: 12px;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#4a4a4a;
+}
+a:hover{
+    text-decoration: none;
+    color:#e42c25;
+}
+sup{
+    vertical-align: text-top;
+}
+sub{
+    vertical-align: text-bottom;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+button,
+input,
+select,
+textarea{
+    font-size: 100%;
+    *vertical-align: top;
+}
+input,
+select {
+    margin-right:5px;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+i,em{
+    font-style: normal;
+}
+.f-rmb {
+    font-family: arial;
+}
+
+/**清除浮动 **/
+.clearfix:after{
+    font-size: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ' ';
+}
+
+*html .clearfix{
+    zoom: 1;
+}
+*:first-child + html .clearfix{
+    zoom: 1;
+}
+
+.zoom{
+    zoom: 1;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-moz-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -moz-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -moz-transform: none;
+    transform: none;
+  }
+}
+@-ms-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -ms-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/****/
+.f-ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+.z-hide{
+    display: none !important;
+}
+.z-show{
+    display: block !important;
+}
+
+.u-arrow {
+    width: 0;
+    height: 0;
+    border-style: dashed;
+    border-bottom: none;
+    border-right:4px solid transparent;
+    border-left:4px solid transparent;
+    border-top:4px solid #767676;
+    overflow-x: hidden;
+    display: inline-block;
+    font-size: 0 !important;
+}
+
+
+/*页面布局宽度*/
+.g-wrap {
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+    /* position: relative; */
+    /* *zoom:1; */
+}
+
+.root990 .g-wrap {
+    width: 990px;
+    min-width: 990px;
+}
+
+
+/*990布局*/
+.root990 .vm-search {
+    width:340px;
+}
+.root990 .vm-s-cons .vm-s-input {
+    width: 242px;
+}
+.root990 .g-footer-icon,.root990 .g-ftmc {
+    width: 990px;
+}
+.root990 .g-footer-icon li {
+    margin-right: 42px;
+}
+.root990 .g-ftmc-list {
+    width: 490px;
+}
+.root990 .g-ftmc-list li {
+    margin-right: 8px;
+}
+.root990 .g-ftmc-qrc {
+    width: 237px;
+}
+.root990 .g-ftmc-qrc1 {
+    padding:0 10px;
+}
+.root990 .g-ftmc-des {
+    padding: 25px 25px;
+}
+.root990 .vg-mlis a {
+    padding: 0 10px;
+}
+.root990 .vg-phone {
+    margin-right: 2%;
+}
+
+
+
+/*通用按钮元件*/
+.u-btn {
+    display: inline-block;
+    padding: 6px 20px;
+    margin:0 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+    transition:all .5s ease;
+    cursor: pointer;
+}
+/*火狐按钮兼容*/
+button::-moz-focus-inner, input[type="button"]::-moz-focus-inner {
+    border:none;
+    padding:0;
+}
+.u-btn-blockb {
+    width: 100%;
+    display: block;
+}
+.u-btn-blocka {
+    display: block;
+}
+
+.u-btn-white,.u-btn-white:hover {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.u-btn-red {
+    color: #fff;
+    background-color: #dd2e29;
+    border-color: #dd2e29;
+}
+.u-btn-red:hover {
+    background: #f7413a;
+    border-color: #f7413a;
+    color: #fff;
+}
+.u-btn-red-oe {
+    color: #dd2e29;
+    background: #fff;
+    border-color: #dd2e29;
+}
+.u-btn-red-oe:hover {
+    color: #fff;
+    background: #dd2e29;
+    border-color: #dd2e29;
+}
+
+.u-btn-orange {
+    color: #fff;
+    background-color: #ffa11a;
+    border-color: #ffa11a;
+}
+.u-btn-orange:hover {
+    color: #fff;
+    background-color: #ff8f40;
+    border-color: #ff8f40;
+}
+
+.u-btn-orange-oe {
+    color: #ffa11a;
+    background: #fff;
+    border-color: #ffa11a;
+}
+.u-btn-orange-oe:hover {
+    color: #fff;
+    background: #ffa11a;
+    border-color: #ffa11a;
+}
+
+.u-btn-blush {
+    color: #fff;
+    background-color: #f2423b;
+    border-color: #f2423b;
+}
+.u-btn-blush:hover {
+    color: #fff;
+    background-color: #ea3730;
+    border-color: #ea3730;
+}
+
+.u-btn-disabled,.u-btn-disabled:hover {
+    color: #fff;
+    background-color: #c1c1c1;
+    border-color: #c1c1c1;
+    cursor: not-allowed;
+}
+.u-btn-disabled-oe,.u-btn-disabled-oe:hover {
+    color: #c1c1c1;
+    background-color: #fff;
+    border-color: #c1c1c1;
+    cursor: not-allowed;
+}
+.u-btn-lg {
+    padding:10px 30px;
+    font-size: 18px;
+}
+.u-btn-s {
+    padding:4px 20px 3px;
+    font-size: 12px;
+}
+.u-btn-xs {
+    padding:3px 10px 2px;
+    font-size: 12px;
+}

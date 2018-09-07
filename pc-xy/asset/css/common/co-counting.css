@@ -1,0 +1,32 @@
+.Amount {
+    width: 40px;
+    padding: 0 5px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #c3c3c3;
+    float: left;
+    margin: 0;
+    text-align: center;
+    margin-left: -1px;
+}
+.minus, .plus {
+    float: left;
+    width: 20px;
+    border: 1px solid #c3c3c3;
+    height: 25px;
+    line-height: 25px;
+    margin-left: -1px;
+    font-size: 12px;
+    background: #fff;
+    color: #424242;
+}
+.minus:hover, .plus:hover {
+    color: #424242;
+}
+.DisIn, .DisDe {
+    cursor: not-allowed;
+    color: #ccc;
+}
+.DisIn:hover, .DisDe:hover {
+    color: #ccc;
+}

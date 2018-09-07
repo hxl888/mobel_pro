@@ -1,0 +1,167 @@
+body{
+  background:#ece8e2;
+}
+.header{
+  background-color: #fff;
+}
+.content1{
+  position: relative;
+  background:#ece8e2;
+  width:960px;
+  left:50%;
+  margin-left: -480px;
+  height:960px;
+}
+.content1 .a_title{
+  /*position: absolute;
+  left:50%;
+  margin-left:-480px;*/
+  background:url(../images/ico-4/lous.png);
+  height:708px;
+  width:201px;
+}
+.content1 .a_title ul{
+  border-bottom:rgb(226,232,238) 1px solid;
+  margin:0 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.content1 .a_title ul li{
+  line-height: 30px;
+  padding-left: 45px;
+  color:#383838;
+  cursor:pointer;
+}
+#highlight{
+  background-color:#06a8f0;
+  color:#fff;
+}
+.content1 .a_title ul>li#highlight:hover{
+  background-color:#2868c6;
+}
+.content1 .a_title ul>li:first-child{
+  font-size: 16px;
+  line-height: 45px;
+  color:#66666;
+  cursor:default;
+}
+.content1 .a_title ul .access{
+  background:url(../images/ico-4/access.png) no-repeat 15px center;
+}
+.content1 .a_title ul .distribution{
+  background:url(../images/ico-4/distribution.png) no-repeat 15px center;
+}
+.content1 .a_title ul .storages{
+  background:url(../images/ico-4/storage.png) no-repeat 15px center;
+}
+.content1 .a_theme{
+  position: absolute;
+  left:50%;
+  margin-left:-279px;
+  height:58px;
+  width:759px;
+}
+.content1 .a_theme .one{
+  position: absolute;
+  line-height: 58px;
+  left:22px;
+  color:#8cacd7;
+}
+.content1 .a_theme .interva{
+  position: absolute;
+  line-height: 58px;
+  left:55px;
+  width:10px;
+  height:58px;
+  background:url(../images/ico-4/interva.png) no-repeat center center;
+}
+.content1 .a_theme .two{
+  position: absolute;
+  line-height: 58px;
+  left:70px;
+  color:#666666;
+}
+.content1 .n-tit-three{
+  position: absolute;
+  line-height: 58px;
+  left:142px;
+  color:#666666;
+}
+.content1 .public{
+  position: absolute;
+  left:50%;
+  margin-left: -279px;
+  width:759px;
+  top:58px;
+  height:905px;
+  background:#fff;
+  display: none;
+}
+.content1 .transaction{
+  display: block;
+}
+.content1 .public p:nth-child(1){
+  position: absolute;
+  left:25px;
+  top:25px;
+  font-weight: bold;
+  color:#383838;
+}
+.content1 .public p:nth-child(2){
+  position: absolute;
+  left:25px;
+  top:50px;
+  color:#383838;
+}
+.content1 .public table{
+  position: absolute;
+  left:25px;
+  top:75px;
+  width:713px;
+}
+.content1 .public table tr{
+  height:40px;
+  line-height: 40px;
+}
+.content1 .public table tr:first-child{
+  background:#e9efe2;
+}
+.content1 .public table th{
+  text-align: left;
+}
+.content1 .public table th{
+  padding-left: 10px;
+  color:#646e76;
+}
+.content1 .public table tr td:first-child{
+  width:240px;
+  border-right: 1px solid #ccc;
+}
+.content1 .public table tr td{
+  padding-left: 10px;
+  border-bottom: 1px solid #ccc;
+  color:#666666;
+}
+.content1 .public table tr td a{
+  color:#666666;
+}
+.content1 .public table tr td a:hover{
+  color:#438fec;
+}
+/*media*/
+@media (max-width:960px){
+  .content1{
+    position: relative;
+    background:#ece8e2;
+    width:960px;
+    height:960px;
+    left:480px;
+    top:0px;
+  }
+  .section5{
+    position: relative;
+    width:960px;
+    height:375px;
+    left:0px;
+  }
+}
